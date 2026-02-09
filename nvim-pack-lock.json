@@ -33,6 +33,10 @@
       "rev": "bc395b810d9583bfa3244f31db80ab12a8e7561e",
       "src": "https://github.com/SilverofLight/kd_translate.nvim"
     },
+    "kitty-scrollback.nvim": {
+      "rev": "5574df779fbe03205a08af4d9154279ff491be75",
+      "src": "https://github.com/mikesmithgh/kitty-scrollback.nvim"
+    },
     "lazydev.nvim": {
       "rev": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d",
       "src": "https://github.com/folke/lazydev.nvim"

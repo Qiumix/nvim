@@ -13,6 +13,7 @@ vim.pack.add({
   { src = vim.g.gh_str("echasnovski/mini.pick") },
   { src = vim.g.gh_str('windwp/nvim-autopairs') },
   { src = vim.g.gh_str('saecki/crates.nvim') },
+  { src = vim.g.gh_str('mikesmithgh/kitty-scrollback.nvim') },
   { src = vim.g.gh_str('mikavilpas/yazi.nvim'),                  version = vim.version.range('*') },
 })
 
@@ -24,6 +25,7 @@ end)
 require 'mini.pick'.setup()
 require 'oil'.setup()
 require 'crates'.setup()
+require('kitty-scrollback').setup()
 require 'which-key'.setup({
   preset = 'helix',
 })
