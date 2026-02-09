@@ -29,6 +29,10 @@
       "rev": "794f03c97afc7f4b03fb6ec5111be507df1850cf",
       "src": "https://github.com/MagicDuck/grug-far.nvim"
     },
+    "kd_translate.nvim": {
+      "rev": "bc395b810d9583bfa3244f31db80ab12a8e7561e",
+      "src": "https://github.com/SilverofLight/kd_translate.nvim"
+    },
     "lazydev.nvim": {
       "rev": "5231c62aa83c2f8dc8e7ba957aa77098cda1257d",
       "src": "https://github.com/folke/lazydev.nvim"
