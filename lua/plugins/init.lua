@@ -1,8 +1,15 @@
-require("plugins.blink")
-require("plugins.conform")
-require("plugins.git")
-require("plugins.markdown")
-require("plugins.treesitter")
-require("plugins.whichkey")
+function only_require_without_vsc(plugin)
+  if vim.g.vscode then
+    return
+  end
+  require(plugin)
+end
+
+only_require_without_vsc("plugins.blink")
+only_require_without_vsc("plugins.conform")
+only_require_without_vsc("plugins.git")
+only_require_without_vsc("plugins.markdown")
+only_require_without_vsc("plugins.treesitter")
+only_require_without_vsc("plugins.whichkey")
 require("plugins.yanky")
-require("plugins.catppuccin")
+only_require_without_vsc("plugins.catppuccin")
