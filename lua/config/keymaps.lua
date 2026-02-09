@@ -1,4 +1,3 @@
-vim.g.mapleader = " "
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
@@ -15,11 +14,11 @@ map('n', '<leader>e', "<cmd>Yazi<CR>")
 
 -- Alternative buffer switching (vim-style)
 map("n", "<leader>bn", ":bnext<CR>", { desc = "Next buffer" })
+map("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
+map("n", "]b", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 map("n", "<leader>bp", ":bprevious<CR>", { desc = "Previous buffer" })
 map("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
-map("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 map("n", "[b", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
-map("n", "]b", "<cmd>bnext<cr>", { desc = "Next Buffer" })
 
 -- Quick switch to last edited file (super useful!)
 map("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
@@ -83,10 +82,10 @@ map("v", "<A-Up>", ":m '<-2<CR>gv=gv", opts)
 -- ═══════════════════════════════════════════════════════════
 
 -- Better line start/end (more comfortable than $ and ^)
-map("n", "gl", "$", { desc = "Go to end of line" })
-map("n", "gh", "^", { desc = "Go to start of line" })
-map("n", "<A-h>", "^", { desc = "Go to start of line", silent = true })
-map("n", "<A-l>", "$", { desc = "Go to end of line", silent = true })
+map({ "n", "v" }, "gl", "$", { desc = "Go to end of line" })
+map({ "n", "v" }, "gh", "^", { desc = "Go to start of line" })
+map({ "n", "v" }, "<A-h>", "^", { desc = "Go to start of line", silent = true })
+map({ "n", "v" }, "<A-l>", "$", { desc = "Go to end of line", silent = true })
 
 -- Select all content
 map("n", "==", "gg<S-v>G")
@@ -94,7 +93,8 @@ map("n", "<A-a>", "ggVG", { noremap = true, silent = true, desc = "Select all" }
 
 -- Clear search highlighting
 map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and Clear hlsearch" })
-map("n", "<leader>ur", "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>", { desc = "Redraw / Clear hlsearch / Diff Update" })
+map("n", "<leader>ur", "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>",
+  { desc = "Redraw / Clear hlsearch / Diff Update" })
 
 -- Smart search navigation (n always goes forward, N always backward)
 map("n", "n", "'Nn'[v:searchforward].'zv'", { expr = true, desc = "Next Search Result" })

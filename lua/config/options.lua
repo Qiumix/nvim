@@ -6,7 +6,7 @@ opt.number = true -- Line numbers
 opt.relativenumber = true -- Relative line numbers
 opt.cursorline = true -- Highlight current line
 opt.wrap = false -- Don't wrap lines
-opt.scrolloff = 10 -- Keep 10 lines above/below cursor
+opt.scrolloff = 5 -- Keep 10 lines above/below cursor
 opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 
 -- Indentation
@@ -29,13 +29,13 @@ opt.signcolumn = "yes" -- Always show sign column
 opt.showmatch = true -- Highlight matching brackets
 opt.matchtime = 2 -- How long to show matching bracket
 opt.cmdheight = 1 -- Command line height
-opt.showmode = false -- Don't show mode in command line
+opt.showmode = true -- Don't show mode in command line
 opt.pumheight = 10 -- Popup menu height
 opt.pumblend = 10 -- Popup menu transparency
-opt.winblend = 0 -- Floating window transparency
+opt.winblend = 20 -- Floating window transparency
 opt.completeopt = "menu,menuone,noselect"
 opt.conceallevel = 2 -- Hide * markup for bold and italic, but not markers with substitutions
-opt.confirm = true -- Confirm to save changes before exiting modified buffer
+opt.confirm = false -- Confirm to save changes before exiting modified buffer
 opt.concealcursor = "" -- Don't hide cursor line markup
 opt.synmaxcol = 300 -- Syntax highlighting limit
 opt.ruler = false -- Disable the default ruler
@@ -48,7 +48,7 @@ opt.writebackup = false -- Don't create backup before writing
 opt.swapfile = false -- Don't create swap files
 opt.undofile = true -- Persistent undo
 opt.undolevels = 10000
-opt.undodir = vim.fn.expand("~/.vim/undodir") -- Undo directory
+opt.undodir = vim.fn.expand("~/.local/share/nvim/vim/undodir") -- Undo directory
 opt.updatetime = 300 -- Faster completion
 opt.timeoutlen = vim.g.vscode and 1000 or 300 -- Lower than default (1000) to quickly trigger which-key
 opt.ttimeoutlen = 0 -- Key code timeout
@@ -94,7 +94,7 @@ opt.redrawtime = 10000
 opt.maxmempattern = 20000
 
 -- Create undo directory if it doesn't exist
-local undodir = vim.fn.expand("~/.vim/undodir")
+local undodir = vim.fn.expand("~/.local/share/nvim/vim/undodir")
 if vim.fn.isdirectory(undodir) == 0 then
   vim.fn.mkdir(undodir, "p")
 end

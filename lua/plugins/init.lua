@@ -1,0 +1,7 @@
+require("plugins.blink")
+require("plugins.conform")
+require("plugins.git")
+require("plugins.markdown")
+require("plugins.treesitter")
+require("plugins.whichkey")
+require("plugins.yanky")
