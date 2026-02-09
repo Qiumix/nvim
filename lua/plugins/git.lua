@@ -3,24 +3,20 @@ vim.pack.add({
   "https://github.com/sindrets/diffview.nvim",
 })
 
+local sign = {
+  add = { text = "▎" },
+  change = { text = "▎" },
+  delete = { text = "" },
+  topdelete = { text = "" },
+  changedelete = { text = "▎" },
+  untracked = { text = "▎" },
+}
+
 -- Setup gitsigns.nvim
 require("gitsigns").setup({
   current_line_blame = true,
-  signs = {
-    add = { text = "▎" },
-    change = { text = "▎" },
-    delete = { text = "" },
-    topdelete = { text = "" },
-    changedelete = { text = "▎" },
-    untracked = { text = "▎" },
-  },
-  signs_staged = {
-    add = { text = "▎" },
-    change = { text = "▎" },
-    delete = { text = "" },
-    topdelete = { text = "" },
-    changedelete = { text = "▎" },
-  },
+  signs = sign,
+  signs_staged = sign,
   on_attach = function(buffer)
     local gs = package.loaded.gitsigns
 

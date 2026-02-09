@@ -8,8 +8,6 @@ vim.pack.add({
   { src = vim.g.gh_str('nvim-lua/plenary.nvim') },
   { src = vim.g.gh_str('wakatime/vim-wakatime') },
   { src = vim.g.gh_str('rachartier/tiny-inline-diagnostic.nvim') },
-  { src = vim.g.gh_str("catppuccin/nvim") },
-  { src = vim.g.gh_str("xiyaowong/transparent.nvim") },
   { src = vim.g.gh_str("stevearc/oil.nvim") },
   { src = vim.g.gh_str("neovim/nvim-lspconfig") },
   { src = vim.g.gh_str("echasnovski/mini.pick") },
@@ -29,8 +27,6 @@ require 'crates'.setup()
 require 'which-key'.setup({
   preset = 'helix',
 })
-vim.cmd("colorscheme catppuccin")
--- vim.cmd("hi statusline guibg=NONE")
 
 vim.lsp.enable({
   "lua_ls",
