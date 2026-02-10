@@ -9,6 +9,9 @@ vim.pack.add({
   { src = vim.g.gh_str('wakatime/vim-wakatime') },
   { src = vim.g.gh_str('rachartier/tiny-inline-diagnostic.nvim') },
   { src = vim.g.gh_str("stevearc/oil.nvim") },
+  { src = vim.g.gh_str("tris203/precognition.nvim") },
+  { src = vim.g.gh_str("nvzone/showkeys") },
+  { src = vim.g.gh_str("m4xshen/hardtime.nvim") },
   { src = vim.g.gh_str("neovim/nvim-lspconfig") },
   { src = vim.g.gh_str('windwp/nvim-autopairs') },
   { src = vim.g.gh_str('saecki/crates.nvim') },
@@ -24,6 +27,7 @@ end)
 require 'oil'.setup()
 require 'crates'.setup()
 require('kitty-scrollback').setup()
+require('hardtime').setup()
 require 'which-key'.setup({
   preset = 'helix',
 })
