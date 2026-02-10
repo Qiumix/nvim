@@ -10,7 +10,6 @@ vim.pack.add({
   { src = vim.g.gh_str('rachartier/tiny-inline-diagnostic.nvim') },
   { src = vim.g.gh_str("stevearc/oil.nvim") },
   { src = vim.g.gh_str("neovim/nvim-lspconfig") },
-  { src = vim.g.gh_str("echasnovski/mini.pick") },
   { src = vim.g.gh_str('windwp/nvim-autopairs') },
   { src = vim.g.gh_str('saecki/crates.nvim') },
   { src = vim.g.gh_str('mikesmithgh/kitty-scrollback.nvim') },
@@ -22,7 +21,6 @@ vim.schedule(function()
   vim.o.clipboard = 'unnamedplus'
 end)
 
-require 'mini.pick'.setup()
 require 'oil'.setup()
 require 'crates'.setup()
 require('kitty-scrollback').setup()
