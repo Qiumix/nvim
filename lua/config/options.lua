@@ -25,9 +25,9 @@ vim.opt.incsearch = true  -- Show matches as you type
 vim.opt.termguicolors = true  -- Enable 24-bit colors
 vim.opt.signcolumn = "yes"    -- Always show sign column
 vim.opt.showmatch = true      -- Highlight matching brackets
-vim.opt.matchtime = 2         -- How long to show matching bracket
+vim.opt.matchtime = 1         -- How long to show matching bracket
 vim.opt.cmdheight = 1         -- Command line height
-vim.opt.showmode = true       -- Don't show mode in command line
+vim.opt.showmode = false      -- Don't show mode in command line
 vim.opt.pumheight = 10        -- Popup menu height
 vim.opt.pumblend = 10         -- Popup menu transparency
 vim.opt.winblend = 10         -- Floating window transparency
@@ -41,8 +41,6 @@ vim.opt.virtualedit = "block" -- Allow cursor to move where there is no text in 
 vim.opt.winminwidth = 5       -- Minimum window width
 
 -- File handling
-vim.opt.encoding = "utf-8"
-vim.opt.fileencodings = "ucs-bom,utf-8,gbk,gb2312,gb18030,big5,latin1"
 vim.opt.backup = false                                             -- Don't create backup files
 vim.opt.writebackup = false                                        -- Don't create backup before writing
 vim.opt.swapfile = false                                           -- Don't create swap files
@@ -57,17 +55,19 @@ vim.opt.autoread = true                                            -- Auto reloa
 vim.opt.autowrite = true                                           -- Auto save
 
 -- Behavior settings
-vim.opt.hidden = true                                       -- Allow hidden buffers
-vim.opt.errorbells = false                                  -- No error bells
-vim.opt.backspace = "indent,eol,start"                      -- Better backspace behavior
-vim.opt.autochdir = false                                   -- Don't auto change directory
-vim.opt.iskeyword:append("-")                               -- Treat dash as part of word
-vim.opt.path:append("**")                                   -- include subdirectories in search
+vim.opt.hidden = true                  -- Allow hidden buffers
+vim.opt.errorbells = false             -- No error bells
+vim.opt.backspace = "indent,eol,start" -- Better backspace behavior
+vim.opt.autochdir = false              -- Don't auto change directory
+-- vim.opt.iskeyword:append("-")                               -- Treat dash as part of word
+vim.opt.path:append("**")              -- include subdirectories in search
+vim.opt.wildignore:append("**/node_modules/**,**/build/**,**/.git/**")
 -- opt.selection = "exclusive"                             -- Selection behavior
 vim.opt.mouse = "a"                                         -- Enable mouse support
 vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 vim.opt.modifiable = true                                   -- Allow buffer modifications
 vim.opt.encoding = "UTF-8"                                  -- Set encoding
+vim.opt.fileencodings = "ucs-bom,utf-8,gbk,gb2312,gb18030,big5,latin1"
 
 -- Folding settings
 vim.opt.smoothscroll = true
@@ -103,23 +103,31 @@ end
 vim.g.autoformat = true
 vim.g.trouble_lualine = true
 
--- opt.fillchars = {
---   foldopen = "",
---   foldclose = "",
---   fold = " ",
---   foldsep = " ",
---   diff = "╱",
---   eob = " ",
--- }
+vim.opt.fillchars = {
+  foldopen = " ",
+  foldclose = " ",
+  fold = " ",
+  foldsep = " ",
+  diff = "╱",
+  eob = " ",
+}
 
-vim.opt.jumpoptions = "view"
+vim.opt.jumpoptions = "view,stack"
 vim.opt.laststatus = 3    -- global statusline
-vim.opt.list = false
+vim.opt.list = true
 vim.opt.linebreak = true  -- Wrap lines at convenient points
 vim.opt.list = true       -- Show some invisible characters (tabs...
 vim.opt.shiftround = true -- Round indent
 vim.opt.shiftwidth = 2    -- Size of an indent
 vim.opt.shortmess:append({ W = true, I = true, c = true, C = true })
+
+vim.opt.listchars = {
+  tab = '» ',
+  trail = '·',
+  nbsp = '␣',
+  extends = '→',
+  precedes = '←',
+}
 
 vim.g.markdown_recommended_style = 0
 
