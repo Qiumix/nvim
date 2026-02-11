@@ -1,6 +1,11 @@
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
+map('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
+map('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
+map('n', '<leader>k', ':TranslateNormal<CR>')
+map('v', '<leader>k', ':TranslateVisual<CR>')
+
 -- ═══════════════════════════════════════════════════════════
 -- BUFFER NAVIGATION (think browser tabs)
 -- ═══════════════════════════════════════════════════════════
@@ -8,7 +13,8 @@ local opts = { noremap = true, silent = true }
 -- Tab/Shift-Tab: Like browser tabs, feels natural
 map("n", "<Tab>", ":bnext<CR>", { desc = "Next buffer" })
 map("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
-map('n', '<leader>o', "<cmd>source<CR>")
+map('n', '<leader>oo', "<cmd>source<CR>")
+map('n', '<leader>or', "<cmd>restart<CR>")
 map('n', '<leader>lf', vim.lsp.buf.format)
 map('n', '<leader>e', "<cmd>Yazi<CR>")
 

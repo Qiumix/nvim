@@ -1,5 +1,13 @@
 {
   "plugins": {
+    "FTerm.nvim": {
+      "rev": "d1320892cc2ebab472935242d9d992a2c9570180",
+      "src": "https://github.com/numToStr/FTerm.nvim"
+    },
+    "alpha-nvim": {
+      "rev": "a9d8fb72213c8b461e791409e7feabb74eb6ce73",
+      "src": "https://github.com/goolord/alpha-nvim"
+    },
     "blink.cmp": {
       "rev": "4b18c32adef2898f95cdef6192cbd5796c1a332d",
       "src": "https://github.com/Saghen/blink.cmp",
@@ -17,9 +25,21 @@
       "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
       "src": "https://github.com/sindrets/diffview.nvim"
     },
+    "fcitx.nvim": {
+      "rev": "c8543d72adf02a557722847c5d263171ec5c9bb4",
+      "src": "https://github.com/h-hg/fcitx.nvim"
+    },
+    "fcitx.vim": {
+      "rev": "3c9a71b892952964e101f22a462db319d640589e",
+      "src": "https://github.com/lilydjwg/fcitx.vim"
+    },
     "flash.nvim": {
       "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
       "src": "https://github.com/folke/flash.nvim"
+    },
+    "fzf-lua": {
+      "rev": "fb8c50ba62a0daa433b7ac2b78834f318322b879",
+      "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
       "rev": "abf82a65f185bd54adc0679f74b7d6e1ada690c9",
@@ -49,13 +69,25 @@
       "rev": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee",
       "src": "https://github.com/iamcco/markdown-preview.nvim"
     },
+    "mini.icons": {
+      "rev": "efc85e42262cd0c9e1fdbf806c25cb0be6de115c",
+      "src": "https://github.com/echasnovski/mini.icons"
+    },
     "mini.pick": {
       "rev": "4ad37ade984e69c43227b82ccdca5a92a22886de",
       "src": "https://github.com/echasnovski/mini.pick"
     },
+    "mini.statusline": {
+      "rev": "3e96596ebe51b899874d8174409cdc4f3c749d9a",
+      "src": "https://github.com/echasnovski/mini.statusline"
+    },
     "mini.surround": {
       "rev": "d648a5601e1c48f175b07d10eba141da338a0a2a",
       "src": "https://github.com/echasnovski/mini.surround"
+    },
+    "mini.tabline": {
+      "rev": "caf23615b9b99bacc79ecd60f61c4e6a8ec18c84",
+      "src": "https://github.com/echasnovski/mini.tabline"
     },
     "noice.nvim": {
       "rev": "7bfd942445fb63089b59f97ca487d605e715f155",
@@ -93,6 +125,10 @@
     "nvim-nio": {
       "rev": "21f5324bfac14e22ba26553caf69ec76ae8a7662",
       "src": "https://github.com/nvim-neotest/nvim-nio"
+    },
+    "nvim-numbertoggle": {
+      "rev": "796af12a1e2aed6faba9be08e6fb5d472bab29de",
+      "src": "https://github.com/sitiom/nvim-numbertoggle"
     },
     "nvim-treesitter": {
       "rev": "19c729dae6e0eeb79423df0cf37780aa9a7cc3b7",
@@ -135,6 +171,10 @@
     "tiny-inline-diagnostic.nvim": {
       "rev": "ecce93ff7db4461e942c03e0fcc64bd785df4057",
       "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
+    },
+    "todo-comments.nvim": {
+      "rev": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668",
+      "src": "https://github.com/folke/todo-comments.nvim"
     },
     "transparent.nvim": {
       "rev": "a4145c52f5421f1626a4d7dc0f41e785c4439944",
