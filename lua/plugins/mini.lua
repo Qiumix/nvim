@@ -2,7 +2,9 @@ vim.pack.add({
   { src = vim.g.gh_str("echasnovski/mini.nvim") },
 })
 
-require("plugins.sub_mods.mini")
+require("mini.surround").setup()
 if not vim.g.vscode then
-  require("plugins.sub_mods.mini_no_vsc")
+  require("mini.statusline").setup()
+  require("mini.tabline").setup()
+  require("mini.icons").setup()
 end
