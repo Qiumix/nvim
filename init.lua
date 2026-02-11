@@ -28,6 +28,7 @@ require 'oil'.setup()
 require 'crates'.setup()
 require('kitty-scrollback').setup()
 require('hardtime').setup()
+require('precognition').setup()
 require 'which-key'.setup({
   preset = 'helix',
 })
