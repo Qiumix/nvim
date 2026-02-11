@@ -1,5 +1,8 @@
 local opt = vim.opt
 
+opt.encoding = "utf-8"
+opt.fileencodings = "ucs-bom,utf-8,gbk,gb2312,gb18030,big5,latin1"
+
 vim.o.winborder = "rounded"
 vim.o.showtabline = 2
 opt.number = true         -- Line numbers
