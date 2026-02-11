@@ -1,5 +1,5 @@
 vim.pack.add({
-  { src = vim.g.gh_str('goolord/alpha-nvim') }
+  { src = vim.g.gh('goolord/alpha-nvim') }
 })
 local alpha = require('alpha')
 local dashboard = require("alpha.themes.dashboard")

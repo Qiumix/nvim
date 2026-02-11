@@ -1,27 +1,27 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.g.gh_str = function(str) return 'https://github.com/' .. str end
+vim.g.gh = function(str) return 'https://github.com/' .. str end
 require("config")
 
 vim.pack.add({
-  { src = vim.g.gh_str('nvim-lua/plenary.nvim') },
+  { src = vim.g.gh('nvim-lua/plenary.nvim') },
   -- { src = vim.g.gh_str('MunifTanjim/nui.nvim') },
-  { src = vim.g.gh_str('wakatime/vim-wakatime') },
-  { src = vim.g.gh_str('rachartier/tiny-inline-diagnostic.nvim') },
+  { src = vim.g.gh('wakatime/vim-wakatime') },
+  { src = vim.g.gh('rachartier/tiny-inline-diagnostic.nvim') },
   -- { src = vim.g.gh_str("stevearc/oil.nvim") },
   -- { src = vim.g.gh_str("tris203/precognition.nvim") },
-  { src = vim.g.gh_str("nvzone/showkeys") },
-  { src = vim.g.gh_str("numToStr/FTerm.nvim") },
+  { src = vim.g.gh("nvzone/showkeys") },
+  { src = vim.g.gh("numToStr/FTerm.nvim") },
   -- { src = vim.g.gh_str("m4xshen/hardtime.nvim") },
-  { src = vim.g.gh_str("neovim/nvim-lspconfig") },
-  { src = vim.g.gh_str('windwp/nvim-autopairs') },
-  { src = vim.g.gh_str('saecki/crates.nvim') },
-  { src = vim.g.gh_str('mikesmithgh/kitty-scrollback.nvim') },
-  { src = vim.g.gh_str('ibhagwan/fzf-lua') },
-  { src = vim.g.gh_str('SilverofLight/kd_translate.nvim') },
-  { src = vim.g.gh_str('sitiom/nvim-numbertoggle') },
-  { src = vim.g.gh_str('mikavilpas/yazi.nvim'),                  version = vim.version.range('*') },
+  { src = vim.g.gh("neovim/nvim-lspconfig") },
+  { src = vim.g.gh('windwp/nvim-autopairs') },
+  { src = vim.g.gh('saecki/crates.nvim') },
+  { src = vim.g.gh('mikesmithgh/kitty-scrollback.nvim') },
+  { src = vim.g.gh('ibhagwan/fzf-lua') },
+  { src = vim.g.gh('SilverofLight/kd_translate.nvim') },
+  { src = vim.g.gh('sitiom/nvim-numbertoggle') },
+  { src = vim.g.gh('mikavilpas/yazi.nvim'),                  version = vim.version.range('*') },
 })
 
 

@@ -1,5 +1,5 @@
 vim.pack.add({
-  { src = vim.g.gh_str("echasnovski/mini.nvim") },
+  { src = vim.g.gh("echasnovski/mini.nvim") },
 })
 
 require("mini.surround").setup()
