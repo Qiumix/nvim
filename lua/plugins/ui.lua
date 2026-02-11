@@ -3,15 +3,8 @@ vim.pack.add({
 })
 local alpha = require('alpha')
 local dashboard = require("alpha.themes.dashboard")
-dashboard.section.header.val = {
-
-
-  [[  ^  ^  ^   ^☆ ★ ☆ ___I_☆ ★ ☆ ^  ^   ^  ^  ^   ^  ^ ]],
-  [[ /|\/|\/|\ /|\ ★☆ /\-_--\ ☆ ★/|\/|\ /|\/|\/|\ /|\/|\ ]],
-  [[ /|\/|\/|\ /|\ ★ /  \_-__\☆ ★/|\/|\ /|\/|\/|\ /|\/|\ ]],
-  [[ /|\/|\/|\ /|\ 󰻀 |[]| [] | 󰻀 /|\/|\ /|\/|\/|\ /|\/|\ ]],
-}
-
+local start_art = require("plugins.start_art")
+dashboard.section.header.val = start_art[1]
 dashboard.section.buttons.val = {
   dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
   dashboard.button("f", "󰍉  Find file", ":lua require('fzf-lua').files() <CR>"),
@@ -24,7 +17,7 @@ dashboard.section.buttons.val = {
 }
 
 dashboard.section.footer.val = function()
-  return vim.g.startup_time_ms or "[[  ]]"
+  return vim.g.startup_time_ms or "[[  ]]"
 end
 
 dashboard.section.buttons.opts.hl = "Keyword"

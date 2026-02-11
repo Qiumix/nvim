@@ -1,6 +1,9 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.g.start_time = vim.fn.reltime()
+vim.loader.enable()
+
 vim.g.gh = function(str) return 'https://github.com/' .. str end
 require("config")
 
