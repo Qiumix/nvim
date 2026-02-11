@@ -9,14 +9,14 @@ require("config")
 
 vim.pack.add({
   { src = vim.g.gh('nvim-lua/plenary.nvim') },
-  -- { src = vim.g.gh_str('MunifTanjim/nui.nvim') },
+  -- { src = vim.g.gh('MunifTanjim/nui.nvim') },
   { src = vim.g.gh('wakatime/vim-wakatime') },
   { src = vim.g.gh('rachartier/tiny-inline-diagnostic.nvim') },
-  -- { src = vim.g.gh_str("stevearc/oil.nvim") },
-  -- { src = vim.g.gh_str("tris203/precognition.nvim") },
+  -- { src = vim.g.gh("stevearc/oil.nvim") },
+  { src = vim.g.gh("tris203/precognition.nvim") },
   { src = vim.g.gh("nvzone/showkeys") },
   { src = vim.g.gh("numToStr/FTerm.nvim") },
-  -- { src = vim.g.gh_str("m4xshen/hardtime.nvim") },
+  -- { src = vim.g.gh("m4xshen/hardtime.nvim") },
   { src = vim.g.gh("neovim/nvim-lspconfig") },
   { src = vim.g.gh('windwp/nvim-autopairs') },
   { src = vim.g.gh('saecki/crates.nvim') },
@@ -44,14 +44,7 @@ require 'FTerm'.setup({
 })
 -- require('hardtime').setup()
 
--- require('precognition').setup()
--- if require("precognition").toggle() then
---   vim.notify("precognition on")
--- else
---   vim.notify("precognition off")
--- end
--- require("precognition").peek()
-
+require('precognition').setup()
 require 'which-key'.setup({
   preset = 'helix',
 })
