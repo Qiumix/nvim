@@ -1,8 +1,5 @@
 vim.pack.add({
-  { src = vim.g.gh_str("echasnovski/mini.surround") },
-  { src = vim.g.gh_str("echasnovski/mini.statusline") },
-  { src = vim.g.gh_str("echasnovski/mini.tabline") },
-  { src = vim.g.gh_str("echasnovski/mini.icons") },
+  { src = vim.g.gh_str("echasnovski/mini.nvim") },
 })
 
 require("plugins.sub_mods.mini")
