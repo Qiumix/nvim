@@ -8,19 +8,10 @@ only_require_without_vsc("plugins.ui")
 require("plugins.yanky")
 require("plugins.noice")
 require("plugins.mini")
-only_require_without_vsc("plugins.colorscheme")
 only_require_without_vsc("plugins.lazydev")
-
--- require 'oil'.setup()
-require 'crates'.setup()
+only_require_without_vsc("plugins.tiny")
+only_require_without_vsc('crates').setup()
 require('kitty-scrollback').setup()
-require 'FTerm'.setup({
-  dimensions = {
-    height = 0.8,
-    width = 0.8,
-  },
-})
-
-only_require_without_vsc 'which-key'.setup({
-  preset = 'helix',
-})
+require("plugins.fterm")
+only_require_without_vsc('plugins.whichkey')
+only_require_without_vsc("plugins.colorscheme")
