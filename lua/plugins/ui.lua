@@ -1,6 +1,3 @@
-vim.pack.add({
-  { src = gh('goolord/alpha-nvim') }
-})
 local alpha = require('alpha')
 local dashboard = require("alpha.themes.dashboard")
 local start_art = require("plugins.start_art")

@@ -1,7 +1,3 @@
-vim.pack.add({
-  "https://github.com/gbprod/yanky.nvim",
-})
-
 local _yanky_loaded = false
 
 local function load_yanky()
