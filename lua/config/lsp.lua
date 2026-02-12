@@ -63,9 +63,19 @@ vim.lsp.enable({
   "helm_ls",
   "jsonls",
   "biome",
-  "harper_ls",
+  "clangd",
+  "vscode-json-language-server",
+  "vscode-eslint-language-server",
+  "vscode-html-language-server",
+  "vscode-css-language-server",
+  "bash-language-server",
+  "fish_lsp",
+  "jdtls",
+  -- "harper_ls",
   -- "yamlls",
 })
+
+
 
 -- Load Lsp on-demand, e.g: eslint is disable by default
 -- e.g: We could enable eslint by set vim.g.lsp_on_demands = {"eslint"}

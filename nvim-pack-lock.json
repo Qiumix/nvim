@@ -105,6 +105,10 @@
       "rev": "21f5324bfac14e22ba26553caf69ec76ae8a7662",
       "src": "https://github.com/nvim-neotest/nvim-nio"
     },
+    "nvim-notify": {
+      "rev": "8701bece920b38ea289b457f902e2ad184131a5d",
+      "src": "https://github.com/rcarriga/nvim-notify"
+    },
     "nvim-numbertoggle": {
       "rev": "796af12a1e2aed6faba9be08e6fb5d472bab29de",
       "src": "https://github.com/sitiom/nvim-numbertoggle"

@@ -22,7 +22,9 @@ vim.opt.hlsearch = true   -- Don't highlight search results
 vim.opt.incsearch = true  -- Show matches as you type
 
 -- Visual settings
-vim.opt.termguicolors = true  -- Enable 24-bit colors
+vim.opt.termguicolors = true -- Enable 24-bit colors
+vim.opt.textwidth = 80
+vim.opt.colorcolumn = "+1"
 vim.opt.signcolumn = "yes"    -- Always show sign column
 vim.opt.showmatch = true      -- Highlight matching brackets
 vim.opt.matchtime = 1         -- How long to show matching bracket
