@@ -16,8 +16,10 @@ vim.pack.add({
   { src = gh('nvzone/showkeys') },
   { src = gh('numToStr/FTerm.nvim') },
   { src = gh('neovim/nvim-lspconfig') },
+  { src = gh('onsails/lspkind.nvim') },
   { src = gh('folke/noice.nvim') },
   { src = gh('windwp/nvim-autopairs') },
+  { src = gh('xzbdmw/colorful-menu.nvim') },
   { src = gh('saecki/crates.nvim') },
   { src = gh('mikesmithgh/kitty-scrollback.nvim') },
   { src = gh('ibhagwan/fzf-lua') },
@@ -31,6 +33,7 @@ vim.pack.add({
   { src = gh("lewis6991/gitsigns.nvim") },
   { src = gh("sindrets/diffview.nvim") },
   { src = gh("folke/lazydev.nvim") },
+  { src = gh("chentoast/marks.nvim") },
   {
     src = gh("saghen/blink.cmp"),
     version = vim.version.range("^1"),
