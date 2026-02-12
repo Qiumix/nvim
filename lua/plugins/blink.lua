@@ -23,7 +23,7 @@ local cmdline = {
   },
 }
 
-vim.api.nvim_create_autocmd("InsertEnter", {
+vim.api.nvim_create_autocmd({ "InsertEnter", "CmdlineEnter" }, {
   pattern = "*",
   group = group,
   once = true,

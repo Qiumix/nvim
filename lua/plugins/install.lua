@@ -18,6 +18,10 @@ vim.pack.add({
   { src = gh('neovim/nvim-lspconfig') },
   { src = gh('onsails/lspkind.nvim') },
   { src = gh('folke/noice.nvim') },
+  { src = gh("folke/which-key.nvim") },
+  { src = gh("folke/lazydev.nvim") },
+  { src = gh("folke/snacks.nvim") },
+  { src = gh("3rd/image.nvim") },
   { src = gh('windwp/nvim-autopairs') },
   { src = gh('xzbdmw/colorful-menu.nvim') },
   { src = gh('saecki/crates.nvim') },
@@ -32,7 +36,6 @@ vim.pack.add({
   { src = gh("xiyaowong/transparent.nvim") },
   { src = gh("lewis6991/gitsigns.nvim") },
   { src = gh("sindrets/diffview.nvim") },
-  { src = gh("folke/lazydev.nvim") },
   { src = gh("chentoast/marks.nvim") },
   {
     src = gh("saghen/blink.cmp"),
@@ -43,6 +46,5 @@ vim.pack.add({
     version = vim.version.range('*')
   },
   { src = gh('goolord/alpha-nvim') },
-  { src = gh("folke/which-key.nvim") },
   { src = gh("gbprod/yanky.nvim") },
 })
