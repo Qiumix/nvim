@@ -1,4 +1,5 @@
 vim.pack.add({
+  { src = gh("lumen-oss/lz.n") },
   {
     src = gh("nvim-treesitter/nvim-treesitter"),
     version = "main",
@@ -7,10 +8,18 @@ vim.pack.add({
     src = gh("nvim-treesitter/nvim-treesitter-textobjects"),
     version = "main",
   },
+
   { src = gh('nvim-lua/plenary.nvim') },
   { src = gh('MunifTanjim/nui.nvim') },
   { src = gh('rcarriga/nvim-notify') },
+
+
+  { src = gh("aznhe21/actions-preview.nvim") },
+  { src = gh("nvim-telescope/telescope.nvim"),            version = "0.1.8" },
+  { src = gh("nvim-telescope/telescope-ui-select.nvim") },
+  { src = gh("LinArcX/telescope-env.nvim") },
   { src = gh('wakatime/vim-wakatime') },
+  { src = gh('L3MON4D3/LuaSnip') },
   { src = gh('rachartier/tiny-inline-diagnostic.nvim') },
   { src = gh('tris203/precognition.nvim') },
   { src = gh('nvzone/showkeys') },
