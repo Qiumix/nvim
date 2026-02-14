@@ -1,5 +1,8 @@
 vim.pack.add({
   { src = gh("Qiumix/fcitx5-rime-dbus.nvim") },
+  { src = gh("tonyfettes/fcitx5.nvim") },
+  { src = gh("black-desk/fcitx5-ui.nvim") },
+
   { src = gh("lumen-oss/lz.n") },
   {
     src = gh("nvim-treesitter/nvim-treesitter"),
@@ -13,7 +16,6 @@ vim.pack.add({
   { src = gh('nvim-lua/plenary.nvim') },
   { src = gh('MunifTanjim/nui.nvim') },
   { src = gh('rcarriga/nvim-notify') },
-
 
   { src = gh("ellisonleao/gruvbox.nvim") },
   { src = gh("aznhe21/actions-preview.nvim") },

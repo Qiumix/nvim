@@ -41,6 +41,14 @@
       "rev": "75762cab36523a81244098b62d3c1004bab7b2bf",
       "src": "https://github.com/Qiumix/fcitx5-rime-dbus.nvim"
     },
+    "fcitx5-ui.nvim": {
+      "rev": "7fcbabd08f89d606ba5a5c0b34c6dfeac034dc61",
+      "src": "https://github.com/black-desk/fcitx5-ui.nvim"
+    },
+    "fcitx5.nvim": {
+      "rev": "b1f8b687767e87d920e3a45128b67ae9cc83544f",
+      "src": "https://github.com/tonyfettes/fcitx5.nvim"
+    },
     "fzf-lua": {
       "rev": "fb8c50ba62a0daa433b7ac2b78834f318322b879",
       "src": "https://github.com/ibhagwan/fzf-lua"
