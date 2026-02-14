@@ -1,4 +1,5 @@
 vim.pack.add({
+  { src = gh("Qiumix/fcitx5-rime-dbus.nvim") },
   { src = gh("lumen-oss/lz.n") },
   {
     src = gh("nvim-treesitter/nvim-treesitter"),

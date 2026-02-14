@@ -37,6 +37,10 @@
       "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
       "src": "https://github.com/sindrets/diffview.nvim"
     },
+    "fcitx5-rime-dbus.nvim": {
+      "rev": "75762cab36523a81244098b62d3c1004bab7b2bf",
+      "src": "https://github.com/Qiumix/fcitx5-rime-dbus.nvim"
+    },
     "fzf-lua": {
       "rev": "fb8c50ba62a0daa433b7ac2b78834f318322b879",
       "src": "https://github.com/ibhagwan/fzf-lua"

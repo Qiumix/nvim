@@ -1,17 +1,9 @@
--- 定义 Rime 状态控制模块
-local function rime_set_ascii(bool_val)
-  local state = bool_val and "true" or "false"
-  vim.loop.spawn("busctl", {
-    args = { "--user", "call", "org.fcitx.Fcitx5", "/rime", "org.fcitx.Fcitx.Rime1", "SetAsciiMode", "b", state },
-    detach = true
-  }, nil)
-end
+local rime_group = vim.api.nvim_create_augroup("RimeAutoMode", { clear = true })
+local rime_last_state = true -- false 表示中文, true 表示英文
 
--- 局部变量存储状态
-local rime_last_state = true
-
-local function rime_save_and_set_ascii()
-  -- 异步获取当前状态
+-- 封装：仅在状态不同时执行切换
+local function rime_switch_to(target_state)
+  -- 获取当前真实状态
   local stdout = vim.loop.new_pipe(false)
   local handle
   handle = vim.loop.spawn("busctl", {
@@ -23,35 +15,57 @@ local function rime_save_and_set_ascii()
   end)
 
   stdout:read_start(function(err, data)
-    assert(not err)
     if data then
-      -- 解析返回结果，如果包含 true 则记为 true
-      rime_last_state = data:find("true") ~= nil
-      -- 记忆后立即设为英文 (Normal 模式需要)
-      vim.schedule(function()
-        rime_set_ascii(true)
-      end)
+      local current_is_ascii = data:find("true") ~= nil
+      -- 核心优化：只有当前状态与目标状态不一致时，才调用 SetAsciiMode
+      if current_is_ascii ~= target_state then
+        vim.schedule(function()
+          vim.loop.spawn("busctl", {
+            args = { "--user", "call", "org.fcitx.Fcitx5", "/rime", "org.fcitx.Fcitx.Rime1", "SetAsciiMode", "b", target_state and "true" or "false" },
+            detach = true
+          }, nil)
+        end)
+      end
     end
   end)
 end
 
--- 设置 Autocmd
-local rime_group = vim.api.nvim_create_augroup("RimeAutoMode", { clear = true })
-
--- 进入插入模式：还原状态
-vim.api.nvim_create_autocmd("InsertEnter", {
+-- 离开插入模式：记录状态并强制切为英文
+vim.api.nvim_create_autocmd("InsertLeave", {
   group = rime_group,
-  pattern = "*",
   callback = function()
-    rime_set_ascii(rime_last_state)
+    -- 这里的逻辑：先查当前状态并存入 rime_last_state，然后确保切到 true (英文)
+    local stdout = vim.loop.new_pipe(false)
+    local handle
+    handle = vim.loop.spawn("busctl", {
+      args = { "--user", "call", "org.fcitx.Fcitx5", "/rime", "org.fcitx.Fcitx.Rime1", "IsAsciiMode" },
+      stdio = { nil, stdout, nil }
+    }, function()
+      stdout:close()
+      handle:close()
+    end)
+
+    stdout:read_start(function(err, data)
+      if data then
+        rime_last_state = data:find("true") ~= nil
+        -- 如果当前不是英文，才切往英文
+        if not rime_last_state then
+          vim.schedule(function()
+            vim.loop.spawn("busctl", {
+              args = { "--user", "call", "org.fcitx.Fcitx5", "/rime", "org.fcitx.Fcitx.Rime1", "SetAsciiMode", "b", "true" },
+              detach = true
+            }, nil)
+          end)
+        end
+      end
+    end)
   end,
 })
 
--- 离开插入模式：记忆状态并切为英文
-vim.api.nvim_create_autocmd("InsertLeave", {
+-- 进入插入模式：还原到离开前的状态
+vim.api.nvim_create_autocmd("InsertEnter", {
   group = rime_group,
-  pattern = "*",
   callback = function()
-    rime_save_and_set_ascii()
+    rime_switch_to(rime_last_state)
   end,
 })
