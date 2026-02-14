@@ -37,10 +37,6 @@
       "rev": "4516612fe98ff56ae0415a259ff6361a89419b0a",
       "src": "https://github.com/sindrets/diffview.nvim"
     },
-    "fcitx5-rime-dbus.nvim": {
-      "rev": "75762cab36523a81244098b62d3c1004bab7b2bf",
-      "src": "https://github.com/Qiumix/fcitx5-rime-dbus.nvim"
-    },
     "fcitx5-ui.nvim": {
       "rev": "7fcbabd08f89d606ba5a5c0b34c6dfeac034dc61",
       "src": "https://github.com/black-desk/fcitx5-ui.nvim"
@@ -158,6 +154,10 @@
     "render-markdown.nvim": {
       "rev": "48b4175dbca8439d30c1f52231cbe5a712c8f9d9",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+    },
+    "rime-dbus.nvim": {
+      "rev": "7445a9bfa7066efadf803b64f988762e464af922",
+      "src": "git@github.com:Qiumix/fcitx5-rime-dbus.nvim"
     },
     "showkeys": {
       "rev": "cb0a50296f11f1e585acffba8c253b9e8afc1f84",
