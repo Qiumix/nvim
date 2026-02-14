@@ -155,9 +155,9 @@
       "rev": "48b4175dbca8439d30c1f52231cbe5a712c8f9d9",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
-    "rime-dbus.nvim": {
-      "rev": "7445a9bfa7066efadf803b64f988762e464af922",
-      "src": "git@github.com:Qiumix/fcitx5-rime-dbus.nvim"
+    "rime-toggle.nvim": {
+      "rev": "8e5a2bf89a19c2290203273da543cc0f5add65c7",
+      "src": "git@github.com:Qiumix/rime-toggle.nvim"
     },
     "showkeys": {
       "rev": "cb0a50296f11f1e585acffba8c253b9e8afc1f84",
