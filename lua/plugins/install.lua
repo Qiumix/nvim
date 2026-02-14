@@ -14,6 +14,7 @@ vim.pack.add({
   { src = gh('rcarriga/nvim-notify') },
 
 
+  { src = gh("ellisonleao/gruvbox.nvim") },
   { src = gh("aznhe21/actions-preview.nvim") },
   { src = gh("nvim-telescope/telescope.nvim"),            version = "0.1.8" },
   { src = gh("nvim-telescope/telescope-ui-select.nvim") },
@@ -30,6 +31,7 @@ vim.pack.add({
   { src = gh("folke/which-key.nvim") },
   { src = gh("folke/lazydev.nvim") },
   { src = gh("folke/snacks.nvim") },
+  { src = gh("folke/todo-comments.nvim") },
   { src = gh("3rd/image.nvim") },
   { src = gh('windwp/nvim-autopairs') },
   { src = gh('xzbdmw/colorful-menu.nvim') },

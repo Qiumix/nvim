@@ -45,6 +45,10 @@
       "rev": "31217271a7314c343606acb4072a94a039a19fb5",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
+    "gruvbox.nvim": {
+      "rev": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b",
+      "src": "https://github.com/ellisonleao/gruvbox.nvim"
+    },
     "image.nvim": {
       "rev": "446a8a5cc7a3eae3185ee0c697732c32a5547a0b",
       "src": "https://github.com/3rd/image.nvim"
@@ -167,6 +171,10 @@
     "tiny-inline-diagnostic.nvim": {
       "rev": "ecce93ff7db4461e942c03e0fcc64bd785df4057",
       "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
+    },
+    "todo-comments.nvim": {
+      "rev": "31e3c38ce9b29781e4422fc0322eb0a21f4e8668",
+      "src": "https://github.com/folke/todo-comments.nvim"
     },
     "transparent.nvim": {
       "rev": "8ac59883de84e9cd1850ea25cf087031c5ba7d54",

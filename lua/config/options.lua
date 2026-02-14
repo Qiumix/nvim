@@ -24,6 +24,7 @@ vim.opt.incsearch = true  -- Show matches as you type
 -- Visual settings
 vim.opt.termguicolors = true -- Enable 24-bit colors
 vim.opt.textwidth = 80
+vim.cmd([[set modeline]])
 vim.opt.colorcolumn = "+1"
 vim.opt.signcolumn = "yes"    -- Always show sign column
 vim.opt.showmatch = true      -- Highlight matching brackets

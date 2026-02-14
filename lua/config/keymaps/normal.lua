@@ -1,6 +1,12 @@
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
+
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
+map("n", "n", "nzzzv")
+map("n", "N", "Nzzzv")
+
 map('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
 map('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
 map('n', '<leader>k', ':TranslateNormal<CR>')
@@ -16,6 +22,7 @@ map("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
 map('n', '<leader>oo', "<cmd>source<CR>")
 map('n', '<leader>or', "<cmd>restart<CR>")
 map('n', '<leader>lf', vim.lsp.buf.format)
+map('n', '<leader>ld', vim.diagnostic.get)
 map('n', '<leader>e', "<cmd>Yazi<CR>")
 
 -- Alternative buffer switching (vim-style)
@@ -28,6 +35,7 @@ map("n", "[b", "<cmd>bprevious<cr>", { desc = "Prev Buffer" })
 
 -- Quick switch to last edited file (super useful!)
 map("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
+map("n", "<leader>bd", "<cmd>bd<cr>", { desc = "Delete Current Buffer" })
 map("n", "<leader>`", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
 
 -- ═══════════════════════════════════════════════════════════
