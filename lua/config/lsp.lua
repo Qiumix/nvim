@@ -71,11 +71,11 @@ vim.lsp.enable({
   "bash-language-server",
   "fish_lsp",
   "jdtls",
+  "tinymist",
+  "typstyle",
   -- "harper_ls",
-  -- "yamlls",
+  "yamlls",
 })
-
-
 
 -- Load Lsp on-demand, e.g: eslint is disable by default
 -- e.g: We could enable eslint by set vim.g.lsp_on_demands = {"eslint"}
