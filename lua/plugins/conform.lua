@@ -20,6 +20,7 @@ require("conform").setup({
     xml = { "prettier", stop_after_first = true },
     toml = { "taplo" },
     nix = { "nixfmt" },
+    typst = { "tinymist", "typstyle" },
   },
   formatters = {
     biome = { require_cwd = true },

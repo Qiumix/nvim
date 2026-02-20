@@ -161,7 +161,7 @@
     },
     "rime-toggle.nvim": {
       "rev": "5146055d71d43d0eacefebafc8fc4ce372384728",
-      "src": "git@github.com:Qiumix/rime-toggle.nvim.git"
+      "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
     "showkeys": {
       "rev": "cb0a50296f11f1e585acffba8c253b9e8afc1f84",

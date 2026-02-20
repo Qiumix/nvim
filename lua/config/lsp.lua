@@ -71,8 +71,8 @@ vim.lsp.enable({
   "bash-language-server",
   "fish_lsp",
   "jdtls",
-  "tinymist",
   "typstyle",
+  "tinymist",
   -- "harper_ls",
   "yamlls",
 })
