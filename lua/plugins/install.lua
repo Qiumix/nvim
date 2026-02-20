@@ -18,7 +18,7 @@ vim.pack.add({
   { src = gh('rcarriga/nvim-notify') },
 
   { src = gh("ellisonleao/gruvbox.nvim") },
-  { src = gh("chomosuke/typst-preview.nvim"),             version = '1.*', },
+  { src = gh("chomosuke/typst-preview.nvim"), },
   { src = gh("aznhe21/actions-preview.nvim") },
   { src = gh("nvim-telescope/telescope.nvim"),            version = "0.1.8" },
   { src = gh("nvim-telescope/telescope-ui-select.nvim") },

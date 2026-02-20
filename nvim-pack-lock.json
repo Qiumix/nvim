@@ -198,8 +198,7 @@
     },
     "typst-preview.nvim": {
       "rev": "bf5d5eaf23bbfcca9f98a24ed29bd084abf89bf2",
-      "src": "https://github.com/chomosuke/typst-preview.nvim",
-      "version": "'1.*'"
+      "src": "https://github.com/chomosuke/typst-preview.nvim"
     },
     "vim-wakatime": {
       "rev": "d7973b157a632d1edeff01818f18d67e584eeaff",
