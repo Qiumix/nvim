@@ -200,6 +200,10 @@
       "rev": "bf5d5eaf23bbfcca9f98a24ed29bd084abf89bf2",
       "src": "https://github.com/chomosuke/typst-preview.nvim"
     },
+    "undotree": {
+      "rev": "d8f99084d98c32f651860eb0baaf89759f91debc",
+      "src": "https://github.com/mbbill/undotree"
+    },
     "vim-wakatime": {
       "rev": "d7973b157a632d1edeff01818f18d67e584eeaff",
       "src": "https://github.com/wakatime/vim-wakatime"

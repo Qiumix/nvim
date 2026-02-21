@@ -70,6 +70,7 @@ vim.lsp.enable({
   "vscode-css-language-server",
   "bash-language-server",
   "fish_lsp",
+  "sql-language-server",
   "jdtls",
   "typstyle",
   "tinymist",
