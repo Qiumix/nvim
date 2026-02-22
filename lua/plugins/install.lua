@@ -1,5 +1,6 @@
 vim.pack.add({
   { src = gh("mbbill/undotree") },
+  { src = gh("xemptuous/sqlua.nvim") },
   { src = gh("Qiumix/rime-toggle.nvim") },
   { src = gh("tonyfettes/fcitx5.nvim") },
   { src = gh("black-desk/fcitx5-ui.nvim") },

@@ -171,6 +171,10 @@
       "rev": "fe7cfe9800a182274d0f868a74b7263b8c0c020b",
       "src": "https://github.com/folke/snacks.nvim"
     },
+    "sqlua.nvim": {
+      "rev": "e4db0e1e16741e1ea42c620d0b8ce3347cc02c51",
+      "src": "https://github.com/xemptuous/sqlua.nvim"
+    },
     "telescope-env.nvim": {
       "rev": "00a703cc7b713cdda0a981d88fddf3ce25502af5",
       "src": "https://github.com/LinArcX/telescope-env.nvim"
