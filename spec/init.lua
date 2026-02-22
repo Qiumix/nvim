@@ -1,1 +1,0 @@
-/home/qiumix/.config/nvim/lua/plugins/init.lua
