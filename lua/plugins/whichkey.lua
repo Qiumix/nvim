@@ -11,6 +11,7 @@ wk.add({
   { '<leader><tab>', group = 'tabs' },
   { '<leader>c', group = 'code' },
   { '<leader>d', group = 'debug' },
+  { '<leader>l', group = 'language' },
   { '<leader>D', group = 'Diffview', icon = { icon = '', color = 'orange' } },
   { '<leader>p', group = 'Yanky', icon = { icon = '󰃮 ', color = 'yellow' } },
   { '<leader>dp', group = 'profiler' },
