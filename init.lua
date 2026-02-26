@@ -3,6 +3,6 @@ vim.g.maplocalleader = ' '
 
 require 'functions'
 
-require 'config'
-
 require 'plugins'
+
+require 'config'
