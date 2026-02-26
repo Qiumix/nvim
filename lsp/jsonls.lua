@@ -1,7 +1,7 @@
 -- NOTE: npm i -g vscode-langservers-extracted
 
 return {
-  cmd = { "vscode-json-language-server", "--stdio" },
+  cmd = { "vscode-json-languageserver", "--stdio" },
   filetypes = { "json", "jsonc" },
   settings = {
     json = {

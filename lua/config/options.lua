@@ -50,7 +50,7 @@ vim.opt.swapfile = false                                           -- Don't crea
 vim.opt.undofile = true                                            -- Persistent undo
 vim.opt.undolevels = 10000
 vim.opt.undodir = vim.fn.expand("~/.local/share/nvim/vim/undodir") -- Undo directory
-vim.opt.updatetime = 300                                           -- Faster completion
+vim.opt.updatetime = 100                                           -- Faster completion
 vim.opt.timeoutlen = vim.g.vscode and 1000 or
     300                                                            -- Lower than default (1000) to quickly trigger which-key
 vim.opt.ttimeoutlen = 0                                            -- Key code timeout
