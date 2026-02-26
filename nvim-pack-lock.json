@@ -26,7 +26,7 @@
       "src": "https://github.com/xzbdmw/colorful-menu.nvim"
     },
     "conform.nvim": {
-      "rev": "c2526f1cde528a66e086ab1668e996d162c75f4f",
+      "rev": "e969e302bced7ffb9a0a0323629f31feb0ca35a6",
       "src": "https://github.com/stevearc/conform.nvim"
     },
     "crates.nvim": {
@@ -46,19 +46,19 @@
       "src": "https://github.com/tonyfettes/fcitx5.nvim"
     },
     "fzf-lua": {
-      "rev": "fb8c50ba62a0daa433b7ac2b78834f318322b879",
+      "rev": "cfc085749d9232373fc6d8cf3a964c5601a7816e",
       "src": "https://github.com/ibhagwan/fzf-lua"
     },
     "gitsigns.nvim": {
-      "rev": "31217271a7314c343606acb4072a94a039a19fb5",
+      "rev": "9f3c6dd7868bcc116e9c1c1929ce063b978fa519",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "gruvbox.nvim": {
-      "rev": "a472496e1a4465a2dd574389dcf6cdb29af9bf1b",
+      "rev": "561126520034a1dac2f78ab063db025d12555998",
       "src": "https://github.com/ellisonleao/gruvbox.nvim"
     },
     "image.nvim": {
-      "rev": "446a8a5cc7a3eae3185ee0c697732c32a5547a0b",
+      "rev": "da2be65c153ba15a14a342b05591652a6df70d58",
       "src": "https://github.com/3rd/image.nvim"
     },
     "kd_translate.nvim": {
@@ -66,7 +66,7 @@
       "src": "https://github.com/SilverofLight/kd_translate.nvim"
     },
     "kitty-scrollback.nvim": {
-      "rev": "5574df779fbe03205a08af4d9154279ff491be75",
+      "rev": "86be511ab7fa1f8d801e80129b2554249a1c2558",
       "src": "https://github.com/mikesmithgh/kitty-scrollback.nvim"
     },
     "lazy.nvim": {
@@ -82,7 +82,7 @@
       "src": "https://github.com/onsails/lspkind.nvim"
     },
     "lz.n": {
-      "rev": "5825c810ac97e141fb8869e3dabef06653ac6ecd",
+      "rev": "3a696418821fa8e4963a0a59dd1f8d40fedb6824",
       "src": "https://github.com/lumen-oss/lz.n"
     },
     "markdown-preview.nvim": {
@@ -94,7 +94,7 @@
       "src": "https://github.com/chentoast/marks.nvim"
     },
     "mini.nvim": {
-      "rev": "e5a9a3830f9c37211df4c82cac45bf728b95739d",
+      "rev": "577d2dcb558efce1518c45a76345e01bf346c8e8",
       "src": "https://github.com/echasnovski/mini.nvim"
     },
     "noice.nvim": {
@@ -110,7 +110,7 @@
       "src": "https://github.com/windwp/nvim-autopairs"
     },
     "nvim-dap": {
-      "rev": "db321947bb289a2d4d76a32e76e4d2bd6103d7df",
+      "rev": "4157a96fb6e1f1945a8c37235deadf4d5077b9a4",
       "src": "https://github.com/mfussenegger/nvim-dap"
     },
     "nvim-dap-ui": {
@@ -122,7 +122,7 @@
       "src": "https://github.com/theHamsta/nvim-dap-virtual-text"
     },
     "nvim-lspconfig": {
-      "rev": "f4e9d367d4e067d7a5fabc9fd3f1349b291eb718",
+      "rev": "a40d22e75d951ad2fcf236ceb013d88f81d2cc9a",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-notify": {
@@ -134,7 +134,7 @@
       "src": "https://github.com/sitiom/nvim-numbertoggle"
     },
     "nvim-treesitter": {
-      "rev": "9f2dad22ef8bb14fd1e0a3aa8859cdc88170668b",
+      "rev": "0f5b204603234a523fafa8f6b860fd36f80a23f6",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter",
       "version": "'main'"
     },
@@ -144,7 +144,7 @@
       "version": "'main'"
     },
     "nvim-web-devicons": {
-      "rev": "746ffbb17975ebd6c40142362eee1b0249969c5c",
+      "rev": "737cf6c657898d0c697311d79d361288a1343d50",
       "src": "https://github.com/nvim-tree/nvim-web-devicons"
     },
     "plenary.nvim": {
@@ -156,7 +156,7 @@
       "src": "https://github.com/tris203/precognition.nvim"
     },
     "render-markdown.nvim": {
-      "rev": "48b4175dbca8439d30c1f52231cbe5a712c8f9d9",
+      "rev": "1c958131c083c8557ea499fdb08c88b8afb05c4e",
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "rime-toggle.nvim": {
@@ -189,7 +189,7 @@
       "version": "'0.1.8'"
     },
     "tiny-inline-diagnostic.nvim": {
-      "rev": "ecce93ff7db4461e942c03e0fcc64bd785df4057",
+      "rev": "ba133b3e932416e4b9507095731a6d7276878fe8",
       "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
     },
     "todo-comments.nvim": {
