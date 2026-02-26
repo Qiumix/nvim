@@ -1,4 +1,5 @@
 vim.filetype.add({
+
   extension = {
     env = "dotenv",
   },

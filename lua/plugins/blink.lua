@@ -23,25 +23,27 @@ local cmdline = {
   },
 }
 
+local function fn()
+  require('blink.cmp').setup({
+    keymap = keymap,
+    signature = signature,
+    completion = completion,
+    cmdline = cmdline,
+
+    appearance = {
+      nerd_font_variant = 'mono',
+      use_nvim_cmp_as_default = true,
+    },
+    sources = {
+      default = { 'snippets', 'lsp', 'path', 'buffer' },
+    },
+    fuzzy = { implementation = 'prefer_rust_with_warning' },
+  })
+end
+
 vim.api.nvim_create_autocmd({ 'InsertEnter', 'CmdlineEnter' }, {
   pattern = '*',
   group = group,
   once = true,
-  callback = function()
-    require('blink.cmp').setup({
-      keymap = keymap,
-      signature = signature,
-      completion = completion,
-      cmdline = cmdline,
-
-      appearance = {
-        nerd_font_variant = 'mono',
-        use_nvim_cmp_as_default = true,
-      },
-      sources = {
-        default = { 'snippets', 'lsp', 'path', 'buffer' },
-      },
-      fuzzy = { implementation = 'prefer_rust_with_warning' },
-    })
-  end,
+  callback = fn,
 })
