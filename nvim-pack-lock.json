@@ -224,6 +224,10 @@
       "rev": "1874d812de12881d1da8c19c8ce2f94f36d00a6b",
       "src": "https://github.com/mikavilpas/yazi.nvim",
       "version": ">=0.0.0"
+    },
+    "zpack.nvim": {
+      "rev": "1cf8b96595408d9fb5f645f8f3b3c822b0dbea03",
+      "src": "https://github.com/zuqini/zpack.nvim"
     }
   }
 }

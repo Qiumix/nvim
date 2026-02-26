@@ -1,6 +1,11 @@
---vim =require '/home/qiumix/.local/share/bob/nightly/share/nvim/runtime/lua/vim/_core/shared.lua'
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+
 require 'functions'
+
+vim.pack.add({ gh('zuqini/zpack.nvim') })
+-- require 'zpack'.setup()
+
 require 'config'
+
 require 'plugins'
