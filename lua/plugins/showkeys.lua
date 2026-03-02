@@ -1,6 +1,7 @@
-require("showkeys").setup({
+local showkeys = require("showkeys")
+showkeys.setup({
   show_count = true,
   maxkeys = 4
 })
 
-require("showkeys").open()
+showkeys.open()
