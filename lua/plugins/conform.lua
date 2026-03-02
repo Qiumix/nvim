@@ -1,6 +1,7 @@
 require('conform').setup({
   formatters_by_ft = {
     lua = { 'stylua' },
+    rust = { 'rustfmt' },
     go = { 'goimports', 'gofmt', stop_after_first = true },
     python = { 'ruff_format', 'isort', 'black', stop_after_first = true },
     json = { 'prettier', 'biome', stop_after_first = true },
