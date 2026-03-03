@@ -62,8 +62,15 @@ vim.opt.hidden = true                  -- Allow hidden buffers
 vim.opt.errorbells = false             -- No error bells
 vim.opt.backspace = "indent,eol,start" -- Better backspace behavior
 vim.opt.autochdir = false              -- Don't auto change directory
-vim.opt.iskeyword:remove("=")          -- Treat dash as part of word
-vim.opt.path:append("**")              -- include subdirectories in search
+vim.opt.iskeyword:remove("=")
+vim.opt.iskeyword:remove(";")
+vim.opt.iskeyword:remove(",")
+vim.opt.iskeyword:remove("{")
+vim.opt.iskeyword:remove("}")
+vim.opt.iskeyword:remove("(")
+vim.opt.iskeyword:remove(")")
+vim.opt.iskeyword:remove("?")
+vim.opt.path:append("**") -- include subdirectories in search
 vim.opt.wildignore:append("**/node_modules/**,**/build/**,**/.git/**")
 -- opt.selection = "exclusive"                             -- Selection behavior
 vim.opt.mouse = "a"                                         -- Enable mouse support

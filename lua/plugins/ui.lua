@@ -1,10 +1,10 @@
 local alpha = require('alpha')
 local dashboard = require('alpha.themes.dashboard')
 local start_art = require('plugins.start_art')
-dashboard.section.header.val = start_art[2]
+dashboard.section.header.val = start_art[5]
 dashboard.section.buttons.val = {
   dashboard.button('n', '  New file', ':ene <BAR> startinsert <CR>'),
-  dashboard.button('f', "󰍉  Find file', ':lua require('fzf-lua').files() <CR>"),
+  dashboard.button('f', '󰍉  Find file', ':lua require("fzf-lua").files() <CR>'),
   dashboard.button('e', '  Browse cwd', ':Yazi<CR>'),
   dashboard.button('r', '  Browse src', ':e ~/.local/src/<CR>'),
   dashboard.button('s', '󰯂  Browse scripts', ':e ~/scripts/<CR>'),
