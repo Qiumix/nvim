@@ -69,6 +69,10 @@
       "rev": "86be511ab7fa1f8d801e80129b2554249a1c2558",
       "src": "https://github.com/mikesmithgh/kitty-scrollback.nvim"
     },
+    "lastplace.nvim": {
+      "rev": "d1f1ec30fc639864bd71dd7c28a2164bc423ef40",
+      "src": "https://github.com/nxhung2304/lastplace.nvim"
+    },
     "lazy.nvim": {
       "rev": "306a05526ada86a7b30af95c5cc81ffba93fef97",
       "src": "https://github.com/folke/lazy.nvim"
