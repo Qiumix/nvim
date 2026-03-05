@@ -60,5 +60,3 @@ vim.api.nvim_create_user_command('FormatEnable', function()
   vim.g.disable_autoformat = false
   vim.notify('Autoformat enabled', vim.log.levels.INFO)
 end, { desc = 'Re-enable autoformat-on-save' })
-
-local auto_format = true

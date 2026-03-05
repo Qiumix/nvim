@@ -1,4 +1,4 @@
-local map = vim.keymap.set
+local auto_format = true
 vim.keymap.set('n', '<leader>uf', function()
   auto_format = not auto_format
   if auto_format then
