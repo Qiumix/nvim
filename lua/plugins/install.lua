@@ -1,6 +1,7 @@
 require('plugins.dependency')
 vim.pack.add({
   { src = gh('mbbill/undotree') },
+  { src = gh('CopilotC-Nvim/CopilotChat.nvim') },
   { src = gh('nxhung2304/lastplace.nvim') },
   { src = gh('xemptuous/sqlua.nvim') },
   { src = gh('Qiumix/rime-toggle.nvim') },

@@ -1,5 +1,9 @@
 {
   "plugins": {
+    "CopilotChat.nvim": {
+      "rev": "743d6005fb412c85309d3f3aa45f18f3a2fb2098",
+      "src": "https://github.com/CopilotC-Nvim/CopilotChat.nvim"
+    },
     "FTerm.nvim": {
       "rev": "d1320892cc2ebab472935242d9d992a2c9570180",
       "src": "https://github.com/numToStr/FTerm.nvim"
