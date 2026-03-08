@@ -23,7 +23,7 @@ map("n", "<Tab>", ":bnext<CR>", { desc = "Next buffer" })
 map("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
 map('n', '<leader>oo', "<cmd>source<CR>")
 map('n', '<leader>or', "<cmd>restart<CR>")
-map('n', '<leader>lf', vim.lsp.buf.format)
+map('n', '<leader>lf', vim.lsp.buf.format, { desc = "LSP Format" })
 map('n', '<leader>ld', vim.diagnostic.get)
 map('n', '<leader>e', "<cmd>Yazi<CR>")
 
