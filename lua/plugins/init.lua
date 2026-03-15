@@ -16,6 +16,7 @@ if crates then
 end
 require('kitty-scrollback').setup()
 require('plugins.fterm')
+require('plugins.flash')
 only_require_without_vsc('plugins.whichkey')
 only_require_without_vsc('plugins.colorscheme')
 only_require_without_vsc('plugins.marks')

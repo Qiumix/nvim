@@ -49,6 +49,10 @@
       "rev": "b1f8b687767e87d920e3a45128b67ae9cc83544f",
       "src": "https://github.com/tonyfettes/fcitx5.nvim"
     },
+    "flash.nvim": {
+      "rev": "fcea7ff883235d9024dc41e638f164a450c14ca2",
+      "src": "https://github.com/folke/flash.nvim"
+    },
     "fzf-lua": {
       "rev": "cfc085749d9232373fc6d8cf3a964c5601a7816e",
       "src": "https://github.com/ibhagwan/fzf-lua"

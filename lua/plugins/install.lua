@@ -36,6 +36,7 @@ vim.pack.add({
   { src = gh('neovim/nvim-lspconfig') },
   { src = gh('onsails/lspkind.nvim') },
   { src = gh('folke/noice.nvim') },
+  { src = gh('folke/flash.nvim') },
   { src = gh('folke/which-key.nvim') },
   { src = gh('folke/lazydev.nvim') },
   { src = gh('folke/snacks.nvim') },
