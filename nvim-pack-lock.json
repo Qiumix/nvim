@@ -179,6 +179,10 @@
       "rev": "5146055d71d43d0eacefebafc8fc4ce372384728",
       "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
+    "rustaceanvim": {
+      "rev": "8ed20c06be4a8e593f8ce71cb3abd34490ff0e20",
+      "src": "https://github.com/mrcjkb/rustaceanvim"
+    },
     "showkeys": {
       "rev": "cb0a50296f11f1e585acffba8c253b9e8afc1f84",
       "src": "https://github.com/nvzone/showkeys"
