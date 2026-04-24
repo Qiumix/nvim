@@ -19,3 +19,8 @@ function only_require_without_vsc(modname)
   end
   return require(modname)
 end
+
+function get_lzn()
+  local lzn = require('lz.n')
+  return lzn
+end

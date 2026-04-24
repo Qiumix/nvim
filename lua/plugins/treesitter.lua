@@ -1,5 +1,4 @@
 require('nvim-treesitter').setup({})
-require('nvim-treesitter').install({
   -- 'bash',
   -- 'blade',
   -- 'c',
@@ -43,7 +42,6 @@ require('nvim-treesitter').install({
   -- 'xml',
   -- 'yaml',
   -- 'zig',
-})
 
 require('nvim-treesitter-textobjects').setup({
   select = {
