@@ -1,5 +1,19 @@
-require('plugins.dependency')
+---
+---Return full url of a github repo
+---
+---@param str string
+---@return string
+local function gh(str)
+  return 'https://github.com/' .. str
+end
+
 vim.pack.add({
+  { src = gh('lumen-oss/lz.n') },
+  { src = gh('nvim-lua/plenary.nvim') },
+  { src = gh('MunifTanjim/nui.nvim') },
+
+
+
   { src = gh('mbbill/undotree') },
   { src = gh('mrcjkb/rustaceanvim') },
   { src = gh('karb94/neoscroll.nvim') },

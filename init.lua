@@ -1,5 +1,4 @@
 require 'config'
 require 'core'
 require 'keymaps'
-require 'utils'
 require 'plugins'
