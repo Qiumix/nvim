@@ -12,8 +12,6 @@ vim.pack.add({
   { src = gh('nvim-lua/plenary.nvim') },
   { src = gh('MunifTanjim/nui.nvim') },
 
-
-
   { src = gh('mbbill/undotree') },
   { src = gh('mrcjkb/rustaceanvim') },
   { src = gh('karb94/neoscroll.nvim') },
@@ -26,7 +24,7 @@ vim.pack.add({
 
   { src = gh('lumen-oss/lz.n') },
   {
-    src = gh('nvim-treesitter/nvim-treesitter'),
+    src = gh('romus204/tree-sitter-manager.nvim'),
     version = 'main',
   },
   {
