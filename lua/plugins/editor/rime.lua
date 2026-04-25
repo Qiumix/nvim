@@ -1,9 +1,11 @@
+local config = {
+  enabled = true,
+  smart_esc = true,
+}
+
 return {
   "rime-toggle.nvim",
   after = function()
-    require("rime_toggle").setup({
-      enabled = true,
-      smart_esc = true,
-    })
+    require("rime_toggle").setup(config)
   end,
 }

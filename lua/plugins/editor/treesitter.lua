@@ -1,4 +1,4 @@
-local tables = {
+local config = {
   select = {
     enable = true,
     lookahead = true,
@@ -19,7 +19,7 @@ return {
   {
     "nvim-treesitter-textobjects",
     after = function()
-      require("nvim-treesitter-textobjects").setup(tables)
+      require("nvim-treesitter-textobjects").setup(config)
     end,
   },
   {

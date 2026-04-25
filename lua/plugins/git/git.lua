@@ -7,7 +7,7 @@ local sign = {
   untracked = { text = "▎" },
 }
 
-local tables = {
+local config = {
   current_line_blame = true,
   signs = sign,
   signs_staged = sign,
@@ -66,6 +66,6 @@ local tables = {
 return {
   "gitsigns.nvim",
   after = function()
-    require("gitsigns").setup(tables)
+    require("gitsigns").setup(config)
   end,
 }

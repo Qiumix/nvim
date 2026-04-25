@@ -20,23 +20,25 @@ local cmdline = {
   },
 }
 
+local config = {
+  keymap = keymap,
+  signature = signature,
+  completion = completion,
+  cmdline = cmdline,
+  appearance = {
+    nerd_font_variant = "mono",
+    use_nvim_cmp_as_default = true,
+  },
+  sources = {
+    default = { "snippets", "lsp", "path", "buffer" },
+  },
+  fuzzy = { implementation = "prefer_rust_with_warning" },
+}
+
 return {
   "blink.cmp",
   event = { "InsertEnter", "CmdlineEnter" },
   after = function()
-    require("blink.cmp").setup({
-      keymap = keymap,
-      signature = signature,
-      completion = completion,
-      cmdline = cmdline,
-      appearance = {
-        nerd_font_variant = "mono",
-        use_nvim_cmp_as_default = true,
-      },
-      sources = {
-        default = { "snippets", "lsp", "path", "buffer" },
-      },
-      fuzzy = { implementation = "prefer_rust_with_warning" },
-    })
+    require("blink.cmp").setup(config)
   end,
 }

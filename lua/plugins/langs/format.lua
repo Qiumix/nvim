@@ -1,4 +1,4 @@
-local tables = {
+local config = {
   formatters_by_ft = {
     lua = { "stylua" },
     rust = { "rustfmt" },
@@ -49,6 +49,6 @@ local tables = {
 return {
   "conform.nvim",
   after = function()
-    require("conform").setup(tables)
+    require("conform").setup(config)
   end,
 }
