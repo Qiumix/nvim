@@ -66,7 +66,6 @@ vim.pack.add({
   { src = gh("sitiom/nvim-numbertoggle") },
   { src = gh("echasnovski/mini.nvim") },
   { src = gh("stevearc/conform.nvim") },
-  { src = gh("xiyaowong/transparent.nvim") },
   { src = gh("lewis6991/gitsigns.nvim") },
   { src = gh("sindrets/diffview.nvim") },
   { src = gh("chentoast/marks.nvim") },
