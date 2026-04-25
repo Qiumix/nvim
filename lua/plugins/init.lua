@@ -4,9 +4,8 @@ local lzn = require("lz.n")
 
 lzn.load("plugins.git")
 lzn.load("plugins.editor")
-lzn.load("plugins.langs")
 lzn.load("plugins.ui")
-
-require("plugins.nolazy")
+lzn.load("plugins.lang")
+lzn.load("plugins.langs")
 
 vim.cmd("colorscheme gruvbox")
