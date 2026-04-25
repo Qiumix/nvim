@@ -5,4 +5,9 @@ local config = {
   },
 }
 
-require('FTerm').setup(config)
+return {
+  'FTerm.nvim',
+  after = function()
+    require('FTerm').setup(config)
+  end
+}

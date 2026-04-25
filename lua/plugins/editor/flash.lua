@@ -33,7 +33,13 @@ local char = {
   }
 }
 
-require("flash").setup({
-  modes = {
-    char = char },
-})
+return {
+  "flash.nvim",
+  after = function()
+    require("flash").setup({
+      modes = {
+        char = char
+      },
+    })
+  end
+}

@@ -1,13 +1,4 @@
-local wk = require('which-key')
-wk.setup({
-  preset = 'helix',
-  win = {
-    wo = {
-      winblend = 20,
-    },
-  },
-})
-wk.add({
+local keys = {
   { '<leader><tab>', group = 'tabs' },
   { '<leader>c', group = 'code' },
   { '<leader>d', group = 'debug' },
@@ -97,4 +88,20 @@ wk.add({
     { '<leader>q', '<cmd>q<cr>', desc = 'Quit' }, -- no need to specify mode since it's inherited
     { '<leader>w', '<cmd>w<cr>', desc = 'Windows' },
   },
-})
+}
+
+return {
+  'which-key.nvim',
+  after = function()
+    local wk = require('which-key')
+    wk.setup({
+      preset = 'helix',
+      win = {
+        wo = {
+          winblend = 20,
+        },
+      },
+    })
+    wk.add(keys)
+  end
+}

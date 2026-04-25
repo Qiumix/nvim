@@ -1,6 +1,9 @@
 require('plugins.install')
 
-require("lz.n").load("plugins.ui")
-require("lz.n").load("plugins.git")
-require("lz.n").load("plugins.editor")
-require("lz.n").load("plugins.langs")
+local lzn = require("lz.n")
+lzn.load("plugins.ui")
+lzn.load("plugins.git")
+lzn.load("plugins.editor")
+lzn.load("plugins.langs")
+
+vim.cmd('colorscheme gruvbox')

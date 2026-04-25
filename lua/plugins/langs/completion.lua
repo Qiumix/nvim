@@ -7,8 +7,6 @@ return {
   version = '1.*',
   event = { 'InsertEnter', 'CmdlineEnter' },
 
-  dependencies = { 'L3MON4D3/LuaSnip' },
-
   after = function()
     require('blink.cmp').setup({
       keymap = {
@@ -60,7 +58,7 @@ return {
           draw = {
             columns = {
               { 'kind_icon' },
-              { 'label', 'label_description', gap = 1 },
+              { 'label',      'label_description', gap = 1 },
               { 'source_name' },
             },
           },
@@ -82,7 +80,6 @@ return {
         window = { border = 'rounded' },
       },
       fuzzy = { implementation = 'prefer_rust_with_warning' },
-    }),
+    })
   end
 }
-

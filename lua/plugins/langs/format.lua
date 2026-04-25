@@ -1,4 +1,4 @@
-require('conform').setup({
+local tables = {
   formatters_by_ft = {
     lua = { 'stylua' },
     rust = { 'rustfmt' },
@@ -44,19 +44,11 @@ require('conform').setup({
     end
     return { timeout_ms = 500, lsp_format = 'fallback' }
   end,
-})
+}
 
-vim.api.nvim_create_user_command('FormatDisable', function(opts)
-  if opts.bang then
-    vim.b.disable_autoformat = true
-  else
-    vim.g.disable_autoformat = true
+return {
+  'conform.nvim',
+  after = function()
+    require('conform').setup(tables)
   end
-  vim.notify('Autoformat disabled' .. (opts.bang and ' (buffer)' or ' (global)'), vim.log.levels.WARN)
-end, { desc = 'Disable autoformat-on-save', bang = true })
-
-vim.api.nvim_create_user_command('FormatEnable', function()
-  vim.b.disable_autoformat = false
-  vim.g.disable_autoformat = false
-  vim.notify('Autoformat enabled', vim.log.levels.INFO)
-end, { desc = 'Re-enable autoformat-on-save' })
+}
