@@ -6,6 +6,7 @@ local keymap = {
 
 local signature = {
   enabled = true,
+  window = { border = "rounded" },
 }
 
 local completion = {
