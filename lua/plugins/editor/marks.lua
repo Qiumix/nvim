@@ -1,7 +1,7 @@
 return {
-  'marks.nvim',
+  "marks.nvim",
   after = function()
-    require 'marks'.setup {
+    require("marks").setup({
       -- whether to map keybinds or not. default true
       default_mappings = true,
       -- which builtin marks to show. default {}
@@ -25,13 +25,13 @@ return {
       -- across multiple buffers. default sign is '!@#$%^&*()' (from 0 to 9), and
       -- default virt_text is ''.
       bookmark_0 = {
-        sign = '⚑',
-        virt_text = 'hello world',
+        sign = "⚑",
+        virt_text = "hello world",
         -- explicitly prompt for a virtual line annotation when setting a bookmark from this group.
         -- defaults to false.
         annotate = false,
       },
-      mappings = {}
-    }
-  end
+      mappings = {},
+    })
+  end,
 }

@@ -1,9 +1,9 @@
 return {
-  'rime-toggle.nvim',
+  "rime-toggle.nvim",
   after = function()
-    require('rime_toggle').setup({
+    require("rime_toggle").setup({
       enabled = true,
-      smart_esc = true
+      smart_esc = true,
     })
-  end
+  end,
 }

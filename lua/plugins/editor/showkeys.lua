@@ -4,8 +4,8 @@ return {
     local showkeys = require("showkeys")
     showkeys.setup({
       show_count = true,
-      maxkeys = 4
+      maxkeys = 4,
     })
     showkeys.open()
-  end
+  end,
 }

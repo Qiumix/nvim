@@ -29,13 +29,13 @@ return {
   --     require('mini.cursorword').setup({ delay = 0 })
   --   end
   -- }
-  'mini.nvim',
+  "mini.nvim",
   after = function()
-    require('mini.surround').setup()
-    require('mini.cursorword').setup({ delay = 0 })
-    require('mini.icons').setup()
-    require('mini.tabline').setup()
-    require('mini.statusline').setup()
-    require('mini.surround').setup()
-  end
+    require("mini.surround").setup()
+    require("mini.cursorword").setup({ delay = 0 })
+    require("mini.icons").setup()
+    require("mini.tabline").setup()
+    require("mini.statusline").setup()
+    require("mini.surround").setup()
+  end,
 }

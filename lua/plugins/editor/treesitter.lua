@@ -47,9 +47,9 @@ local tables = {
     enable = true,
     lookahead = true,
     selection_modes = {
-      ['@parameter.outer'] = 'v', -- charwise
-      ['@function.outer'] = 'V',  -- linewise
-      ['@class.outer'] = '<c-v>', -- blockwise
+      ["@parameter.outer"] = "v", -- charwise
+      ["@function.outer"] = "V", -- linewise
+      ["@class.outer"] = "<c-v>", -- blockwise
     },
     include_surrounding_whitespace = false,
   },
@@ -60,10 +60,10 @@ local tables = {
 }
 
 return {
-  'nvim-treesitter-textobjects',
+  "nvim-treesitter-textobjects",
   after = function()
-    require('nvim-treesitter-textobjects').setup(tables)
-  end
+    require("nvim-treesitter-textobjects").setup(tables)
+  end,
 }
 -- -- SELECT keymaps
 -- local sel = require('nvim-treesitter-textobjects.select')

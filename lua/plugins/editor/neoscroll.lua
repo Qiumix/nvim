@@ -1,6 +1,6 @@
 return {
-  'neoscroll.nvim',
+  "neoscroll.nvim",
   after = function()
-    require('neoscroll').setup({ mappings = {} })
-  end
+    require("neoscroll").setup({ mappings = {} })
+  end,
 }

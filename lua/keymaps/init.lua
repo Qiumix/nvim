@@ -1,16 +1,15 @@
 local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
-
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
 map("n", "ge", "G")
 
-map('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
-map('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
-map('n', '<leader>k', ':TranslateNormal<CR>')
-map('v', '<leader>k', ':TranslateVisual<CR>')
+map("n", "<A-i>", '<CMD>lua require("FTerm").toggle()<CR>')
+map("t", "<A-i>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
+map("n", "<leader>k", ":TranslateNormal<CR>")
+map("v", "<leader>k", ":TranslateVisual<CR>")
 
 -- ═══════════════════════════════════════════════════════════
 -- BUFFER NAVIGATION (think browser tabs)
@@ -19,11 +18,11 @@ map('v', '<leader>k', ':TranslateVisual<CR>')
 -- Tab/Shift-Tab: Like browser tabs, feels natural
 map("n", "<Tab>", ":bnext<CR>", { desc = "Next buffer" })
 map("n", "<S-Tab>", ":bprevious<CR>", { desc = "Previous buffer" })
-map('n', '<leader>oo', "<cmd>source<CR>")
-map('n', '<leader>or', "<cmd>restart<CR>")
-map('n', '<leader>lf', vim.lsp.buf.format, { desc = "LSP Format" })
-map('n', '<leader>ld', vim.diagnostic.get)
-map('n', '<leader>e', "<cmd>Yazi<CR>")
+map("n", "<leader>oo", "<cmd>source<CR>")
+map("n", "<leader>or", "<cmd>restart<CR>")
+map("n", "<leader>lf", vim.lsp.buf.format, { desc = "LSP Format" })
+map("n", "<leader>ld", vim.diagnostic.get)
+map("n", "<leader>e", "<cmd>Yazi<CR>")
 
 -- Alternative buffer switching (vim-style)
 map("n", "<leader>bn", ":bnext<CR>", { desc = "Next buffer" })
@@ -107,8 +106,12 @@ map("n", "<A-a>", "ggVG", { noremap = true, silent = true, desc = "Select all" }
 
 -- Clear search highlighting
 map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and Clear hlsearch" })
-map("n", "<leader>ur", "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>",
-  { desc = "Redraw / Clear hlsearch / Diff Update" })
+map(
+  "n",
+  "<leader>ur",
+  "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>",
+  { desc = "Redraw / Clear hlsearch / Diff Update" }
+)
 
 -- Smart search navigation (n always goes forward, N always backward)
 map("n", "n", "'Nn'[v:searchforward].'zv'", { expr = true, desc = "Next Search Result" })

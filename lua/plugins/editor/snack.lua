@@ -322,5 +322,5 @@ return {
   after = function()
     local Snacks = require("snacks")
     Snacks.setup(tables)
-  end
+  end,
 }

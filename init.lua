@@ -1,4 +1,4 @@
-require 'core'
-require 'keymaps'
-require 'langs'
-require 'plugins'
+require("core")
+require("keymaps")
+require("langs")
+require("plugins")

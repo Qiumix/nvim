@@ -2,23 +2,23 @@ local tables = {
   defaults = {
     preview = { treesitter = false },
     color_devicons = true,
-    sorting_strategy = 'ascending',
-    path_displays = { 'smart' },
+    sorting_strategy = "ascending",
+    path_displays = { "smart" },
     layout_config = {
       height = 100,
       width = 400,
-      prompt_position = 'top',
+      prompt_position = "top",
       preview_cutoff = 40,
-    }
-  }
+    },
+  },
 }
 
 return {
-  'telescope.nvim',
+  "telescope.nvim",
   after = function()
-    local telescope = require('telescope')
+    local telescope = require("telescope")
     telescope.setup(tables)
-  end
+  end,
 }
 
 -- telescope.load_extension('ui-select')

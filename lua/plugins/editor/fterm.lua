@@ -6,8 +6,8 @@ local config = {
 }
 
 return {
-  'FTerm.nvim',
+  "FTerm.nvim",
   after = function()
-    require('FTerm').setup(config)
-  end
+    require("FTerm").setup(config)
+  end,
 }

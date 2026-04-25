@@ -1,4 +1,4 @@
 return {
-  'gruvbox.nvim',
-  colorscheme = "gruvbox"
+  "gruvbox.nvim",
+  colorscheme = "gruvbox",
 }
