@@ -42,7 +42,7 @@ vim.opt.autoindent = true -- Copy indent from current line
 vim.opt.breakindent = true -- visually indent wrapped lines to match start
 
 -- ── Search ─────────────────────────────────────────────────────────
-vim.opt.hlsearch = false -- Don't highlight search results
+vim.opt.hlsearch = true -- Don't highlight search results
 vim.opt.incsearch = true -- Show matches as you type
 vim.opt.ignorecase = true -- case-insensitive search by default
 vim.opt.smartcase = true -- …unless query contains uppercase letters

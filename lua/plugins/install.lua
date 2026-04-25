@@ -31,15 +31,10 @@ vim.pack.add({
     src = gh("nvim-treesitter/nvim-treesitter-textobjects"),
     version = "main",
   },
-
   { src = gh("rcarriga/nvim-notify") },
-
   { src = gh("ellisonleao/gruvbox.nvim") },
   { src = gh("chomosuke/typst-preview.nvim") },
   { src = gh("aznhe21/actions-preview.nvim") },
-  { src = gh("nvim-telescope/telescope.nvim"), version = "0.1.8" },
-  { src = gh("nvim-telescope/telescope-ui-select.nvim") },
-  { src = gh("LinArcX/telescope-env.nvim") },
   { src = gh("wakatime/vim-wakatime") },
   { src = gh("L3MON4D3/LuaSnip") },
   { src = gh("rachartier/tiny-inline-diagnostic.nvim") },
@@ -65,6 +60,7 @@ vim.pack.add({
   { src = gh("SilverofLight/kd_translate.nvim") },
   { src = gh("sitiom/nvim-numbertoggle") },
   { src = gh("echasnovski/mini.nvim") },
+  { src = gh("nvim-tree/nvim-web-devicons") },
   { src = gh("stevearc/conform.nvim") },
   { src = gh("lewis6991/gitsigns.nvim") },
   { src = gh("sindrets/diffview.nvim") },
