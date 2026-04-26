@@ -8,7 +8,7 @@ local config = {
   indent = { enabled = true },
   input = { enabled = true },
   layout = { enabled = true },
-  notifier = { enabled = true },
+  notifier = { enabled = false },
   quickfile = { enabled = true },
   scope = { enabled = true },
   scratch = { enabled = true },

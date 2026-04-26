@@ -1,8 +1,8 @@
 return {
   {
-    "nvim-web-devicons",
+    "mini.nvim",
     after = function()
-      require("nvim-web-devicons").setup()
+      require("mini.icons").setup()
     end,
   },
 }
