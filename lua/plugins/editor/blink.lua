@@ -1,9 +1,3 @@
-local keymap = {
-  preset = "default",
-  ["<C-u>"] = { "scroll_documentation_up", "fallback" },
-  ["<C-d>"] = { "scroll_documentation_down", "fallback" },
-}
-
 local signature = {
   enabled = true,
   window = { border = "rounded" },
@@ -22,7 +16,6 @@ local cmdline = {
 }
 
 local config = {
-  keymap = keymap,
   signature = signature,
   completion = completion,
   cmdline = cmdline,
