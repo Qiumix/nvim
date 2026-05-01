@@ -1,6 +1,6 @@
 local config = {
   enabled = true,
-  smart_esc = true,
+  smart_esc = false,
 }
 
 return {

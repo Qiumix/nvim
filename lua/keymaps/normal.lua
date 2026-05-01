@@ -1,4 +1,7 @@
 local map = vim.keymap.set
+map("n", "<esc>", function ()
+  vim.cmd("nohlsearch")
+end, { desc = "Clear highlight search" })
 
 map("n", "<A-i>", '<CMD>lua require("FTerm").toggle()<CR>', { desc = "Toggle Fterm" })
 map("t", "<A-i>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', { desc = "Toggle Fterm" })

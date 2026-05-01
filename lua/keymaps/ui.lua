@@ -1,3 +1,4 @@
+vim.g.disable_autoformat = true
 local map = vim.keymap.set
 
 -- clear
@@ -13,7 +14,9 @@ map("n", "<leader>uw", "<cmd>set wrap!<CR>", { desc = "Toggle Wrap", silent = tr
 map("n", "<leader>uf", function()
   if vim.g.disable_autoformat then
     vim.g.disable_autoformat = false
+    vim.notify("Autoformat disabled", vim.log.levels.INFO)
   else
     vim.g.disable_autoformat = true
+    vim.notify("Autoformat enabled", vim.log.levels.INFO)
   end
 end, { desc = "Toggle autoformat(global)" })
