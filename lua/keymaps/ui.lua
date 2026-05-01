@@ -1,11 +1,19 @@
 local map = vim.keymap.set
 
+-- clear
 map(
   "n",
-  "<leader>ur",
+  "<leader>ul",
   "<Cmd>nohlsearch<Bar>diffupdate<Bar>normal! <C-L><CR>",
   { desc = "Redraw / Clear hlsearch / Diff Update" }
 )
 
 -- Toggle line wrapping
-map("n", "<leader>tw", "<cmd>set wrap!<CR>", { desc = "Toggle Wrap", silent = true })
+map("n", "<leader>uw", "<cmd>set wrap!<CR>", { desc = "Toggle Wrap", silent = true })
+map("n", "<leader>uf", function()
+  if vim.g.disable_autoformat then
+    vim.g.disable_autoformat = false
+  else
+    vim.g.disable_autoformat = true
+  end
+end, { desc = "Toggle autoformat(global)" })

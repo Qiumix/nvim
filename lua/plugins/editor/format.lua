@@ -23,13 +23,16 @@ local config = {
     nix = { "nixfmt" },
     typst = { "tinymist", "typstyle" },
   },
+
   formatters = {
     biome = { require_cwd = true },
     deno_fmt = { require_cwd = true },
   },
+
   default_format_opts = {
     lsp_format = "fallback",
   },
+
   format_on_save = function(bufnr)
     local ignore_filetypes = { "sql", "yaml", "yml" }
     if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
