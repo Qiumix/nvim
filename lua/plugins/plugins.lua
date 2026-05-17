@@ -1,10 +1,9 @@
----
 ---Return full url of a github repo
 ---
----@param str string
+---@param repo_addr string
 ---@return string
-local function gh(str)
-  return "https://github.com/" .. str
+local function github_prefix(repo_addr)
+  return "https://github.com/" .. repo_addr
 end
 
 local plugins = {
@@ -80,7 +79,7 @@ local plugins = {
 }
 
 for _, plugin in ipairs(plugins) do
-  plugin.src = gh(plugin.src)
+  plugin.src = github_prefix(plugin.src)
 end
 
 return plugins
