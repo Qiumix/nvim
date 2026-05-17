@@ -69,6 +69,10 @@
       "rev": "44e07129cd0ea0c60afa7a1991d35b5765b51a6b",
       "src": "https://github.com/3rd/image.nvim"
     },
+    "indent-blankline.nvim": {
+      "rev": "d28a3f70721c79e3c5f6693057ae929f3d9c0a03",
+      "src": "https://github.com/lukas-reineke/indent-blankline.nvim"
+    },
     "kd_translate.nvim": {
       "rev": "bc395b810d9583bfa3244f31db80ab12a8e7561e",
       "src": "https://github.com/SilverofLight/kd_translate.nvim"

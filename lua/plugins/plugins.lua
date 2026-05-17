@@ -19,6 +19,7 @@ local plugins = {
   { src = "xemptuous/sqlua.nvim" },
   { src = "Qiumix/rime-toggle.nvim" },
   { src = "tonyfettes/fcitx5.nvim" },
+  { src = "lukas-reineke/indent-blankline.nvim" },
   { src = "black-desk/fcitx5-ui.nvim" },
   { src = "alexpasmantier/tv.nvim" },
   { src = "nvim-telescope/telescope.nvim" },
