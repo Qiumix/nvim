@@ -155,7 +155,7 @@
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "rime-toggle.nvim": {
-      "rev": "6301c1a46afe30b9480d9da273b45bc443f833e0",
+      "rev": "b66a83b2b43589cd8ab9bf2c9db3a387b313001e",
       "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
     "rustaceanvim": {
@@ -187,7 +187,7 @@
       "src": "https://github.com/folke/todo-comments.nvim"
     },
     "tree-sitter-manager.nvim": {
-      "rev": "bfb85e965ab988b9c158ee4b583c1d0097221687",
+      "rev": "9e34b54ac652876953f0e55f879fe5652a6c86dd",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim",
       "version": "'main'"
     },
