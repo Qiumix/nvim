@@ -21,6 +21,8 @@ vim.pack.add({
   { src = gh("Qiumix/rime-toggle.nvim") },
   { src = gh("tonyfettes/fcitx5.nvim") },
   { src = gh("black-desk/fcitx5-ui.nvim") },
+  { src = gh("alexpasmantier/tv.nvim") },
+  { src = gh("nvim-telescope/telescope.nvim") },
 
   { src = gh("lumen-oss/lz.n") },
   {
