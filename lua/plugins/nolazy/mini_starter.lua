@@ -30,7 +30,3 @@ local config = {
 }
 
 require("mini.starter").setup(config)
-return {
-  "mini.nvim",
-  lazy = false,
-}
