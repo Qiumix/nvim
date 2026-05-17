@@ -1,3 +1,6 @@
-require("core")
-require("keymaps")
+require("helper_fn")
+
+Load("core")
+Load("keymaps")
+
 require("plugins")

@@ -4,7 +4,6 @@ vim.lsp.enable({
   "eslint",
   "lua_ls",
   "gopls",
-  -- "rust_analyser",
   "zls",
   "cssls",
   "html",

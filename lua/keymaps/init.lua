@@ -1,8 +1,0 @@
-require("keymaps.normal")
-require("keymaps.better")
-require("keymaps.ui")
-require("keymaps.tab")
-require("keymaps.buffer")
-require("keymaps.wm")
-require("keymaps.coding")
-require("keymaps.file")
