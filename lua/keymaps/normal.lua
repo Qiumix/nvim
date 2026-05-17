@@ -1,5 +1,5 @@
 local map = vim.keymap.set
-map("n", "<esc>", function ()
+map("n", "<esc>", function()
   vim.cmd("nohlsearch")
 end, { desc = "Clear highlight search" })
 

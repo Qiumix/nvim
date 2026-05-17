@@ -4,7 +4,7 @@ local config = {
   dashboard = { enabled = false },
   dim = { enabled = true },
   explorer = { enabled = true, replace_netrw = true },
-  image = { enabled = true },
+  image = require("plugins.editor.snack.image"),
   indent = { enabled = true },
   input = { enabled = true },
   layout = { enabled = true },
@@ -19,7 +19,7 @@ local config = {
   words = { enabled = false },
   zen = { enabled = true },
 
-  picker = require('plugins.editor.snack.picker'),
+  picker = require("plugins.editor.snack.picker"),
 }
 
 return {

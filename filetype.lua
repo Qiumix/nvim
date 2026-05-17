@@ -4,7 +4,7 @@ vim.filetype.add({
     env = "dotenv",
     conf = "hyprlang",
     kbd = "lisp",
-    log = "log"
+    log = "log",
   },
 
   -- filename only match file's name, not path
