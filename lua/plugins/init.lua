@@ -1,4 +1,5 @@
-require("plugins.install")
+local plugins = require("plugins.plugins")
+vim.pack.add(plugins)
 
 local lzn = require("lz.n")
 
