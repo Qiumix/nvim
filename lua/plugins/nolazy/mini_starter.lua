@@ -29,9 +29,8 @@ local config = {
   silent = false,
 }
 
+require("mini.starter").setup(config)
 return {
   "mini.nvim",
-  after = function()
-    require("mini.starter").setup(config)
-  end,
+  lazy = false,
 }

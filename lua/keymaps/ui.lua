@@ -1,4 +1,4 @@
-vim.g.disable_autoformat = true
+vim.g.disable_autoformat = false
 local map = vim.keymap.set
 
 -- clear
