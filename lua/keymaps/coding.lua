@@ -1,5 +1,7 @@
 local map = vim.keymap.set
 
+map("n", "gd", vim.lsp.buf.definition, { desc = "LSP Goto Definition" })
+
 -- Inspection tools (useful for debugging highlights and treesitter)
 map("n", "<leader>ti", vim.show_pos, { desc = "Inspect Pos" })
 map("n", "<leader>tI", "<cmd>InspectTree<cr>", { desc = "Inspect Tree" })

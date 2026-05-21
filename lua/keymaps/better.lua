@@ -53,3 +53,7 @@ map("v", "<A-j>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc 
 map("v", "<A-k>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
 
 map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
+
+map({ "n", "x", "o" }, "gl", "$")
+
+map({ "n", "x", "o" }, "gh", "0")
