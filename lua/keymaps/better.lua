@@ -20,7 +20,6 @@ map({ "n", "v" }, "gl", "$", { desc = "Go to end of line" })
 map({ "n", "v" }, "gh", "^", { desc = "Go to start of line" })
 map({ "n", "v" }, "<A-h>", "^", { desc = "Go to start of line", silent = true })
 map({ "n", "v" }, "<A-l>", "$", { desc = "Go to end of line", silent = true })
-map("n", "ge", "G")
 
 -- Better indenting (stay in visual mode)
 map("v", "<", "<gv")
@@ -55,5 +54,5 @@ map("v", "<A-k>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", {
 map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 
 map({ "n", "x", "o" }, "gl", "$")
-
 map({ "n", "x", "o" }, "gh", "0")
+map({ "n", "x", "o" }, "ge", "G")
