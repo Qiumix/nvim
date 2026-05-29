@@ -1,16 +1,23 @@
+local starter = require("mini.starter")
+
+local items = {
+  { name = "n ░ New File", action = "enew", section = "󱜕  Utils" },
+  { name = "f ░ Find Files", action = "Tv files", section = "📺 Television Finder" },
+  { name = "g ░ Live Grep", action = "Tv text", section = "📺 Television Finder" },
+  { name = "l ░ Git Logs", action = "Tv git-log", section = "📺 Television Finder" },
+  { name = "b ░ Git Branches", action = "Tv git-branch", section = "📺 Television Finder" },
+  { name = "t ░ Select Channel", action = "Tv", section = "📺 Television Finder" },
+
+  { name = "c ░ Neovim Config", action = "edit $MYVIMRC", section = "🔧 Maintenance" },
+}
+
 local config = {
-  -- Whether to evaluate action of single active item
-  evaluate_single = false,
-  -- Items to be displayed. Should be an array with the following elements:
-  -- - Item: table with <action>, <name>, and <section> keys.
-  -- - Function: should return one of these three categories.
-  -- - Array: elements of these three types (i.e. item, array, function).
-  -- If `nil` (default), default items will be used (see |mini.starter|).
-  items = nil,
+  items = items,
+  evaluate_single = true,
   header = [[
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
-│                      Witch Of Neko               󰃢    │
+│                     Witch Of Neko                󰃢    │
 │                                                       │
 │        ████████   ██ █  █ ██  █        │
 │         ██   ██    ██   ██ ██    ██        │
@@ -21,12 +28,10 @@ local config = {
 │                                                       │
 └───────────────────────────────────────────────────────┘
   ]],
-  -- Array  of functions to be applied consecutively to initial content.
-  -- Each function should take and return content for 'Starter' buffer (see
-  -- |mini.starter| and |MiniStarter.content| for more details).
-  content_hooks = nil,
-  query_updaters = "abcdefghijklmnopqrstuvwxyz0123456789_-.",
-  silent = false,
+  footer = "",
+  content_hooks = {
+    starter.gen_hook.aligning("center", "center"),
+  },
 }
 
-require("mini.starter").setup(config)
+starter.setup(config)

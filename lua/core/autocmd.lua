@@ -1,6 +1,6 @@
 local autocmd = vim.api.nvim_create_autocmd
 local augroup = function(name)
-  return vim.api.nvim_create_augroup("lingshin_" .. name, { clear = true })
+  return vim.api.nvim_create_augroup(name, { clear = true })
 end
 
 -- Highlight on yank
