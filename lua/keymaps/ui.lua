@@ -20,3 +20,5 @@ map("n", "<leader>uf", function()
     vim.notify("Autoformat enabled", vim.log.levels.INFO)
   end
 end, { desc = "Toggle autoformat(global)" })
+
+map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })

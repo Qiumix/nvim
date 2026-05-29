@@ -5,21 +5,12 @@ map("n", "<leader>h", "<cmd>nohlsearch<CR>", { desc = "Clear search highlights" 
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
--- Smart search navigation (n always goes forward, N always backward)
-map("n", "n", "'Nn'[v:searchforward].'zv'", { expr = true, desc = "Next Search Result" })
-map("x", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next Search Result" })
-map("o", "n", "'Nn'[v:searchforward]", { expr = true, desc = "Next Search Result" })
-map("n", "N", "'nN'[v:searchforward].'zv'", { expr = true, desc = "Prev Search Result" })
-map("x", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev Search Result" })
-map("o", "N", "'nN'[v:searchforward]", { expr = true, desc = "Prev Search Result" })
-
 map({ "i", "n" }, "<esc>", "<cmd>nohlsearch<cr><esc>", { desc = "Escape and Clear hlsearch" })
 
 -- Better line start/end (more comfortable than $ and ^)
-map({ "n", "v" }, "gl", "$", { desc = "Go to end of line" })
-map({ "n", "v" }, "gh", "^", { desc = "Go to start of line" })
-map({ "n", "v" }, "<A-h>", "^", { desc = "Go to start of line", silent = true })
-map({ "n", "v" }, "<A-l>", "$", { desc = "Go to end of line", silent = true })
+map({ "n", "v", "o" }, "gl", "$", { desc = "Go to end of line" })
+map({ "n", "v", "o" }, "gh", "^", { desc = "Go to start of line" })
+map({ "n", "x", "o" }, "ge", "G", { desc = "Go to end of file" })
 
 -- Better indenting (stay in visual mode)
 map("v", "<", "<gv")
@@ -50,9 +41,3 @@ map("i", "<A-j>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move Down" })
 map("i", "<A-k>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move Up" })
 map("v", "<A-j>", ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv", { desc = "Move Down" })
 map("v", "<A-k>", ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv", { desc = "Move Up" })
-
-map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
-
-map({ "n", "x", "o" }, "gl", "$")
-map({ "n", "x", "o" }, "gh", "0")
-map({ "n", "x", "o" }, "ge", "G")
