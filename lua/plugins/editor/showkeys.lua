@@ -5,6 +5,7 @@ local config = {
 
 return {
   "showkeys",
+  event = "DeferredUIEnter",
   after = function()
     local showkeys = require("showkeys")
     showkeys.setup(config)

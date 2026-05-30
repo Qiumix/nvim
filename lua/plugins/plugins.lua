@@ -60,9 +60,7 @@ local plugins = {
   { src = "echasnovski/mini.starter" },
   { src = "echasnovski/mini.ai" },
   { src = "echasnovski/mini.nvim", name = "mini.ui" },
-  { src = "nvim-tree/nvim-web-devicons" },
   { src = "stevearc/conform.nvim" },
-  { src = "lewis6991/gitsigns.nvim" },
   { src = "sindrets/diffview.nvim" },
   { src = "chentoast/marks.nvim" },
   {
@@ -78,6 +76,7 @@ local plugins = {
 
 for _, plugin in ipairs(plugins) do
   plugin.src = github_prefix(plugin.src)
+  plugin.load = function() end
 end
 
 return plugins

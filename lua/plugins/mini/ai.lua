@@ -1,7 +1,7 @@
 return {
   "mini.ai",
   lazy = true,
-  event = { "BufReadPre", "BufNewFile", "BufWritePre" },
+  event = "DeferredUIEnter",
   after = function()
     require("mini.ai").setup()
   end,

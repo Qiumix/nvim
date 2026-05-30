@@ -2,6 +2,7 @@ local keys = require("plugins.editor.wk.keys")
 
 return {
   "which-key.nvim",
+  event = "DeferredUIEnter",
   after = function()
     local wk = require("which-key")
     wk.setup({

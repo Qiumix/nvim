@@ -24,6 +24,7 @@ return {
   },
   {
     "tree-sitter-manager.nvim",
+    cmd = { "TSManager", "TSInstall", "TSUninstall" },
     after = function()
       require("tree-sitter-manager").setup()
     end,
