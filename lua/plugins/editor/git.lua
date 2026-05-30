@@ -18,6 +18,7 @@ return {
   "gitsigns.nvim",
   event = "DeferredUIEnter",
   after = function()
-    require("gitsigns").setup(config)
+    vim.g.git = require("gitsigns")
+    vim.g.git.setup(config)
   end,
 }
