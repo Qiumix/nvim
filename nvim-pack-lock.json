@@ -130,9 +130,17 @@
       "rev": "9d0b9b7188d5c24b5a87f0d8b383ec8bda7a0de4",
       "src": "https://github.com/echasnovski/mini.nvim"
     },
+    "mini.icons": {
+      "rev": "520995f1d75da0e4cc901ee95080b1ff2bc46b94",
+      "src": "https://github.com/nvim-mini/mini.icons"
+    },
     "mini.nvim": {
       "rev": "9d0b9b7188d5c24b5a87f0d8b383ec8bda7a0de4",
       "src": "https://github.com/echasnovski/mini.nvim"
+    },
+    "mini.pairs": {
+      "rev": "30cf2f01c4aaa2033db67376b9924fa2442c05d6",
+      "src": "https://github.com/nvim-mini/mini.pairs"
     },
     "mini.starter": {
       "rev": "a7d8b353cf120fee32bb5d88e7a9de5eaec746e7",
