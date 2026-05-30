@@ -1,6 +1,6 @@
 return {
   "LuaSnip",
-  event = "InsertEnter",
+  event = "BufEnter",
   after = function()
     require("luasnip").setup()
   end,
