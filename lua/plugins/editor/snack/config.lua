@@ -4,7 +4,7 @@ return {
   dashboard = { enabled = false },
   dim = { enabled = true },
   explorer = { enabled = true, replace_netrw = true },
-  image = require("plugins.editor.snack.image"),
+  image = { enabled = false },
   indent = { enabled = true },
   input = { enabled = true },
   layout = { enabled = true },

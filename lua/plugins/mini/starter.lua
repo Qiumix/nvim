@@ -12,7 +12,6 @@ local items = {
 
 return {
   "mini.starter",
-  event = "DeferredUIEnter",
   after = function()
     local starter = require("mini.starter")
 
@@ -34,9 +33,7 @@ return {
 └───────────────────────────────────────────────────────┘
   ]],
       footer = "",
-      content_hooks = {
-        starter.gen_hook.aligning("center", "center"),
-      },
+      content_hooks = { starter.gen_hook.aligning("center", "center") },
     }
     starter.setup(config)
   end,

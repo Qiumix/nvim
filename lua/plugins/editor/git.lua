@@ -15,6 +15,7 @@ local config = {
 
 return {
   "gitsigns.nvim",
+  event = "DeferredUIEnter",
   after = function()
     require("gitsigns").setup(config)
   end,
