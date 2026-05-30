@@ -1,5 +1,5 @@
 return {
-  "nvim-mini/mini.ai",
+  "mini.ai",
   lazy = true,
   event = { "BufReadPre", "BufNewFile", "BufWritePre" },
   after = function()

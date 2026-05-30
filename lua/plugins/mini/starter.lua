@@ -1,5 +1,3 @@
-local starter = require("mini.starter")
-
 local items = {
   { name = "f 󰈞 Find Files", action = "Tv files", section = "  Television Finder" },
   { name = "g  Live Grep", action = "Tv text", section = "  Television Finder" },
@@ -12,10 +10,16 @@ local items = {
   { name = "q  Quit Neovim", action = "quit", section = "  Utils" },
 }
 
-local config = {
-  items = items,
-  evaluate_single = true,
-  header = [[
+return {
+  "mini.starter",
+  event = "DeferredUIEnter",
+  after = function()
+    local starter = require("mini.starter")
+
+    local config = {
+      items = items,
+      evaluate_single = true,
+      header = [[
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
 │                     Witch Of Neko                󰃢    │
@@ -29,15 +33,11 @@ local config = {
 │                                                       │
 └───────────────────────────────────────────────────────┘
   ]],
-
-  footer = function()
-    local ms = vim.fn.reltimefloat(vim.fn.reltime()) / 1000
-    return ms
+      footer = "",
+      content_hooks = {
+        starter.gen_hook.aligning("center", "center"),
+      },
+    }
+    starter.setup(config)
   end,
-
-  content_hooks = {
-    starter.gen_hook.aligning("center", "center"),
-  },
 }
-
-starter.setup(config)
