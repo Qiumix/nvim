@@ -1,16 +1,14 @@
+---@type lz.n.PluginSpec
 return {
   "lazydev.nvim",
-  lazy = true,
   ft = "lua",
-  cmd = "LazyDev",
-  opts = {
-    library = {
-      { path = "${3rd}/luv/library", words = { "vim%.uv" } },
-      { path = "snacks.nvim", words = { "Snacks" } },
-      { path = "mini.icons", words = { "MiniIcon" } },
-    },
-  },
+  lazy = false,
   after = function()
-    require("lazydev").setup()
+    require("lazydev").setup({
+      library = {
+        { path = "~/.local/share/nvim/site/pack/core/opt/lz.n", words = { "lz.n" } },
+        { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+      },
+    })
   end,
 }

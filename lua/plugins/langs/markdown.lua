@@ -1,3 +1,4 @@
+---@type lz.n.PluginSpec
 return {
   "render-markdown.nvim",
   ft = { "markdown", "norg", "org" },

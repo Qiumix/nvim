@@ -1,4 +1,6 @@
 local config = require("plugins.editor.flash.config")
+
+---@type lz.n.PluginSpec
 return {
   "flash.nvim",
   event = "DeferredUIEnter",

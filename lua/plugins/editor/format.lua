@@ -1,5 +1,6 @@
 local config = require("plugins.editor.formater.config")
 
+---@type lz.n.PluginSpec
 return {
   "conform.nvim",
   event = "DeferredUIEnter",

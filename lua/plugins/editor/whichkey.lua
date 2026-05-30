@@ -1,5 +1,6 @@
 local keys = require("plugins.editor.wk.keys")
 
+---@type lz.n.PluginSpec
 return {
   "which-key.nvim",
   event = "DeferredUIEnter",

@@ -1,5 +1,6 @@
 local config = require("plugins.editor.snack.config")
 
+---@type lz.n.PluginSpec
 return {
   "snacks.nvim",
   event = "DeferredUIEnter",

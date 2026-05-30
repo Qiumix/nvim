@@ -36,6 +36,7 @@ local plugins = {
   {
     src = "L3MON4D3/LuaSnip",
     version = vim.version.range("^2"),
+    load = function() end,
   },
   { src = "rachartier/tiny-inline-diagnostic.nvim" },
   { src = "tris203/precognition.nvim" },
@@ -76,7 +77,6 @@ local plugins = {
 
 for _, plugin in ipairs(plugins) do
   plugin.src = github_prefix(plugin.src)
-  plugin.load = function() end
 end
 
 return plugins

@@ -1,5 +1,6 @@
 local config = require("plugins.editor.blink.config")
 
+---@type lz.n.PluginSpec
 return {
   "blink.cmp",
   event = { "InsertEnter", "CmdlineEnter" },

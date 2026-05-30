@@ -1,3 +1,4 @@
+---@type lz.n.PluginSpec
 return {
   "marks.nvim",
   event = "DeferredUIEnter",

@@ -1,3 +1,4 @@
+---@type lz.n.PluginSpec
 return {
   "colorful-menu.nvim",
   after = function()

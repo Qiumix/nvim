@@ -13,6 +13,7 @@ local config = {
   signs_staged = sign,
 }
 
+---@type lz.n.PluginSpec
 return {
   "gitsigns.nvim",
   event = "DeferredUIEnter",

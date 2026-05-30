@@ -10,6 +10,7 @@ local items = {
   { name = "q  Quit Neovim", action = "quit", section = "  Utils" },
 }
 
+require("mini.git").setup()
 return {
   "mini.starter",
   after = function()

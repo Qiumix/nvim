@@ -1,3 +1,4 @@
+require("mini.git").setup()
 return {
   "mini.ui",
   event = "DeferredUIEnter",

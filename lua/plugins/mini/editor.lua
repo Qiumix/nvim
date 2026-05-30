@@ -1,4 +1,4 @@
-require("mini.git").setup()
+---@type lz.n.PluginSpec
 return {
   "mini.editor",
   event = { "BufReadPre", "BufNewFile" },

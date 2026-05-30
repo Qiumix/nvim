@@ -3,6 +3,7 @@ local config = {
   maxkeys = 4,
 }
 
+---@type lz.n.PluginSpec
 return {
   "showkeys",
   event = "DeferredUIEnter",
