@@ -35,7 +35,7 @@ local plugins = {
   { src = "wakatime/vim-wakatime" },
   {
     src = "L3MON4D3/LuaSnip",
-    version = "v2.*",
+    version = vim.version.range("^2"),
   },
   { src = "rachartier/tiny-inline-diagnostic.nvim" },
   { src = "tris203/precognition.nvim" },
