@@ -28,9 +28,15 @@ map("n", "<leader>or", "<cmd>restart<CR>", { desc = "Restart" })
 map("n", "<leader>k", ":TranslateNormal<CR>", { desc = "Translate word" })
 map("v", "<leader>k", ":TranslateVisual<CR>", { desc = "Translate select" })
 
-map("n", "<leader>lf", vim.lsp.buf.format, { desc = "LSP Format" })
+map({ "n", "v" }, "<leader>lf", function()
+  require("conform").format({ async = true }, function(err, did_edit)
+    if not err and did_edit then
+      vim.notify("Code formatted", vim.log.levels.INFO, { title = "Conform" })
+    end
+  end)
+end, { desc = "Format buffer" })
+
 -- map("n", "<leader>ld", vim.diagnostic.get, { desc = "Get Diagnostic " })
 map("n", "<leader>ld", vim.diagnostic.setqflist, { desc = "Open Diagnostic Buffer" })
 
 map("n", "<leader>e", "<cmd>Yazi<CR>", { desc = "Yazi" })
--- Alternative buffer switching (vim-style)
