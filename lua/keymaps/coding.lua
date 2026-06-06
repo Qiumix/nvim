@@ -1,13 +1,24 @@
 local map = vim.keymap.set
+vim.g.disable_autoformat = false
 
 map("n", "gd", vim.lsp.buf.definition, { desc = "LSP Goto Definition" })
 
+map("n", "<leader>qq", "<cmd>qa<cr>", { desc = "Quit All" })
 -- Inspection tools (useful for debugging highlights and treesitter)
 map("n", "<leader>ti", vim.show_pos, { desc = "Inspect Pos" })
 map("n", "<leader>tI", "<cmd>InspectTree<cr>", { desc = "Inspect Tree" })
 
--- Keyword program (K for help on word under cursor)
-map("n", "<leader>K", "<cmd>norm! K<cr>", { desc = "Keywordprg" })
+map("n", "<leader>tw", "<cmd>set wrap!<CR>", { desc = "Toggle Wrap", silent = true })
+
+map("n", "<leader>tf", function()
+  if vim.g.disable_autoformat then
+    vim.g.disable_autoformat = false
+    vim.notify("Autoformat enabled", vim.log.levels.INFO)
+  else
+    vim.g.disable_autoformat = true
+    vim.notify("Autoformat disabled", vim.log.levels.INFO)
+  end
+end, { desc = "Toggle autoformat(global)" })
 
 -- ═══════════════════════════════════════════════════════════
 -- FOLDING NAVIGATION (for code organization)
