@@ -26,7 +26,7 @@ return {
   ---@type lz.n.PluginSpec
   {
     "tree-sitter-manager.nvim",
-    cmd = { "TSManager", "TSInstall", "TSUninstall" },
+    event = "DeferredUIEnter",
     after = function()
       require("tree-sitter-manager").setup()
     end,

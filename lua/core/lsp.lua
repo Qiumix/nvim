@@ -19,6 +19,7 @@ vim.lsp.enable({
   "vue-language-server",
   "fish_lsp",
   "sql-language-server",
+  "wgsl-analyzer",
   "jdtls",
   "typstyle",
   "tinymist",
@@ -26,3 +27,4 @@ vim.lsp.enable({
   "yamlls",
   ts_server,
 })
+vim.lsp.config("wgsl-analyzer", { filetypes = "wgsl" })

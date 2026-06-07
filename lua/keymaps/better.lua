@@ -11,6 +11,10 @@ map({ "i", "n" }, "<esc>", "<cmd>nohlsearch<cr><esc>", { desc = "Escape and Clea
 map({ "n", "v", "o" }, "gl", "$", { desc = "Go to end of line" })
 map({ "n", "v", "o" }, "gh", "^", { desc = "Go to start of line" })
 map({ "n", "x", "o" }, "ge", "G", { desc = "Go to end of file" })
+map({ "n", "x", "o" }, "go", "%", { desc = "Go to end of file" })
+
+map({ "n", "v", "o" }, "<A-h>", "^", { desc = "Go to start of line" })
+map({ "n", "v", "o" }, "<A-l>", "$", { desc = "Go to end of line" })
 
 -- Better indenting (stay in visual mode)
 map("v", "<", "<gv")

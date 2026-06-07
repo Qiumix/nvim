@@ -2,6 +2,7 @@ vim.filetype.add({
 
   extension = {
     env = "dotenv",
+    wgsl = "wgsl",
     conf = "hyprlang",
     kbd = "lisp",
     log = "log",
