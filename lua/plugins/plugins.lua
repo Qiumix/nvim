@@ -63,7 +63,9 @@ local plugins = {
   { src = "echasnovski/mini.nvim", name = "mini.editor" },
   { src = "echasnovski/mini.nvim", name = "mini.ui" },
   { src = "echasnovski/mini.starter" },
+  { src = "echasnovski/mini.pair" },
   { src = "echasnovski/mini.ai" },
+  { src = "echasnovski/mini.icon" },
 
   { src = "stevearc/conform.nvim" },
   { src = "sindrets/diffview.nvim" },
