@@ -93,19 +93,21 @@ vim.opt.listchars = {
 
 -- ── Completion & Navigation ────────────────────────────────────────
 vim.opt.wildmode = "longest:full,full" -- complete longest common, then cycle full matches
-vim.opt.jumpoptions = "view" -- restore view when jumping through jumplist
+vim.opt.jumpoptions = { "stack" } -- restore view when jumping through jumplist
 
 -- ── Encoding ───────────────────────────────────────────────────────
+vim.opt.ttimeoutlen = 10
 vim.opt.encoding = "UTF-8" -- Set encoding
-vim.opt.fileencodings = { -- try these encodings when reading a file
+vim.opt.fileencodings = {
   "ucs-bom",
   "utf-8",
+  "shift-jis",
   "gb18030",
   "gbk",
-  "gb2312",
+  "cp932",
+  "big5",
   "latin1",
 }
-
 -- ── Diagnostics ────────────────────────────────────────────────────
 vim.diagnostic.config({
   float = {

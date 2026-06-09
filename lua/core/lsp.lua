@@ -25,6 +25,7 @@ vim.lsp.enable({
   "tinymist",
   -- "harper_ls",
   "yamlls",
+  "roslyn-language-server",
   ts_server,
 })
 vim.lsp.config("wgsl-analyzer", { filetypes = "wgsl" })

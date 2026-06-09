@@ -2,6 +2,7 @@ local map = vim.keymap.set
 local opts = { noremap = true, silent = true }
 
 map("n", "<leader>h", "<cmd>nohlsearch<CR>", { desc = "Clear search highlights" })
+map("n", "<C-I>", "<C-I>", { noremap = true })
 map("n", "n", "nzzzv")
 map("n", "N", "Nzzzv")
 
