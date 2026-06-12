@@ -79,6 +79,7 @@ local plugins = {
     version = vim.version.range("*"),
   },
   { src = "gbprod/yanky.nvim" },
+  { src = "stevearc/oil.nvim" },
 }
 
 for _, plugin in ipairs(plugins) do

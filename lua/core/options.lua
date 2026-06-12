@@ -93,7 +93,7 @@ vim.opt.listchars = {
 
 -- ── Completion & Navigation ────────────────────────────────────────
 vim.opt.wildmode = "longest:full,full" -- complete longest common, then cycle full matches
-vim.opt.jumpoptions = { "stack" } -- restore view when jumping through jumplist
+vim.opt.jumpoptions = { "stack", "view" } -- restore view when jumping through jumplist
 
 -- ── Encoding ───────────────────────────────────────────────────────
 vim.opt.ttimeoutlen = 10

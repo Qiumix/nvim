@@ -79,11 +79,13 @@ local config = {
   end,
 }
 
----@type lz.n.PluginSpec
 return {
-  "gitsigns.nvim",
-  event = "DeferredUIEnter",
-  after = function()
-    require("gitsigns").setup(config)
-  end,
+  ---@type lz.n.PluginSpec
+  {
+    "gitsigns.nvim",
+    event = "DeferredUIEnter",
+    after = function()
+      require("gitsigns").setup(config)
+    end,
+  },
 }

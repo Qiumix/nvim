@@ -25,6 +25,7 @@ vim.lsp.enable({
   "tinymist",
   -- "harper_ls",
   "yamlls",
+  "taplo",
   "roslyn-language-server",
   ts_server,
 })
