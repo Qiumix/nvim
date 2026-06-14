@@ -1,7 +1,7 @@
 ---@type lz.n.PluginSpec
 return {
   "tiny-inline-diagnostic.nvim",
-  event = "BufEnter",
+  event = "DeferredUIEnter",
   after = function()
     require("tiny-inline-diagnostic").setup()
     vim.diagnostic.config()

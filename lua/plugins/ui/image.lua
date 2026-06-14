@@ -1,5 +1,11 @@
 local config = {
-  backend = "sixel",
+  backend = (function()
+    if vim.env.TERM == "foot" then
+      return "sixel"
+    else
+      return "kitty"
+    end
+  end)(),
 }
 
 return {

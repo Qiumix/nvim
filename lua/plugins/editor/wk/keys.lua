@@ -195,7 +195,7 @@ return {
   },
 
   -- <leader>q Prefix (Session Control)
-  { "<leader>qq", "<cmd>qa<cr>", desc = "Quit All", mode = "n", icon = "󰈆 " },
+  { "<leader>q", "<cmd>qa<cr>", desc = "Quit All", mode = "n", icon = "󰈆 " },
 
   -- <leader>o Prefix (System Control Hooks)
   { "<leader>oo", "<cmd>source<CR>", desc = "Source file", mode = "n", icon = "󰑓 " },

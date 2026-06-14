@@ -1,7 +1,7 @@
 ---@type lz.n.PluginSpec
 return {
   "mini.editor",
-  event = { "BufReadPre", "BufNewFile" },
+  event = "DeferredUIEnter",
   after = function()
     require("mini.cursorword").setup()
     require("mini.surround").setup()

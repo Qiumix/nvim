@@ -1,6 +1,9 @@
 vim.filetype.add({
 
   extension = {
+    sld = "scheme",
+    sls = "scheme",
+    sps = "scheme",
     env = "dotenv",
     wgsl = "wgsl",
     conf = "hyprlang",

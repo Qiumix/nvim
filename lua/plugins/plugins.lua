@@ -6,6 +6,7 @@ local function github_prefix(repo_addr)
   return "https://github.com/" .. repo_addr
 end
 
+---@type (string|vim.pack.Spec)[]
 local plugins = {
   { src = "lumen-oss/lz.n" },
   { src = "nvim-lua/plenary.nvim" },
@@ -19,6 +20,7 @@ local plugins = {
   { src = "Qiumix/rime-toggle.nvim" },
   { src = "lukas-reineke/indent-blankline.nvim" },
   { src = "alexpasmantier/tv.nvim" },
+  { src = "norcalli/nvim-colorizer.lua" },
   { src = "lumen-oss/lz.n" },
   { src = "lewis6991/gitsigns.nvim" },
   {
