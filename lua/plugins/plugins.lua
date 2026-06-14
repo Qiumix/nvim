@@ -20,7 +20,7 @@ local plugins = {
   { src = "Qiumix/rime-toggle.nvim" },
   { src = "lukas-reineke/indent-blankline.nvim" },
   { src = "alexpasmantier/tv.nvim" },
-  { src = "norcalli/nvim-colorizer.lua" },
+  { src = "uga-rosa/ccc.nvim" },
   { src = "lumen-oss/lz.n" },
   { src = "lewis6991/gitsigns.nvim" },
   {

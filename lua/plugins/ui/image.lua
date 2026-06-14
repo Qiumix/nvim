@@ -8,6 +8,7 @@ local config = {
   end)(),
 }
 
+---@type lz.n.PluginSpec
 return {
   "image.nvim",
   ft = { "markdown", "typst", "html", "css" },

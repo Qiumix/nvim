@@ -1,6 +1,9 @@
+---@type lz.n.PluginSpec
 return {
-  "nvim-colorizer.lua",
+  "ccc.nvim",
+  event = "DeferredUIEnter",
   after = function()
-    require("colorizer").setup()
+    local ccc = require("ccc")
+    ccc.setup({})
   end,
 }
