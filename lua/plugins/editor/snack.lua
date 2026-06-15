@@ -1,4 +1,4 @@
----@type lz.n.PluginSpec
+---@type lz.n.Spec
 return {
   "snacks.nvim",
   event = "DeferredUIEnter",

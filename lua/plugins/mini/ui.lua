@@ -1,6 +1,6 @@
 local status_line_config = {}
 
----@type lz.n.PluginSpec
+---@type lz.n.Spec
 return {
   "mini.ui",
   event = "DeferredUIEnter",

@@ -1,7 +1,7 @@
 local config = {
   transparent_mode = true,
 }
----@type lz.n.PluginSpec
+---@type lz.n.Spec
 return {
   "gruvbox.nvim",
   colorscheme = "gruvbox",

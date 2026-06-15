@@ -10,6 +10,7 @@ local items = {
   { name = "q  Quit Neovim", action = "quit", section = "  Utils" },
 }
 
+---@type lz.n.Spec
 return {
   "mini.starter",
   after = function()

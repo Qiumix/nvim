@@ -1,4 +1,4 @@
----@type lz.n.PluginSpec
+---@type lz.n.Spec
 return {
   "crates.nvim",
   ft = "toml",

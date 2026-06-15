@@ -1,5 +1,5 @@
+---@type lz.n.Spec
 return {
-  ---@type lz.n.PluginSpec
   {
     "tv.nvim",
     cmd = "Tv",

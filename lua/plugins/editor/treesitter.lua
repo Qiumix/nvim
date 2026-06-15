@@ -15,15 +15,14 @@ local config = {
   },
 }
 
+---@type lz.n.Spec
 return {
-  ---@type lz.n.PluginSpec
   {
     "nvim-treesitter-textobjects",
     after = function()
       require("nvim-treesitter-textobjects").setup(config)
     end,
   },
-  ---@type lz.n.PluginSpec
   {
     "tree-sitter-manager.nvim",
     event = "DeferredUIEnter",
