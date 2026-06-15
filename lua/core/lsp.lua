@@ -23,7 +23,9 @@ vim.lsp.enable({
   "yamlls",
   "taplo",
   "roslyn_ls",
-  "scheme-langserver",
+  -- "scheme-langserver",
+  "steel-language-server",
   "wgsl",
+  "kotlin_language_server",
   ts_server,
 })
