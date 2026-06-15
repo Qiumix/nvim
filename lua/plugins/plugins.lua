@@ -70,6 +70,7 @@ local plugins = {
   { src = "nvim-mini/mini.icons" },
 
   { src = "stevearc/conform.nvim" },
+  { src = "hiphish/rainbow-delimiters.nvim" },
   { src = "sindrets/diffview.nvim" },
   { src = "chentoast/marks.nvim" },
   {
