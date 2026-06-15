@@ -18,6 +18,4 @@ return {
   toggle = { enabled = true },
   words = { enabled = false },
   zen = { enabled = true },
-
-  picker = require("plugins.editor.snack.picker"),
 }
