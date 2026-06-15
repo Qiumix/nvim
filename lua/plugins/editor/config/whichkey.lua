@@ -213,6 +213,15 @@ return {
 
   -- <leader>e Prefix (Explorer)
   { "<leader>e", "<cmd>Yazi<CR>", desc = "Yazi", mode = "n", icon = "󰇥 " },
+  {
+    "<leader>E",
+    function()
+      require("oil").toggle_float()
+    end,
+    desc = "Oil",
+    mode = "n",
+    icon = "󰏇 ",
+  },
 
   -- <leader>s Prefix (Television Search Engines)
   { "<leader>ss", "<cmd>Tv<cr>", desc = "Television Panel", mode = "n", icon = "󰭟 " },
