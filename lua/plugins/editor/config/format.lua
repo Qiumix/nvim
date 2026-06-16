@@ -19,10 +19,11 @@ return {
     vue = { "biome", "prettier", stop_after_first = true },
     astro = { "biome", "prettier", stop_after_first = true },
     xml = { "prettier", stop_after_first = true },
-    lisp = { "cl_indentify" },
-    asd = { "cl_indentify" },
-    ros = { "cl_indentify" },
-    -- scheme = { "cl_indentify" },
+    lisp = { "lisp_fmt" },
+    asd = { "lisp_fmt" },
+    ros = { "lisp_fmt" },
+    scheme = { "lisp_fmt" },
+    steel = { "lisp_fmt" },
     toml = { "taplo" },
     nix = { "nixfmt" },
     typst = { "tinymist", "typstyle" },
@@ -31,9 +32,9 @@ return {
   formatters = {
     biome = { require_cwd = true },
     deno_fmt = { require_cwd = true },
-    cl_indentify = {
-      command = "cl-indentify",
-      args = {},
+    lisp_fmt = {
+      command = "raco",
+      args = { "fmt" },
       stdin = true,
     },
   },

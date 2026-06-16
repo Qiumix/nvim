@@ -43,6 +43,33 @@ return {
   },
 
   -- ═══════════════════════════════════════════════════════════
+  --  TEXT OBJECTS DESCRIPTIONS (mini.ai & Tree-sitter Textobjects)
+  --  Triggered after pressing operators (v/d/c/y) followed by a/i[cite: 3]
+  -- ═══════════════════════════════════════════════════════════
+  {
+    mode = { "x", "o" }, -- Target both Visual and Operator-pending modes[cite: 3]
+    { "a", desc = "Argument / Parameter", icon = "󰅪 " },
+    { "f", desc = "Function / Method definition", icon = "󰡱 " },
+    { "F", desc = "Class / Struct definition", icon = "󰌗 " },
+    { "o", desc = "Condition / Loop block", icon = "󰞕 " },
+
+    -- Complementing mini.ai's builtin specs from image_4c5e77.jpg
+    { "b", desc = "Balanced ( ) [ ] { }", icon = "󰅩 " },
+    { "B", desc = "Balanced { } block", icon = "󰅪 " },
+    { "i", desc = "Object scope with border", icon = "󰦪 " },
+    { "n", desc = "Around next textobject", icon = "󰄾 " },
+    { "l", desc = "Around last textobject", icon = "󰄼 " },
+    { "p", desc = "Paragraph", icon = "󰦨 " },
+    { "s", desc = "Sentence", icon = "󰦪 " },
+    { "t", desc = "XML / HTML tag block", icon = "󰜬 " },
+    { "w", desc = "Word with white spaces", icon = "󰗊 " },
+    { "W", desc = "WORD with white spaces", icon = "󰗊 " },
+    { '"', desc = "Double quoted string", icon = "󱇬 " },
+    { "'", desc = "Single quoted string", icon = "󱇬 " },
+    { "`", desc = "Backtick quoted string", icon = "󱇬 " },
+  },
+
+  -- ═══════════════════════════════════════════════════════════
   --  MERGED GLOBAL & ROOT KEYMAPS
   -- ═══════════════════════════════════════════════════════════
   -- Root Movements (Normal Mode)
@@ -50,11 +77,9 @@ return {
   { "n", "nzzzv", desc = "Next search match", mode = "n", icon = "󰮴 " },
   { "N", "Nzzzv", desc = "Prev search match", mode = "n", icon = "󰮳 " },
 
-  -- Buffer Navigation & Management
-  { "<Tab>", ":bnext<CR>", desc = "Next buffer", mode = "n", silent = true, icon = "󰄾 " },
-  { "<S-Tab>", ":bprevious<CR>", desc = "Previous buffer", mode = "n", silent = true, icon = "󰄼 " },
-  { "<S-l>", "<cmd>bnext<cr>", desc = "Next Buffer", mode = "n", icon = "󰄾 " },
-  { "<S-h>", "<cmd>bprevious<cr>", desc = "Prev Buffer", mode = "n", icon = "󰄼 " },
+  -- Buffer Navigation & Management (Cleaned up redundant S-l/S-h bindings)
+  { "<Tab>", "<cmd>bnext<cr>", desc = "Next Buffer", mode = "n", icon = "󰄾 " },
+  { "<S-Tab>", "<cmd>bprevious<cr>", desc = "Prev Buffer", mode = "n", icon = "󰄼 " },
   { "<A-d>", "<cmd>bd<cr>", desc = "Delete Current Buffer", mode = "n", icon = "󰭌 " },
 
   -- Multi-mode Window & Terminal UI
@@ -62,7 +87,7 @@ return {
   { "<A-i>", '<CMD>lua require("FTerm").toggle()<CR>', desc = "Toggle Fterm", mode = "n", icon = "󰞀 " },
   { "<A-i>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>', desc = "Toggle Fterm", mode = "t", icon = "󰞀 " },
 
-  -- Smart Visual j/k Movements
+  -- Smart Visual j/k Movements (Standardized visual mode to 'x')
   { "j", "v:count == 0 ? 'gj' : 'j'", desc = "Down", mode = { "n", "x" }, expr = true, silent = true, icon = "󰜮 " },
   { "k", "v:count == 0 ? 'gk' : 'k'", desc = "Up", mode = { "n", "x" }, expr = true, silent = true, icon = "󰜷 " },
   {
@@ -85,20 +110,20 @@ return {
     "<A-j>",
     ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv",
     desc = "Move Selection Down",
-    mode = "v",
+    mode = "x",
     icon = "󰜮 ",
   },
   {
     "<A-k>",
     ":<C-u>execute \"'<,'>move '<-\" . (v:count1 + 1)<cr>gv=gv",
     desc = "Move Selection Up",
-    mode = "v",
+    mode = "x",
     icon = "󰜷 ",
   },
 
   -- Visual Editing Core
-  { "<", "<gv", desc = "Indent left and keep selection", mode = "v", icon = "󰉶 " },
-  { ">", ">gv", desc = "Indent right and keep selection", mode = "v", icon = "󰉵 " },
+  { "<", "<gv", desc = "Indent left and keep selection", mode = "x", icon = "󰉶 " },
+  { ">", ">gv", desc = "Indent right and keep selection", mode = "x", icon = "󰉵 " },
   {
     "p",
     function()
@@ -109,7 +134,7 @@ return {
       end
     end,
     desc = "Smart paste without overwriting register",
-    mode = "v",
+    mode = "x",
     expr = true,
     silent = true,
     icon = "󰅌 ",
@@ -130,8 +155,8 @@ return {
   { "]q", vim.cmd.cnext, desc = "Next Quickfix", mode = "n", icon = "󰮴 " },
 
   -- g Prefix (Goto & Helix Buffer Style)
-  { "gl", "$", desc = "Go to end of line", mode = { "n", "v", "o" }, icon = "󰦡 " },
-  { "gh", "^", desc = "Go to start of line", mode = { "n", "v", "o" }, icon = "󰦣 " },
+  { "gl", "$", desc = "Go to end of line", mode = { "n", "x", "o" }, icon = "󰦡 " },
+  { "gh", "^", desc = "Go to start of line", mode = { "n", "x", "o" }, icon = "󰦣 " },
   { "ge", "G", desc = "Go to end of file", mode = { "n", "x", "o" }, icon = "󰋨 " },
   { "go", "%", desc = "Jump to matching bracket", mode = { "n", "x", "o" }, icon = "󰅪 " },
   { "gd", vim.lsp.buf.definition, desc = "LSP Goto Definition", mode = "n", icon = "󰔪 " },
@@ -139,8 +164,8 @@ return {
   { "gp", "<cmd>bprevious<CR>", desc = "Previous buffer (Helix style)", mode = "n", icon = "󰄼 " },
 
   -- Alt-based Navigation
-  { "<A-h>", "^", desc = "Go to start of line", mode = { "n", "v", "o" }, icon = "󰦣 " },
-  { "<A-l>", "$", desc = "Go to end of line", mode = { "n", "v", "o" }, icon = "󰦡 " },
+  { "<A-h>", "^", desc = "Go to start of line", mode = { "n", "x", "o" }, icon = "󰦣 " },
+  { "<A-l>", "$", desc = "Go to end of line", mode = { "n", "x", "o" }, icon = "󰦡 " },
 
   -- z Prefix (Fold controls)
   { "zv", "zMzvzz", desc = "Close all folds except the current one", mode = "n", icon = "󰘖 " },
@@ -183,14 +208,19 @@ return {
   {
     "<leader>lf",
     function()
-      require("conform").format({ async = true }, function(err, did_edit)
-        if not err and did_edit then
-          vim.notify("Code formatted", vim.log.levels.INFO, { title = "Conform" })
-        end
-      end)
+      local has_conform, conform = pcall(require, "conform")
+      if has_conform then
+        conform.format({ async = true }, function(err, did_edit)
+          if not err and did_edit then
+            vim.notify("Code formatted", vim.log.levels.INFO, { title = "Conform" })
+          end
+        end)
+      else
+        vim.lsp.buf.format({ async = true })
+      end
     end,
     desc = "Format buffer",
-    mode = { "n", "v" },
+    mode = { "n", "x" },
     icon = "󰛦 ",
   },
 
@@ -209,7 +239,7 @@ return {
     mode = "n",
     icon = { icon = "󰗊 ", color = "orange" },
   },
-  { "<leader>k", ":TranslateVisual<CR>", desc = "Translate select", mode = "v", icon = "󰗊 " },
+  { "<leader>k", ":TranslateVisual<CR>", desc = "Translate select", mode = "x", icon = "󰗊 " },
 
   -- <leader>e Prefix (Explorer)
   { "<leader>e", "<cmd>Yazi<CR>", desc = "Yazi", mode = "n", icon = "󰇥 " },
