@@ -160,8 +160,8 @@ return {
   { "ge", "G", desc = "Go to end of file", mode = { "n", "x", "o" }, icon = "󰋨 " },
   { "go", "%", desc = "Jump to matching bracket", mode = { "n", "x", "o" }, icon = "󰅪 " },
   { "gd", vim.lsp.buf.definition, desc = "LSP Goto Definition", mode = "n", icon = "󰔪 " },
-  { "gn", "<cmd>bnext<CR>", desc = "Next buffer (Helix style)", mode = "n", icon = "󰄾 " },
-  { "gp", "<cmd>bprevious<CR>", desc = "Previous buffer (Helix style)", mode = "n", icon = "󰄼 " },
+  { "gn", "<cmd>bnext<CR>", desc = "Next buffer", mode = "n", icon = "󰄾 " },
+  { "gp", "<cmd>bprevious<CR>", desc = "Previous buffer", mode = "n", icon = "󰄼 " },
 
   -- Alt-based Navigation
   { "<A-h>", "^", desc = "Go to start of line", mode = { "n", "x", "o" }, icon = "󰦣 " },
