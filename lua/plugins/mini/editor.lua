@@ -7,7 +7,7 @@ return {
     require("mini.surround").setup()
     require("mini.pairs").setup()
     require("mini.cmdline").setup({
-      autocomplete = { enable = true },
+      autocomplete = { enable = false },
       autocorrect = { enable = false },
       autopeek = {
         enable = true,

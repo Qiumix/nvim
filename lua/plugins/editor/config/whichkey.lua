@@ -188,6 +188,23 @@ return {
   { "<leader>ti", vim.show_pos, desc = "Inspect Pos", mode = "n", icon = "󰘚 " },
   { "<leader>tI", "<cmd>InspectTree<cr>", desc = "Inspect Tree", mode = "n", icon = "󰙅 " },
   {
+    "<leader>td",
+    "<cmd>TinyInlineDiag toggle<cr>",
+    desc = "Toggle Inline Diagnostics",
+    mode = "n",
+    silent = true,
+    icon = "󰙏 ",
+  },
+  {
+    "<leader>tc",
+    "<cmd>TinyInlineDiag toggle_cursor_only<cr>",
+    desc = "Toggle Cursor-Only Diags",
+    mode = "n",
+    silent = true,
+    icon = "󰹹 ",
+  },
+
+  {
     "<leader>tf",
     function()
       if vim.g.disable_autoformat then

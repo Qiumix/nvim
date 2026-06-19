@@ -1,6 +1,6 @@
 local config = {
   open_cmd = "floorp %s",
-  port = 3340,
+  -- port = 3340,
   host = "127.0.0.1",
   dependencies_bin = {
     -- ["tinymist"] = "/usr/bin/tinymist",
