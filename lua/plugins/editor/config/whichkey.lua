@@ -6,6 +6,7 @@ return {
   { "<leader><tab>", group = "tabs", icon = { icon = "󰓩 ", color = "blue" } },
   { "<leader>t", group = "toggle", icon = { icon = " ", color = "cyan" } },
   { "<leader>l", group = "language", icon = { icon = " ", color = "green" } },
+  { "<leader>o", group = "opt", icon = { icon = "󰑓 ", color = "cyan" } },
   { "<leader>D", group = "Diffview", icon = { icon = "", color = "orange" } },
   { "<leader>g", group = "git", icon = { icon = " ", color = "purple" } },
   { "<leader>q", group = "quit/session", icon = { icon = "󰈆 ", color = "red" } },
@@ -43,11 +44,24 @@ return {
   },
 
   -- ═══════════════════════════════════════════════════════════
+  --  SURROUND ACTIONS DESCRIPTIONS (mini.surround)
+  -- ═══════════════════════════════════════════════════════════
+  { "s", group = "surround", icon = { icon = "󰗅 ", color = "grey" } },
+  { "sa", desc = "Add surrounding", icon = { icon = "󰭋 ", color = "green" } },
+  { "sd", desc = "Delete surrounding", icon = { icon = "󰭌 ", color = "red" } },
+  { "sr", desc = "Replace surrounding", icon = { icon = "󰛦 ", color = "orange" } },
+  { "sf", desc = "Find surrounding (Right)", icon = { icon = "󰄾 ", color = "azure" } },
+  { "sF", desc = "Find surrounding (Left)", icon = { icon = "󰄼 ", color = "azure" } },
+  { "sh", desc = "Highlight surrounding", icon = { icon = "󰘚 ", color = "yellow" } },
+  { "sl", desc = "Surround last (prefix)", icon = { icon = "󰄼 ", color = "grey" } },
+  { "sn", desc = "Surround next (prefix)", icon = { icon = "󰄾 ", color = "grey" } },
+
+  -- ═══════════════════════════════════════════════════════════
   --  TEXT OBJECTS DESCRIPTIONS (mini.ai & Tree-sitter Textobjects)
   --  Triggered after pressing operators (v/d/c/y) followed by a/i
   -- ═══════════════════════════════════════════════════════════
   {
-    mode = { "x", "o" }, -- Target both Visual and Operator-pending modes
+    mode = { "x", "o" },
     { "a", desc = "Argument / Parameter", icon = { icon = "󰅪 ", color = "cyan" } },
     { "f", desc = "Function / Method definition", icon = { icon = "󰡱 ", color = "blue" } },
     { "F", desc = "Class / Struct definition", icon = { icon = "󰌗 ", color = "orange" } },
@@ -208,10 +222,8 @@ return {
   -- ═══════════════════════════════════════════════════════════
   --  GROUPED MAPS (SUB-PATHS)
   -- ═══════════════════════════════════════════════════════════
-  -- [ Prefix (Previous)
   { "[q", vim.cmd.cprev, desc = "Previous Quickfix", mode = "n", icon = { icon = "󰮳 ", color = "red" } },
 
-  -- ] Prefix (Next)
   { "]q", vim.cmd.cnext, desc = "Next Quickfix", mode = "n", icon = { icon = "󰮴 ", color = "green" } },
 
   -- g Prefix (Goto & Helix Buffer Style)
@@ -267,7 +279,9 @@ return {
   },
   { "<leader>bd", "<cmd>bd<cr>", desc = "Delete Current Buffer", mode = "n", icon = { icon = "󰭌 ", color = "red" } },
 
-  -- <leader>t Prefix (Toggles & Diagnostics)
+  { "<leader>oo", "<cmd>source<CR>", desc = "Source file", mode = "n", icon = { icon = "󰑓 ", color = "cyan" } },
+  { "<leader>or", "<cmd>restart<CR>", desc = "Restart", mode = "n", icon = { icon = "󰜉 ", color = "red" } },
+
   {
     "<leader>tw",
     "<cmd>set wrap!<CR>",
