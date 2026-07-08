@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "render-markdown.nvim",
+  src = "MeanderingProgrammer/render-markdown.nvim",
   ft = { "markdown", "norg", "org" },
   opts = {
     heading = {

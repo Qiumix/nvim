@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "lazydev.nvim",
+  src = "folke/lazydev.nvim",
   ft = "lua",
   after = function()
     require("lazydev").setup({

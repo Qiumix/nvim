@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "lastplace.nvim",
+  src = "nxhung2304/lastplace.nvim",
   after = function()
     require("lastplace").setup()
   end,

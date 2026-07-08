@@ -1,8 +1,10 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "LuaSnip",
+  src = "L3MON4D3/LuaSnip",
+  version = vim.version.range("^2"),
   event = "InsertEnter",
   after = function()
     require("luasnip").setup()
   end,
+  load = function() end,
 }

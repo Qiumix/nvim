@@ -8,9 +8,9 @@ local config = {
   },
 }
 
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "typst-preview.nvim",
+  src = "chomosuke/typst-preview.nvim",
   ft = "typst",
   cmd = "TypstPreview",
   after = function()

@@ -10,9 +10,10 @@ local items = {
   { name = "q  Quit Neovim", action = "quit", section = "  Utils" },
 }
 
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "mini.starter",
+  src = "nvim-mini/mini.nvim",
+  name = "mini.starter",
   after = function()
     local starter = require("mini.starter")
 

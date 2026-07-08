@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "tiny-inline-diagnostic.nvim",
+  src = "rachartier/tiny-inline-diagnostic.nvim",
   event = "DeferredUIEnter",
   lazy = false,
   after = function()

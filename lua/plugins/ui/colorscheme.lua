@@ -1,10 +1,10 @@
 local config = {
   transparent_mode = true,
 }
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "gruvbox.nvim",
-  colorscheme = "gruvbox",
+  src = "ellisonleao/gruvbox.nvim",
+
   after = function()
     require("gruvbox").setup(config)
   end,

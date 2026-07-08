@@ -1,7 +1,7 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
   {
-    "oil.nvim",
+    src = "stevearc/oil.nvim",
     event = "DeferredUIEnter",
     cmd = "Oil",
     after = function()
@@ -10,7 +10,8 @@ return {
     end,
   },
   {
-    "yazi.nvim",
+    src = "mikavilpas/yazi.nvim",
+    version = vim.version.range("*"),
     event = "DeferredUIEnter",
     cmd = "Yazi",
     after = function()

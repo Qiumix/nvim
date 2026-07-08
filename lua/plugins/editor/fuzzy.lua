@@ -1,7 +1,7 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
   {
-    "tv.nvim",
+    src = "alexpasmantier/tv.nvim",
     cmd = "Tv",
     after = function()
       require("tv").setup({})

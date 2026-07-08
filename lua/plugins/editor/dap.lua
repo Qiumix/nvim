@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "nvim-dap",
+  src = "mfussenegger/nvim-dap",
   after = function()
     --
   end,

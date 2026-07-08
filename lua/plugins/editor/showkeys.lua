@@ -3,9 +3,9 @@ local config = {
   maxkeys = 4,
 }
 
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "showkeys",
+  src = "nvzone/showkeys",
   event = "DeferredUIEnter",
   after = function()
     local showkeys = require("showkeys")

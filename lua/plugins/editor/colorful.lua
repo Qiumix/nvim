@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "colorful-menu.nvim",
+  src = "xzbdmw/colorful-menu.nvim",
   after = function()
     require("colorful-menu").setup({})
   end,

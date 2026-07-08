@@ -32,16 +32,18 @@ local config = {
   },
 }
 
----@type lz.n.Spec
+---@type LznPackSpec
 return {
   {
-    "nvim-treesitter-textobjects",
+    src = "nvim-treesitter/nvim-treesitter-textobjects",
+    version = "main",
     after = function()
       require("nvim-treesitter-textobjects").setup(config)
     end,
   },
   {
-    "tree-sitter-manager.nvim",
+    src = "romus204/tree-sitter-manager.nvim",
+    version = "main",
     event = "DeferredUIEnter",
     after = function()
       require("tree-sitter-manager").setup()

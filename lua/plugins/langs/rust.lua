@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "crates.nvim",
+  src = "saecki/crates.nvim",
   ft = "toml",
   after = function()
     require("crates").setup()

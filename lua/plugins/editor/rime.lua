@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "rime-toggle.nvim",
+  src = "Qiumix/rime-toggle.nvim",
   event = "InsertEnter",
   after = function()
     require("rime_toggle").setup({ enabled = true })

@@ -1,6 +1,7 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "blink.cmp",
+  src = "saghen/blink.cmp",
+  version = vim.version.range("^1"),
   event = { "InsertEnter", "CmdlineEnter" },
   after = function()
     local config = require("plugins.editor.config.blink")

@@ -8,11 +8,11 @@ local config = {
   end)(),
 }
 
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "image.nvim",
+  src = "3rd/image.nvim",
   ft = { "markdown", "typst", "html", "css" },
-  after = {
-    require("image").setup(config),
-  },
+  after = function()
+    require("image").setup(config)
+  end,
 }

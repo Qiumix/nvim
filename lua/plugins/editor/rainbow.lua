@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "rainbow-delimiters.nvim",
+  src = "hiphish/rainbow-delimiters.nvim",
   event = "DeferredUIEnter",
   after = function() end,
 }

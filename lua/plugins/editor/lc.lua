@@ -23,7 +23,7 @@ local config = {
 }
 
 return {
-  "leetcode.nvim",
+  src = "kawre/leetcode.nvim",
   enabled = "leetcode.nvim" == vim.fn.argv(0, -1),
   after = function()
     require("leetcode").setup(config)

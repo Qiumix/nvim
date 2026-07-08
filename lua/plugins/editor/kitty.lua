@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "kitty-scrollback.nvim",
+  src = "mikesmithgh/kitty-scrollback.nvim",
   cmd = { "KittyScrollbackGenerateKittens", "KittyScrollbackGenerateCommandLineEditing", "KittyScrollbackCheckHealth" },
   event = { "User KittyScrollbackLaunch" },
   after = function()

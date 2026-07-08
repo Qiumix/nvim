@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "marks.nvim",
+  src = "chentoast/marks.nvim",
   event = "DeferredUIEnter",
   after = function()
     require("marks").setup()

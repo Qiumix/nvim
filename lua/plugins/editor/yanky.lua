@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "yanky.nvim",
+  src = "gbprod/yanky.nvim",
   event = "DeferredUIEnter",
   after = function()
     require("yanky").setup()

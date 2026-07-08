@@ -1,6 +1,5 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "which-key.nvim",
   after = function()
     local keys = require("plugins.editor.config.whichkey")
     local wk = require("which-key")
@@ -14,4 +13,5 @@ return {
     })
     wk.add(keys)
   end,
+  src = "folke/which-key.nvim",
 }

@@ -1,6 +1,7 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "mini.editor",
+  src = "nvim-mini/mini.nvim",
+  name = "mini.editor",
   event = "DeferredUIEnter",
   after = function()
     require("mini.cursorword").setup()

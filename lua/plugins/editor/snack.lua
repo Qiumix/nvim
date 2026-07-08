@@ -1,6 +1,6 @@
----@type lz.n.Spec
+---@type LznPackSpec
 return {
-  "snacks.nvim",
+  src = "folke/snacks.nvim",
   event = "DeferredUIEnter",
   after = function()
     local config = require("plugins.editor.config.snack")
