@@ -330,6 +330,25 @@ return {
     mode = "n",
     icon = { icon = "󰉼 ", color = "green" },
   },
+  {
+    "<leader>tt",
+    function()
+      local sw = vim.bo.shiftwidth
+      if vim.bo.expandtab then
+        vim.bo.expandtab = false
+        vim.bo.softtabstop = 0
+        vim.notify("Tab style: tabs (shiftwidth=" .. sw .. ")", vim.log.levels.INFO)
+      else
+        vim.bo.expandtab = true
+        vim.bo.softtabstop = 2
+        vim.bo.shiftwidth = 2
+        vim.notify("Tab style: spaces (shiftwidth=" .. sw .. ")", vim.log.levels.INFO)
+      end
+    end,
+    desc = "Toggle tab/spaces",
+    mode = "n",
+    icon = { icon = "󰌒 ", color = "cyan" },
+  },
 
   -- <leader>l Prefix (LSP & Language tools)
   {
