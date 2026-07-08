@@ -1,4 +1,20 @@
----@class LznPackSpec: vim.pack.Spec, lz.n.PluginLoadSpec
+---@class LznPackSpec
+---@field data?     any
+---@field name?     string
+---@field src       string
+---@field version?  string|vim.VersionRange
+---@field enabled?  boolean|fun():boolean
+---@field priority? number
+---@field load?     fun(name:string)
+---@field beforeAll? fun(self:LznPackSpec)
+---@field before?    fun(self:LznPackSpec)
+---@field after?     fun(self:LznPackSpec)
+---@field event?       string|lz.n.EventSpec[]
+---@field cmd?         string[]|string
+---@field ft?          string[]|string
+---@field keys?        string|string[]|lz.n.KeysSpec[]
+---@field colorscheme? string[]|string
+---@field lazy?        boolean
 
 ---Return full url of a github repo
 ---@param repo_addr string
