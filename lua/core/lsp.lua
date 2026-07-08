@@ -12,7 +12,7 @@ vim.lsp.enable({
   "biome",
   "clangd",
   "bashls",
-  "vue_ls",
+  "vtsls",
   "fish_lsp",
   "sqlls",
   "sqls",

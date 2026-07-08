@@ -23,6 +23,7 @@ local plugins = {
   { src = "uga-rosa/ccc.nvim" },
   { src = "lumen-oss/lz.n" },
   { src = "lewis6991/gitsigns.nvim" },
+  { src = "kawre/leetcode.nvim" },
   {
     src = "romus204/tree-sitter-manager.nvim",
     version = "main",
