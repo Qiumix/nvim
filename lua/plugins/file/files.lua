@@ -6,7 +6,7 @@ return {
     cmd = "Oil",
     after = function()
       require("lz.n").trigger_load("mini.icons")
-      require("oil").setup(require("plugins.editor.config.oil"))
+      require("oil").setup(require("plugins.config.oil"))
     end,
   },
   {
@@ -15,7 +15,7 @@ return {
     event = "DeferredUIEnter",
     cmd = "Yazi",
     after = function()
-      require("yazi").setup(require("plugins.editor.config.yazi"))
+      require("yazi").setup(require("plugins.config.yazi"))
     end,
   },
 }

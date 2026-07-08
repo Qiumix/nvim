@@ -4,7 +4,7 @@ return {
   event = "DeferredUIEnter",
   lazy = false,
   after = function()
-    require("tiny-inline-diagnostic").setup({ require("plugins.editor.config.tiny") })
+    require("tiny-inline-diagnostic").setup({ require("plugins.config.tiny") })
     vim.diagnostic.config({ virtual_text = false })
   end,
 }

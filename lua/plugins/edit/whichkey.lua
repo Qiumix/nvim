@@ -1,7 +1,7 @@
 ---@type LznPackSpec
 return {
   after = function()
-    local keys = require("plugins.editor.config.whichkey")
+    local keys = require("plugins.config.whichkey")
     local wk = require("which-key")
     wk.setup({
       preset = "helix",

@@ -3,7 +3,7 @@ return {
   src = "stevearc/conform.nvim",
   event = "DeferredUIEnter",
   after = function()
-    local config = require("plugins.editor.config.format")
+    local config = require("plugins.config.format")
     require("conform").setup(config)
   end,
 }

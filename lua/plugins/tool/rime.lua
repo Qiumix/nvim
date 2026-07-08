@@ -1,7 +1,7 @@
 ---@type LznPackSpec
 return {
   src = "Qiumix/rime-toggle.nvim",
-  event = "DeferredUIEnter",
+  lazy = false,
   after = function()
     require("rime_toggle").setup()
   end,
