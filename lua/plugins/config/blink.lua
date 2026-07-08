@@ -11,10 +11,14 @@ local completion = {
       components = {
         label = {
           text = function(ctx)
-            return require("colorful-menu").blink_components_text(ctx)
+            local ok, mod = pcall(require, "colorful-menu")
+            if ok then return mod.blink_components_text(ctx) end
+            return ctx.label
           end,
           highlight = function(ctx)
-            return require("colorful-menu").blink_components_highlight(ctx)
+            local ok, mod = pcall(require, "colorful-menu")
+            if ok then return mod.blink_components_highlight(ctx) end
+            return {}
           end,
         },
       },

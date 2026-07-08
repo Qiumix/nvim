@@ -1,5 +1,6 @@
 ---@type LznPackSpec
 return {
+  event = "UIEnter",
   after = function()
     local keys = require("plugins.config.whichkey")
     local wk = require("which-key")

@@ -37,6 +37,7 @@ return {
   {
     src = "nvim-treesitter/nvim-treesitter-textobjects",
     version = "main",
+    event = "UIEnter",
     after = function()
       require("nvim-treesitter-textobjects").setup(config)
     end,

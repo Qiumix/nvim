@@ -14,6 +14,7 @@ local items = {
 return {
   src = "nvim-mini/mini.nvim",
   name = "mini.starter",
+  event = "UIEnter",
   after = function()
     local starter = require("mini.starter")
 

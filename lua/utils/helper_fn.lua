@@ -25,16 +25,17 @@ local function github_prefix(repo_addr)
   return "https://github.com/" .. repo_addr
 end
 
----Scan a directory for plugin spec files and collect only vim.pack specs.
----lz.n specs are handled by lz.n's own directory-scanning import mechanism.
+---Scan a directory for plugin spec files and collect vim.pack specs.
+---Also returns a set of plugin names that have lazy-loading triggers.
 ---
 ---@param mod_prefix string (e.g., "plugins.editor")
----@return table[] pack_specs
+---@return table[] pack_specs, table<string,true> lazy_names
 function CollectPackSpecs(mod_prefix)
   local dir_path = vim.fn.stdpath("config") .. "/lua/" .. mod_prefix:gsub("%.", "/")
   local pack_specs = {}
+  local lazy_names = {}
 
-  local function collect_spec(s)
+  local function collect_spec(s, lazy_names)
     if s.src then
       local src = s.src
       if type(src) == "string" and not src:match("^https?://") then
@@ -46,6 +47,13 @@ function CollectPackSpecs(mod_prefix)
         version = s.version,
       }
       table.insert(pack_specs, p)
+
+      if s.event or s.cmd or s.ft or s.keys or s.colorscheme then
+        local name = s.name or src:match("([^/]+)$")
+        if name then
+          lazy_names[name] = true
+        end
+      end
     end
   end
 
@@ -57,17 +65,17 @@ function CollectPackSpecs(mod_prefix)
         if ok2 and type(spec) == "table" then
           if type(spec[1]) == "table" then
             for _, s in ipairs(spec) do
-              collect_spec(s)
+              collect_spec(s, lazy_names)
             end
           else
-            collect_spec(spec)
+            collect_spec(spec, lazy_names)
           end
         end
       end
     end
   end
 
-  return pack_specs
+  return pack_specs, lazy_names
 end
 
 --- Scans a directory, executes all Lua files within it, and merges their

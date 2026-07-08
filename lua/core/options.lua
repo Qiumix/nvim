@@ -152,3 +152,8 @@ vim.g.autoformat = true
 vim.g.trouble_lualine = true
 vim.opt.shortmess:append({ W = true, I = true, c = true, C = true })
 vim.g.markdown_recommended_style = 0
+
+-- Disable builtin plugins replaced by third-party alternatives
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1
+vim.g.loaded_matchit = 1

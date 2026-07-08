@@ -6,5 +6,4 @@ return {
   after = function()
     require("luasnip").setup()
   end,
-  load = function() end,
 }
