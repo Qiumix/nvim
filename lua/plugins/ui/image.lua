@@ -10,6 +10,7 @@ local config = {
 
 ---@type LznPackSpec
 return {
+  enabled = false,
   src = "3rd/image.nvim",
   ft = { "markdown", "typst", "html", "css" },
   after = function()

@@ -4,7 +4,7 @@ return {
   dashboard = { enabled = false },
   dim = { enabled = true },
   explorer = { enabled = true, replace_netrw = true },
-  image = { enabled = false },
+  image = { enabled = true },
   indent = { enabled = true },
   input = { enabled = true },
   layout = { enabled = true },
