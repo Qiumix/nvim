@@ -8,6 +8,6 @@ autocmd("TextYankPost", {
   desc = "Highlight on yank",
   group = augroup("highlight_yank"),
   callback = function()
-    vim.highlight.on_yank()
+    vim.hl.hl_op()
   end,
 })

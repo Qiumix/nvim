@@ -1,5 +1,3 @@
-local ts_server = vim.g.lsp_typescript_server or "vtsls"
-
 vim.lsp.enable({
   "eslint",
   "lua_ls",
@@ -7,7 +5,6 @@ vim.lsp.enable({
   "zls",
   "cssls",
   "html",
-  "helm_ls",
   "jsonls",
   "biome",
   "clangd",
@@ -15,9 +12,7 @@ vim.lsp.enable({
   "vtsls",
   "fish_lsp",
   "sqlls",
-  "sqls",
   "jdtls",
-  "typst_lsp",
   "tinymist",
   -- "harper_ls",
   "yamlls",
@@ -27,5 +22,4 @@ vim.lsp.enable({
   "steel-language-server",
   "wgsl",
   "kotlin_language_server",
-  ts_server,
 })
