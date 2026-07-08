@@ -1,4 +1,4 @@
----@class LznPackSpec
+---@class LznPackSpecItem
 ---@field data?     any
 ---@field name?     string
 ---@field src       string
@@ -6,15 +6,17 @@
 ---@field enabled?  boolean|fun():boolean
 ---@field priority? number
 ---@field load?     fun(name:string)
----@field beforeAll? fun(self:LznPackSpec)
----@field before?    fun(self:LznPackSpec)
----@field after?     fun(self:LznPackSpec)
+---@field beforeAll? fun(self:LznPackSpecItem)
+---@field before?    fun(self:LznPackSpecItem)
+---@field after?     fun(self:LznPackSpecItem)
 ---@field event?       string|lz.n.EventSpec[]
 ---@field cmd?         string[]|string
 ---@field ft?          string[]|string
 ---@field keys?        string|string[]|lz.n.KeysSpec[]
 ---@field colorscheme? string[]|string
 ---@field lazy?        boolean
+
+---@alias LznPackSpec LznPackSpecItem | LznPackSpecItem[]
 
 ---Return full url of a github repo
 ---@param repo_addr string
