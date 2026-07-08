@@ -94,7 +94,9 @@ function LznLoadSpecs(mod_prefix)
   local all_specs = {}
 
   local function process_spec(spec)
-    if type(spec) ~= "table" then return end
+    if type(spec) ~= "table" then
+      return
+    end
     if not spec[1] and spec.src then
       spec[1] = spec.name or spec.src:match("([^/]+)$")
     end
