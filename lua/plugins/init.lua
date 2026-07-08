@@ -22,7 +22,7 @@ for _, prefix in ipairs(spec_categories) do
 end
 
 -- Install & load all plugins
-vim.pack.add(all_pack_specs, { confirm = false })
+vim.pack.add(all_pack_specs, { confirm = false, load = false })
 
 -- Register lazy-loading specs via lz.n with auto-derived [1]
 for _, prefix in ipairs(spec_categories) do
@@ -30,5 +30,4 @@ for _, prefix in ipairs(spec_categories) do
 end
 
 -- Load gruvbox for the colorscheme
-vim.cmd("packadd gruvbox.nvim")
 vim.cmd("colorscheme gruvbox")

@@ -140,7 +140,6 @@ vim.opt.winminwidth = 5 -- Minimum window width
 
 -- Behavior settings
 vim.opt.hidden = true -- Allow hidden buffers
--- vim.opt.iskeyword = "_,49-57,A-Z,a-z"
 vim.opt.iskeyword = "_,A-Z,a-z,48-57"
 vim.opt.path:append("**") -- include subdirectories in search
 vim.opt.wildignore:append("**/node_modules/**,**/build/**,**/.git/**")
