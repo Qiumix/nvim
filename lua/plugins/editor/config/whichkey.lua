@@ -4,22 +4,22 @@ return {
   --  PRE-DEFINED GROUPS & INITIAL SPECIFICATIONS
   -- ═══════════════════════════════════════════════════════════
   { "<leader><tab>", group = "tabs", icon = { icon = "󰓩 ", color = "blue" } },
-  { "<leader>t", group = "toggle", icon = { icon = " ", color = "cyan" } },
+  { "<leader>t", group = "toggle", icon = { icon = "󰔡 ", color = "cyan" } },
   { "<leader>l", group = "language", icon = { icon = " ", color = "green" } },
-  { "<leader>o", group = "opt", icon = { icon = "󰑓 ", color = "cyan" } },
-  { "<leader>D", group = "Diffview", icon = { icon = "", color = "orange" } },
+  { "<leader>o", group = "opt", icon = { icon = "󰘮 ", color = "cyan" } },
+  { "<leader>D", group = "Diffview", icon = { icon = "󰢪", color = "orange" } },
   { "<leader>g", group = "git", icon = { icon = " ", color = "purple" } },
   { "<leader>q", group = "quit/session", icon = { icon = "󰈆 ", color = "red" } },
-  { "<leader>s", group = "search", icon = { icon = " ", color = "yellow" } },
-  { "[", group = "prev", icon = { icon = "󰮳 ", color = "azure" } },
-  { "]", group = "next", icon = { icon = "󰮴 ", color = "azure" } },
-  { "g", group = "goto/buffer", icon = { icon = "󰕒 ", color = "blue" } },
-  { "s", group = "surround", icon = { icon = "e ", color = "grey" } },
+  { "<leader>s", group = "search", icon = { icon = "󰍉 ", color = "yellow" } },
+  { "[", group = "prev", icon = { icon = "󰅁 ", color = "azure" } },
+  { "]", group = "next", icon = { icon = "󰅂 ", color = "azure" } },
+  { "g", group = "goto/buffer", icon = { icon = "󰘸 ", color = "blue" } },
+  { "s", group = "surround", icon = { icon = "󰖶 ", color = "grey" } },
   { "z", group = "fold", icon = { icon = "󰘖 ", color = "grey" } },
   {
     "<leader>b",
     group = "buffer",
-    icon = { icon = "󰓩 ", color = "blue" },
+    icon = { icon = "󰈙 ", color = "blue" },
     expand = function()
       return require("which-key.extras").expand.buf()
     end,
@@ -47,14 +47,14 @@ return {
   --  SURROUND ACTIONS DESCRIPTIONS (mini.surround)
   -- ═══════════════════════════════════════════════════════════
   { "s", group = "surround", icon = { icon = "󰗅 ", color = "grey" } },
-  { "sa", desc = "Add surrounding", icon = { icon = "󰭋 ", color = "green" } },
+  { "sa", desc = "Add surrounding", icon = { icon = "󱇬 ", color = "green" } },
   { "sd", desc = "Delete surrounding", icon = { icon = "󰭌 ", color = "red" } },
-  { "sr", desc = "Replace surrounding", icon = { icon = "󰛦 ", color = "orange" } },
-  { "sf", desc = "Find surrounding (Right)", icon = { icon = "󰄾 ", color = "azure" } },
-  { "sF", desc = "Find surrounding (Left)", icon = { icon = "󰄼 ", color = "azure" } },
-  { "sh", desc = "Highlight surrounding", icon = { icon = "󰘚 ", color = "yellow" } },
-  { "sl", desc = "Surround last (prefix)", icon = { icon = "󰄼 ", color = "grey" } },
-  { "sn", desc = "Surround next (prefix)", icon = { icon = "󰄾 ", color = "grey" } },
+  { "sr", desc = "Replace surrounding", icon = { icon = "󰓡 ", color = "orange" } },
+  { "sf", desc = "Find surrounding (Right)", icon = { icon = "󰞔 ", color = "azure" } },
+  { "sF", desc = "Find surrounding (Left)", icon = { icon = "󰞓 ", color = "azure" } },
+  { "sh", desc = "Highlight surrounding", icon = { icon = "󰙒 ", color = "yellow" } },
+  { "sl", desc = "Surround last (prefix)", icon = { icon = "󰜱 ", color = "grey" } },
+  { "sn", desc = "Surround next (prefix)", icon = { icon = "󰜴 ", color = "grey" } },
 
   -- ═══════════════════════════════════════════════════════════
   --  TEXT OBJECTS DESCRIPTIONS (mini.ai & Tree-sitter Textobjects)
@@ -62,38 +62,38 @@ return {
   -- ═══════════════════════════════════════════════════════════
   {
     mode = { "x", "o" },
-    { "a", desc = "Argument / Parameter", icon = { icon = "󰅪 ", color = "cyan" } },
-    { "f", desc = "Function / Method definition", icon = { icon = "󰡱 ", color = "blue" } },
-    { "F", desc = "Class / Struct definition", icon = { icon = "󰌗 ", color = "orange" } },
-    { "o", desc = "Condition / Loop block", icon = { icon = "󰞕 ", color = "purple" } },
+    { "a", desc = "Argument / Parameter", icon = { icon = "󰅩 ", color = "cyan" } },
+    { "f", desc = "Function / Method definition", icon = { icon = "󰊕 ", color = "blue" } },
+    { "F", desc = "Class / Struct definition", icon = { icon = "󰒪 ", color = "orange" } },
+    { "o", desc = "Condition / Loop block", icon = { icon = "󰅨 ", color = "purple" } },
 
     -- Complementing mini.ai's builtin specs
-    { "b", desc = "Balanced ( ) [ ] { }", icon = { icon = "󰅩 ", color = "grey" } },
-    { "B", desc = "Balanced { } block", icon = { icon = "󰅪 ", color = "grey" } },
-    { "i", desc = "Object scope with border", icon = { icon = "󰦪 ", color = "grey" } },
-    { "n", desc = "Around next textobject", icon = { icon = "󰄾 ", color = "azure" } },
-    { "l", desc = "Around last textobject", icon = { icon = "󰄼 ", color = "azure" } },
+    { "b", desc = "Balanced ( ) [ ] { }", icon = { icon = "󰅪 ", color = "grey" } },
+    { "B", desc = "Balanced { } block", icon = { icon = "󰅩 ", color = "grey" } },
+    { "i", desc = "Object scope with border", icon = { icon = "󰉶 ", color = "grey" } },
+    { "n", desc = "Around next textobject", icon = { icon = "󰞔 ", color = "azure" } },
+    { "l", desc = "Around last textobject", icon = { icon = "󰞓 ", color = "azure" } },
     { "p", desc = "Paragraph", icon = { icon = "󰦨 ", color = "yellow" } },
     { "s", desc = "Sentence", icon = { icon = "󰦪 ", color = "yellow" } },
     { "t", desc = "XML / HTML tag block", icon = { icon = "󰜬 ", color = "red" } },
-    { "w", desc = "Word with white spaces", icon = { icon = "󰗊 ", color = "green" } },
-    { "W", desc = "WORD with white spaces", icon = { icon = "󰗊 ", color = "green" } },
-    { '"', desc = "Double quoted string", icon = { icon = "󱇬 ", color = "grey" } },
-    { "'", desc = "Single quoted string", icon = { icon = "󱇬 ", color = "grey" } },
-    { "`", desc = "Backtick quoted string", icon = { icon = "󱇬 ", color = "grey" } },
+    { "w", desc = "Word with white spaces", icon = { icon = "󰏫 ", color = "green" } },
+    { "W", desc = "WORD with white spaces", icon = { icon = "󰏫 ", color = "green" } },
+    { '"', desc = "Double quoted string", icon = { icon = "󰅺 ", color = "grey" } },
+    { "'", desc = "Single quoted string", icon = { icon = "󰅺 ", color = "grey" } },
+    { "`", desc = "Backtick quoted string", icon = { icon = "󰅺 ", color = "grey" } },
   },
 
   -- ═══════════════════════════════════════════════════════════
   --  MERGED GLOBAL & ROOT KEYMAPS
   -- ═══════════════════════════════════════════════════════════
   -- Root Movements (Normal Mode)
-  { "<C-I>", "<C-I>", desc = "Jump forward in jumplist", mode = "n", icon = { icon = "󰕒 ", color = "blue" } },
-  { "n", "nzzzv", desc = "Next search match", mode = "n", icon = { icon = "󰮴 ", color = "azure" } },
-  { "N", "Nzzzv", desc = "Prev search match", mode = "n", icon = { icon = "󰮳 ", color = "azure" } },
+  { "<C-I>", "<C-I>", desc = "Jump forward in jumplist", mode = "n", icon = { icon = "󰜴 ", color = "blue" } },
+  { "n", "nzzzv", desc = "Next search match", mode = "n", icon = { icon = "󰮰 ", color = "azure" } },
+  { "N", "Nzzzv", desc = "Prev search match", mode = "n", icon = { icon = "󰮲 ", color = "azure" } },
 
   -- Buffer Navigation & Management
-  { "<Tab>", "<cmd>bnext<cr>", desc = "Next Buffer", mode = "n", icon = { icon = "󰄾 ", color = "azure" } },
-  { "<S-Tab>", "<cmd>bprevious<cr>", desc = "Prev Buffer", mode = "n", icon = { icon = "󰄼 ", color = "azure" } },
+  { "<Tab>", "<cmd>bnext<cr>", desc = "Next Buffer", mode = "n", icon = { icon = "󰮱 ", color = "azure" } },
+  { "<S-Tab>", "<cmd>bprevious<cr>", desc = "Prev Buffer", mode = "n", icon = { icon = "󰮳 ", color = "azure" } },
   { "<A-d>", "<cmd>bd<cr>", desc = "Delete Current Buffer", mode = "n", icon = { icon = "󰭌 ", color = "red" } },
 
   -- Multi-mode Window & Terminal UI
@@ -109,14 +109,14 @@ return {
     '<CMD>lua require("FTerm").toggle()<CR>',
     desc = "Toggle Fterm",
     mode = "n",
-    icon = { icon = "󰞀 ", color = "green" },
+    icon = { icon = "󰆍 ", color = "green" },
   },
   {
     "<A-i>",
     '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>',
     desc = "Toggle Fterm",
     mode = "t",
-    icon = { icon = "󰞀 ", color = "green" },
+    icon = { icon = "󰆍 ", color = "green" },
   },
 
   -- Smart Visual j/k Movements
@@ -196,8 +196,8 @@ return {
   },
 
   -- Visual Editing Core
-  { "<", "<gv", desc = "Indent left and keep selection", mode = "x", icon = { icon = "󰉶 ", color = "grey" } },
-  { ">", ">gv", desc = "Indent right and keep selection", mode = "x", icon = { icon = "󰉵 ", color = "grey" } },
+  { "<", "<gv", desc = "Indent left and keep selection", mode = "x", icon = { icon = "󰉵 ", color = "grey" } },
+  { ">", ">gv", desc = "Indent right and keep selection", mode = "x", icon = { icon = "󰉶 ", color = "grey" } },
   {
     "p",
     function()
@@ -211,33 +211,33 @@ return {
     mode = "x",
     expr = true,
     silent = true,
-    icon = { icon = "󰅌 ", color = "green" },
+    icon = { icon = "󰆒 ", color = "green" },
   },
 
   -- Insert Mode Break-points
-  { ",", ",<c-g>u", desc = "Undo break point (,)", mode = "i", icon = { icon = "󰞋 ", color = "grey" } },
-  { ".", ".<c-g>u", desc = "Undo break point (.)", mode = "i", icon = { icon = "󰞋 ", color = "grey" } },
-  { ";", ";<c-g>u", desc = "Undo break point (;)", mode = "i", icon = { icon = "󰞋 ", color = "grey" } },
+  { ",", ",<c-g>u", desc = "Undo break point (,)", mode = "i", icon = { icon = "󰕌 ", color = "grey" } },
+  { ".", ".<c-g>u", desc = "Undo break point (.)", mode = "i", icon = { icon = "󰕌 ", color = "grey" } },
+  { ";", ";<c-g>u", desc = "Undo break point (;)", mode = "i", icon = { icon = "󰕌 ", color = "grey" } },
 
   -- ═══════════════════════════════════════════════════════════
   --  GROUPED MAPS (SUB-PATHS)
   -- ═══════════════════════════════════════════════════════════
   { "[q", vim.cmd.cprev, desc = "Previous Quickfix", mode = "n", icon = { icon = "󰮳 ", color = "red" } },
 
-  { "]q", vim.cmd.cnext, desc = "Next Quickfix", mode = "n", icon = { icon = "󰮴 ", color = "green" } },
+  { "]q", vim.cmd.cnext, desc = "Next Quickfix", mode = "n", icon = { icon = "󰮱 ", color = "green" } },
 
   -- g Prefix (Goto & Helix Buffer Style)
-  { "gl", "g$", desc = "Go to end of line", mode = { "n", "x", "o" }, icon = { icon = "󰦡 ", color = "grey" } },
-  { "gh", "g^", desc = "Go to start of line", mode = { "n", "x", "o" }, icon = { icon = "󰦣 ", color = "grey" } },
-  { "ge", "G", desc = "Go to end of file", mode = { "n", "x", "o" }, icon = { icon = "󰋨 ", color = "grey" } },
-  { "go", "%", desc = "Jump to matching bracket", mode = { "n", "x", "o" }, icon = { icon = "󰅪 ", color = "grey" } },
-  { "gd", vim.lsp.buf.definition, desc = "LSP Goto Definition", mode = "n", icon = { icon = "󰔪 ", color = "blue" } },
-  { "gn", "<cmd>bnext<CR>", desc = "Next buffer", mode = "n", icon = { icon = "󰄾 ", color = "azure" } },
-  { "gp", "<cmd>bprevious<CR>", desc = "Previous buffer", mode = "n", icon = { icon = "󰄼 ", color = "azure" } },
+  { "gl", "g$", desc = "Go to end of line", mode = { "n", "x", "o" }, icon = { icon = "󰘠 ", color = "grey" } },
+  { "gh", "g^", desc = "Go to start of line", mode = { "n", "x", "o" }, icon = { icon = "󰘟 ", color = "grey" } },
+  { "ge", "G", desc = "Go to end of file", mode = { "n", "x", "o" }, icon = { icon = "󰞒 ", color = "grey" } },
+  { "go", "%", desc = "Jump to matching bracket", mode = { "n", "x", "o" }, icon = { icon = "󰅩 ", color = "grey" } },
+  { "gd", vim.lsp.buf.definition, desc = "LSP Goto Definition", mode = "n", icon = { icon = "󰂺 ", color = "blue" } },
+  { "gn", "<cmd>bnext<CR>", desc = "Next buffer", mode = "n", icon = { icon = "󰮱 ", color = "azure" } },
+  { "gp", "<cmd>bprevious<CR>", desc = "Previous buffer", mode = "n", icon = { icon = "󰮳 ", color = "azure" } },
 
   -- Alt-based Navigation
-  { "<A-h>", "^", desc = "Go to start of line", mode = { "n", "x", "o" }, icon = { icon = "󰦣 ", color = "grey" } },
-  { "<A-l>", "$", desc = "Go to end of line", mode = { "n", "x", "o" }, icon = { icon = "󰦡 ", color = "grey" } },
+  { "<A-h>", "^", desc = "Go to start of line", mode = { "n", "x", "o" }, icon = { icon = "󰘟 ", color = "grey" } },
+  { "<A-l>", "$", desc = "Go to end of line", mode = { "n", "x", "o" }, icon = { icon = "󰘠 ", color = "grey" } },
 
   -- z Prefix (Fold controls)
   {
@@ -249,17 +249,17 @@ return {
   },
 
   -- <leader><tab> Prefix (Tabs)
-  { "<leader><tab><tab>", "<cmd>tabnew<cr>", desc = "New Tab", mode = "n", icon = { icon = "󰓩 ", color = "blue" } },
-  { "<leader><tab>]", "<cmd>tabnext<cr>", desc = "Next Tab", mode = "n", icon = { icon = "󰄾 ", color = "azure" } },
+  { "<leader><tab><tab>", "<cmd>tabnew<cr>", desc = "New Tab", mode = "n", icon = { icon = "󰝜 ", color = "blue" } },
+  { "<leader><tab>]", "<cmd>tabnext<cr>", desc = "Next Tab", mode = "n", icon = { icon = "󰅂 ", color = "azure" } },
   {
     "<leader><tab>[",
     "<cmd>tabprevious<cr>",
     desc = "Previous Tab",
     mode = "n",
-    icon = { icon = "󰄼 ", color = "azure" },
+    icon = { icon = "󰅁 ", color = "azure" },
   },
-  { "<leader><tab>f", "<cmd>tabfirst<cr>", desc = "First Tab", mode = "n", icon = { icon = "󰮳 ", color = "azure" } },
-  { "<leader><tab>l", "<cmd>tablast<cr>", desc = "Last Tab", mode = "n", icon = { icon = "󰮴 ", color = "azure" } },
+  { "<leader><tab>f", "<cmd>tabfirst<cr>", desc = "First Tab", mode = "n", icon = { icon = "󰘀 ", color = "azure" } },
+  { "<leader><tab>l", "<cmd>tablast<cr>", desc = "Last Tab", mode = "n", icon = { icon = "󰘁 ", color = "azure" } },
   {
     "<leader><tab>o",
     "<cmd>tabonly<cr>",
@@ -275,12 +275,9 @@ return {
     "<cmd>e #<cr>",
     desc = "Switch to Other Buffer",
     mode = "n",
-    icon = { icon = "󰓦 ", color = "blue" },
+    icon = { icon = "󰘸 ", color = "blue" },
   },
   { "<leader>bd", "<cmd>bd<cr>", desc = "Delete Current Buffer", mode = "n", icon = { icon = "󰭌 ", color = "red" } },
-
-  { "<leader>oo", "<cmd>source<CR>", desc = "Source file", mode = "n", icon = { icon = "󰑓 ", color = "cyan" } },
-  { "<leader>or", "<cmd>restart<CR>", desc = "Restart", mode = "n", icon = { icon = "󰜉 ", color = "red" } },
 
   {
     "<leader>tw",
@@ -290,7 +287,7 @@ return {
     silent = true,
     icon = { icon = "󰖶 ", color = "cyan" },
   },
-  { "<leader>ti", vim.show_pos, desc = "Inspect Pos", mode = "n", icon = { icon = "󰘚 ", color = "yellow" } },
+  { "<leader>ti", vim.show_pos, desc = "Inspect Pos", mode = "n", icon = { icon = "󰋼 ", color = "yellow" } },
   {
     "<leader>tI",
     "<cmd>InspectTree<cr>",
@@ -304,7 +301,7 @@ return {
     desc = "Toggle Inline Diagnostics",
     mode = "n",
     silent = true,
-    icon = { icon = "󰙏 ", color = "orange" },
+    icon = { icon = "󰀦 ", color = "orange" },
   },
   {
     "<leader>tc",
@@ -312,7 +309,7 @@ return {
     desc = "Toggle Cursor-Only Diags",
     mode = "n",
     silent = true,
-    icon = { icon = "󰹹 ", color = "orange" },
+    icon = { icon = "󰃤 ", color = "orange" },
   },
 
   {
@@ -356,7 +353,7 @@ return {
     vim.diagnostic.setqflist,
     desc = "Open Diagnostic Buffer",
     mode = "n",
-    icon = { icon = "󰮭 ", color = "red" },
+    icon = { icon = "󰃤 ", color = "red" },
   },
   {
     "<leader>lf",
@@ -374,14 +371,15 @@ return {
     end,
     desc = "Format buffer",
     mode = { "n", "x" },
-    icon = { icon = "󰛦 ", color = "green" },
+    icon = { icon = "󰏫 ", color = "green" },
   },
+  { "<leader>lt", "<cmd>TypstPreview<cr>", desc = "Preview Typst", mode = "n", icon = { icon = " ", color = "green" } },
 
   -- <leader>q Prefix (Session Control)
-  { "<leader>q", "<cmd>qa<cr>", desc = "Quit All", mode = "n", icon = { icon = "󰈆 ", color = "red" } },
+  { "<leader>q", "<cmd>qa<cr>", desc = "Quit All", mode = "n", icon = { icon = "󰅖 ", color = "red" } },
 
   -- <leader>o Prefix (System Control Hooks)
-  { "<leader>oo", "<cmd>source<CR>", desc = "Source file", mode = "n", icon = { icon = "󰑓 ", color = "cyan" } },
+  { "<leader>oo", "<cmd>source<CR>", desc = "Source file", mode = "n", icon = { icon = "󰓦 ", color = "cyan" } },
   { "<leader>or", "<cmd>restart<CR>", desc = "Restart", mode = "n", icon = { icon = "󰜉 ", color = "red" } },
 
   -- <leader>k Prefix (Translation)
@@ -390,18 +388,18 @@ return {
     ":TranslateNormal<CR>",
     desc = "Translate word",
     mode = "n",
-    icon = { icon = "󰗊 ", color = "orange" },
+    icon = { icon = "󰎚 ", color = "orange" },
   },
   {
     "<leader>k",
     ":TranslateVisual<CR>",
     desc = "Translate select",
     mode = "x",
-    icon = { icon = "󰗊 ", color = "orange" },
+    icon = { icon = "󰎚 ", color = "orange" },
   },
 
   -- <leader>e Prefix (Explorer)
-  { "<leader>e", "<cmd>Yazi<CR>", desc = "Yazi", mode = "n", icon = { icon = "󰇥 ", color = "green" } },
+  { "<leader>e", "<cmd>Yazi<CR>", desc = "Yazi", mode = "n", icon = { icon = "󰉋 ", color = "green" } },
   {
     "<leader>E",
     function()
@@ -409,11 +407,11 @@ return {
     end,
     desc = "Oil",
     mode = "n",
-    icon = { icon = "󰏇 ", color = "green" },
+    icon = { icon = "󰝰 ", color = "green" },
   },
 
   -- <leader>s Prefix (Television Search Engines)
-  { "<leader>ss", "<cmd>Tv<cr>", desc = "Television Panel", mode = "n", icon = { icon = "󰭟 ", color = "yellow" } },
+  { "<leader>ss", "<cmd>Tv<cr>", desc = "Television Panel", mode = "n", icon = { icon = "󰇘 ", color = "yellow" } },
   {
     "<leader>sf",
     "<cmd>Tv files<cr>",
@@ -433,7 +431,7 @@ return {
     "<cmd>Tv env<cr>",
     desc = "Browse environment variables",
     mode = "n",
-    icon = { icon = "󰖟 ", color = "yellow" },
+    icon = { icon = "󰌋 ", color = "yellow" },
   },
   {
     "<leader>sd",
@@ -471,7 +469,7 @@ return {
     desc = "Go to Left Window",
     mode = "n",
     remap = true,
-    icon = { icon = "󰄼 ", color = "cyan" },
+    icon = { icon = "󰅁 ", color = "cyan" },
   },
   {
     "<C-j>",
@@ -495,7 +493,7 @@ return {
     desc = "Go to Right Window",
     mode = "n",
     remap = true,
-    icon = { icon = "󰄾 ", color = "cyan" },
+    icon = { icon = "󰅂 ", color = "cyan" },
   },
   {
     "<C-S-Up>",
@@ -519,7 +517,7 @@ return {
     desc = "Resize window left",
     mode = "n",
     silent = true,
-    icon = { icon = "󰄼 ", color = "grey" },
+    icon = { icon = "󰅁 ", color = "grey" },
   },
   {
     "<C-S-Right>",
@@ -527,7 +525,7 @@ return {
     desc = "Resize window right",
     mode = "n",
     silent = true,
-    icon = { icon = "󰄾 ", color = "grey" },
+    icon = { icon = "󰅂 ", color = "grey" },
   },
   {
     "<leader>ww",
@@ -535,7 +533,7 @@ return {
     desc = "Other Window",
     mode = "n",
     remap = true,
-    icon = { icon = "󰖯 ", color = "cyan" },
+    icon = { icon = "󰅁 ", color = "cyan" },
   },
   {
     "<leader>wd",
