@@ -180,11 +180,11 @@
       "src": "https://github.com/MeanderingProgrammer/render-markdown.nvim"
     },
     "rime-toggle.nvim": {
-      "rev": "f54b717630eb2b865b59809945e9d4d8b46a1c65",
+      "rev": "936e49d689da59bc5c137880e2c73dd020e5cb3c",
       "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
     "rustaceanvim": {
-      "rev": "eb0c154504e9db6f7564cd2f06c5b7d6e01c71ff",
+      "rev": "00ba659a6fe81d0e46281bd425dd3f38037a260a",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "showkeys": {
@@ -204,7 +204,7 @@
       "src": "https://github.com/rachartier/tiny-inline-diagnostic.nvim"
     },
     "tree-sitter-manager.nvim": {
-      "rev": "966c28dbc68fc99c82c51a64b6ec37f420aab880",
+      "rev": "09e3a321eea8100cacd2e759c3a6c9d350295fab",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim",
       "version": "'main'"
     },
