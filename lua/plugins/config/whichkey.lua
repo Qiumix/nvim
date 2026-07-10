@@ -232,6 +232,7 @@ return {
   { "ge", "G", desc = "Go to end of file", mode = { "n", "x", "o" }, icon = { icon = "󰞒 ", color = "grey" } },
   { "go", "%", desc = "Jump to matching bracket", mode = { "n", "x", "o" }, icon = { icon = "󰅩 ", color = "grey" } },
   { "gd", vim.lsp.buf.definition, desc = "LSP Goto Definition", mode = "n", icon = { icon = "󰂺 ", color = "blue" } },
+  { "K", vim.lsp.buf.hover, desc = "LSP Hover", mode = "n", icon = { icon = "󰇮 ", color = "blue" } },
   { "gn", "<cmd>bnext<CR>", desc = "Next buffer", mode = "n", icon = { icon = "󰮱 ", color = "azure" } },
   { "gp", "<cmd>bprevious<CR>", desc = "Previous buffer", mode = "n", icon = { icon = "󰮳 ", color = "azure" } },
 

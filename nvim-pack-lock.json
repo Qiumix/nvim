@@ -1,9 +1,5 @@
 {
   "plugins": {
-    "CopilotChat.nvim": {
-      "rev": "f0c2a23ab79dc295f5e0eef0d8b587a39020c852",
-      "src": "https://github.com/CopilotC-Nvim/CopilotChat.nvim"
-    },
     "FTerm.nvim": {
       "rev": "d1320892cc2ebab472935242d9d992a2c9570180",
       "src": "https://github.com/numToStr/FTerm.nvim"
@@ -91,31 +87,31 @@
       "src": "https://github.com/chentoast/marks.nvim"
     },
     "mini.ai": {
-      "rev": "928971c3cfe99ddf29659acc31214cfa836fabe4",
+      "rev": "fdc8b9701616863e44f7a7a0802cfe16bd866539",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.editor": {
-      "rev": "928971c3cfe99ddf29659acc31214cfa836fabe4",
+      "rev": "fdc8b9701616863e44f7a7a0802cfe16bd866539",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.icons": {
-      "rev": "928971c3cfe99ddf29659acc31214cfa836fabe4",
+      "rev": "fdc8b9701616863e44f7a7a0802cfe16bd866539",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.nvim": {
-      "rev": "928971c3cfe99ddf29659acc31214cfa836fabe4",
+      "rev": "fdc8b9701616863e44f7a7a0802cfe16bd866539",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.pairs": {
-      "rev": "928971c3cfe99ddf29659acc31214cfa836fabe4",
+      "rev": "fdc8b9701616863e44f7a7a0802cfe16bd866539",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.starter": {
-      "rev": "928971c3cfe99ddf29659acc31214cfa836fabe4",
+      "rev": "fdc8b9701616863e44f7a7a0802cfe16bd866539",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.ui": {
-      "rev": "928971c3cfe99ddf29659acc31214cfa836fabe4",
+      "rev": "fdc8b9701616863e44f7a7a0802cfe16bd866539",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "minuet-ai.nvim": {
@@ -184,7 +180,7 @@
       "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
     "rustaceanvim": {
-      "rev": "00ba659a6fe81d0e46281bd425dd3f38037a260a",
+      "rev": "f4ff9fb2f6cc6ef8ca9c1725628c79ef9347c56e",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "showkeys": {
