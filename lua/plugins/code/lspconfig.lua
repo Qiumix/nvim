@@ -1,5 +1,6 @@
 ---@type LznPackSpec
 return {
+  lazy = false,
   src = "neovim/nvim-lspconfig",
-  event = "BufReadPre",
+  event = "UIEnter",
 }

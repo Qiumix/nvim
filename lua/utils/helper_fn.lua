@@ -48,7 +48,7 @@ function CollectPackSpecs(mod_prefix)
       }
       table.insert(pack_specs, p)
 
-      if s.event or s.cmd or s.ft or s.keys or s.colorscheme then
+      if (s.event or s.cmd or s.ft or s.keys or s.colorscheme) and s.lazy ~= false then
         local name = s.name or src:match("([^/]+)$")
         if name then
           lazy_names[name] = true

@@ -1,5 +1,5 @@
 ---@type LznPackSpec
 return {
   src = "rcarriga/nvim-dap-ui",
-  cmd = "DapUI",
+  cmd = "DapContinue",
 }
