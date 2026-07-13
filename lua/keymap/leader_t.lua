@@ -8,6 +8,14 @@ return {
     silent = true,
     icon = { icon = "󰖶 ", color = "cyan" },
   },
+  {
+    "<leader>tm",
+    "<cmd>RenderMarkdown buf_toggle<CR>",
+    desc = "Toggle Render Markdown",
+    mode = "n",
+    silent = true,
+    icon = { icon = " ", color = "cyan" },
+  },
   { "<leader>ti", vim.show_pos, desc = "Inspect Pos", mode = "n", icon = { icon = "󰋼 ", color = "yellow" } },
   {
     "<leader>tI",

@@ -173,6 +173,24 @@ return {
     icon = { icon = "󰍉 ", color = "yellow" },
   },
   {
+    "<leader>s,",
+    function()
+      Snacks.picker.lsp_symbols()
+    end,
+    desc = "LSP Symbols",
+    mode = "n",
+    icon = { icon = "󱔁 ", color = "yellow" },
+  },
+  {
+    "<leader>s<",
+    function()
+      Snacks.picker.lsp_workspace_symbols()
+    end,
+    desc = "LSP Workspace Symbols",
+    mode = "n",
+    icon = { icon = " ", color = "yellow" },
+  },
+  {
     "<leader>sa",
     function()
       Snacks.picker.autocmds()
