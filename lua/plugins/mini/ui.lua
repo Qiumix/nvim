@@ -3,6 +3,7 @@ local status_line_config = {}
 ---@type LznPackSpec
 return {
   src = "nvim-mini/mini.nvim",
+  name = "mini.ui",
   event = "DeferredUIEnter",
   after = function()
     require("mini.icons").setup()

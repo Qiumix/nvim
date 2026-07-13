@@ -87,31 +87,19 @@
       "src": "https://github.com/chentoast/marks.nvim"
     },
     "mini.ai": {
-      "rev": "4171fba613b64ade9a28e198bd5b4fea5ba45e22",
-      "src": "https://github.com/nvim-mini/mini.nvim"
+      "rev": "25248c6aa002391936a6200f12d1466015987133",
+      "src": "https://github.com/nvim-mini/mini.ai"
     },
     "mini.editor": {
-      "rev": "4171fba613b64ade9a28e198bd5b4fea5ba45e22",
+      "rev": "db41c4076105a63caec12612d11228348f55a109",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.icons": {
-      "rev": "4171fba613b64ade9a28e198bd5b4fea5ba45e22",
-      "src": "https://github.com/nvim-mini/mini.nvim"
-    },
-    "mini.nvim": {
-      "rev": "4171fba613b64ade9a28e198bd5b4fea5ba45e22",
-      "src": "https://github.com/nvim-mini/mini.nvim"
-    },
-    "mini.pairs": {
-      "rev": "4171fba613b64ade9a28e198bd5b4fea5ba45e22",
-      "src": "https://github.com/nvim-mini/mini.nvim"
-    },
-    "mini.starter": {
-      "rev": "4171fba613b64ade9a28e198bd5b4fea5ba45e22",
-      "src": "https://github.com/nvim-mini/mini.nvim"
+      "rev": "98faae31e9be1cc054ae63485e58ceb185efcad0",
+      "src": "https://github.com/nvim-mini/mini.icons"
     },
     "mini.ui": {
-      "rev": "4171fba613b64ade9a28e198bd5b4fea5ba45e22",
+      "rev": "db41c4076105a63caec12612d11228348f55a109",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "minuet-ai.nvim": {

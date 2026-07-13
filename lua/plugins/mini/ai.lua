@@ -1,6 +1,6 @@
 ---@type LznPackSpec
 return {
-  src = "nvim-mini/mini.nvim",
+  src = "nvim-mini/mini.ai",
   event = "DeferredUIEnter",
   after = function()
     local ai = require("mini.ai")

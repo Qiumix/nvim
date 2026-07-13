@@ -1,5 +1,5 @@
 ---@type LznPackSpec
 return {
-  src = "nvim-mini/mini.nvim",
+  src = "nvim-mini/mini.icons",
   lazy = true,
 }
