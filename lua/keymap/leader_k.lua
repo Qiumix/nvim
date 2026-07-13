@@ -6,13 +6,13 @@ return {
     ":TranslateNormal<CR>",
     desc = "Translate word",
     mode = "n",
-    icon = { icon = "󰎚 ", color = "orange" },
+    icon = { icon = "󰗊 ", color = "orange" },
   },
   {
     "<leader>k",
     ":TranslateVisual<CR>",
     desc = "Translate select",
     mode = "x",
-    icon = { icon = "󰎚 ", color = "orange" },
+    icon = { icon = "󰗊 ", color = "orange" },
   },
 }

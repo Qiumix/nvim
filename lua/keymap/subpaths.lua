@@ -20,6 +20,7 @@ return {
     end,
     desc = "Goto Definition",
     mode = "n",
+    icon = { icon = "󰂺 ", color = "blue" },
   },
   {
     "gD",
@@ -27,14 +28,16 @@ return {
       Snacks.picker.lsp_declarations()
     end,
     desc = "Goto Declaration",
+    icon = { icon = "󰂺 ", color = "blue" },
   },
   {
-    "gr",
+    "gR",
     function()
       Snacks.picker.lsp_references()
     end,
     nowait = true,
     desc = "References",
+    icon = { icon = "󰒍 ", color = "purple" },
   },
   {
     "gI",
@@ -42,6 +45,7 @@ return {
       Snacks.picker.lsp_implementations()
     end,
     desc = "Goto Implementation",
+    icon = { icon = "󰏔 ", color = "cyan" },
   },
   {
     "gy",
@@ -49,6 +53,7 @@ return {
       Snacks.picker.lsp_type_definitions()
     end,
     desc = "Goto T[y]pe Definition",
+    icon = { icon = "󰜱 ", color = "green" },
   },
   {
     "gai",
@@ -56,6 +61,7 @@ return {
       Snacks.picker.lsp_incoming_calls()
     end,
     desc = "C[a]lls Incoming",
+    icon = { icon = "󰍻 ", color = "orange" },
   },
   {
     "gao",
@@ -63,6 +69,7 @@ return {
       Snacks.picker.lsp_outgoing_calls()
     end,
     desc = "C[a]lls Outgoing",
+    icon = { icon = "󰍽 ", color = "orange" },
   },
 
   { "K", vim.lsp.buf.hover, desc = "LSP Hover", mode = "n", icon = { icon = "󰇮 ", color = "blue" } },

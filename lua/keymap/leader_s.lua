@@ -17,7 +17,7 @@ return {
     end,
     desc = "Find Files",
     mode = "n",
-    icon = { icon = "󰈔 ", color = "yellow" },
+    icon = { icon = "󰈔 ", color = "cyan" },
   },
   {
     "<leader>sl",
@@ -26,7 +26,7 @@ return {
     end,
     desc = "Visual selection or word",
     mode = { "n", "x" },
-    icon = { icon = "󰦨 ", color = "yellow" },
+    icon = { icon = "󰦨 ", color = "green" },
   },
   {
     "<leader>sb",
@@ -35,7 +35,7 @@ return {
     end,
     desc = "Buffers",
     mode = "n",
-    icon = { icon = "󰈙 ", color = "yellow" },
+    icon = { icon = "󰈙 ", color = "blue" },
   },
   {
     "<leader>sh",
@@ -44,7 +44,7 @@ return {
     end,
     desc = "Help Pages",
     mode = "n",
-    icon = { icon = "󰇘 ", color = "yellow" },
+    icon = { icon = "󰇘 ", color = "green" },
   },
   {
     "<leader>sk",
@@ -53,7 +53,7 @@ return {
     end,
     desc = "Keymaps",
     mode = "n",
-    icon = { icon = "󰌌 ", color = "yellow" },
+    icon = { icon = "󰌌 ", color = "purple" },
   },
   {
     "<leader>sc",
@@ -62,7 +62,7 @@ return {
     end,
     desc = "Commands",
     mode = "n",
-    icon = { icon = "󰘳 ", color = "yellow" },
+    icon = { icon = "󰘳 ", color = "orange" },
   },
   {
     "<leader>sC",
@@ -71,7 +71,7 @@ return {
     end,
     desc = "Command History",
     mode = "n",
-    icon = { icon = "󰘳 ", color = "yellow" },
+    icon = { icon = "󰘳 ", color = "orange" },
   },
   {
     "<leader>sd",
@@ -80,7 +80,7 @@ return {
     end,
     desc = "Diagnostics",
     mode = "n",
-    icon = { icon = "󰀦 ", color = "orange" },
+    icon = { icon = "󰀦 ", color = "red" },
   },
   {
     "<leader>sD",
@@ -89,7 +89,7 @@ return {
     end,
     desc = "Buffer Diagnostics",
     mode = "n",
-    icon = { icon = "󰀦 ", color = "orange" },
+    icon = { icon = "󰀦 ", color = "red" },
   },
   {
     "<leader>sr",
@@ -98,7 +98,7 @@ return {
     end,
     desc = "Resume",
     mode = "n",
-    icon = { icon = "󰑓 ", color = "yellow" },
+    icon = { icon = "󰑓 ", color = "purple" },
   },
   {
     "<leader>s.",
@@ -107,7 +107,7 @@ return {
     end,
     desc = "Recent Files",
     mode = "n",
-    icon = { icon = "󰈔 ", color = "yellow" },
+    icon = { icon = "󰈔 ", color = "cyan" },
   },
   {
     "<leader>sp",
@@ -116,7 +116,7 @@ return {
     end,
     desc = "Projects",
     mode = "n",
-    icon = { icon = "󰉋 ", color = "yellow" },
+    icon = { icon = "󰉋 ", color = "green" },
   },
   {
     "<leader>sm",
@@ -125,7 +125,7 @@ return {
     end,
     desc = "Marks",
     mode = "n",
-    icon = { icon = "󰍎 ", color = "yellow" },
+    icon = { icon = "󰍎 ", color = "purple" },
   },
   {
     "<leader>sj",
@@ -134,7 +134,7 @@ return {
     end,
     desc = "Jumps",
     mode = "n",
-    icon = { icon = "󰮱 ", color = "yellow" },
+    icon = { icon = "󰮱 ", color = "blue" },
   },
   {
     "<leader>sq",
@@ -143,7 +143,7 @@ return {
     end,
     desc = "Quickfix List",
     mode = "n",
-    icon = { icon = "󰁨 ", color = "yellow" },
+    icon = { icon = "󰁨 ", color = "azure" },
   },
   {
     "<leader>su",
@@ -152,7 +152,7 @@ return {
     end,
     desc = "Undo History",
     mode = "n",
-    icon = { icon = "󰦛 ", color = "yellow" },
+    icon = { icon = "󰦛 ", color = "orange" },
   },
   {
     "<leader>sR",
@@ -161,7 +161,7 @@ return {
     end,
     desc = "Registers",
     mode = "n",
-    icon = { icon = "󰏪 ", color = "yellow" },
+    icon = { icon = "󰏪 ", color = "purple" },
   },
   {
     "<leader>s/",
@@ -179,7 +179,7 @@ return {
     end,
     desc = "LSP Symbols",
     mode = "n",
-    icon = { icon = "󱔁 ", color = "yellow" },
+    icon = { icon = "󱔁 ", color = "cyan" },
   },
   {
     "<leader>s<",
@@ -188,7 +188,7 @@ return {
     end,
     desc = "LSP Workspace Symbols",
     mode = "n",
-    icon = { icon = " ", color = "yellow" },
+    icon = { icon = " ", color = "blue" },
   },
   {
     "<leader>sa",
@@ -197,7 +197,7 @@ return {
     end,
     desc = "Autocmds",
     mode = "n",
-    icon = { icon = "󰘳 ", color = "yellow" },
+    icon = { icon = "󰘳 ", color = "green" },
   },
   {
     "<leader>sH",
@@ -206,7 +206,7 @@ return {
     end,
     desc = "Highlights",
     mode = "n",
-    icon = { icon = "󰏘 ", color = "yellow" },
+    icon = { icon = "󰏘 ", color = "cyan" },
   },
   {
     "<leader>si",
@@ -215,7 +215,7 @@ return {
     end,
     desc = "Icons",
     mode = "n",
-    icon = { icon = "󰏘 ", color = "yellow" },
+    icon = { icon = "󰏘 ", color = "purple" },
   },
   {
     "<leader>sM",
@@ -224,7 +224,7 @@ return {
     end,
     desc = "Man Pages",
     mode = "n",
-    icon = { icon = " ", color = "yellow" },
+    icon = { icon = " ", color = "green" },
   },
   {
     "<leader>sS",
@@ -233,7 +233,7 @@ return {
     end,
     desc = "Colorschemes",
     mode = "n",
-    icon = { icon = "󰏘 ", color = "yellow" },
+    icon = { icon = "󰏘 ", color = "orange" },
   },
   -- Git
   {
@@ -252,7 +252,7 @@ return {
     end,
     desc = "Git Diff (Hunks)",
     mode = "n",
-    icon = { icon = " ", color = "purple" },
+    icon = { icon = " ", color = "red" },
   },
   {
     "<leader>sgl",
@@ -261,7 +261,7 @@ return {
     end,
     desc = "Git Log",
     mode = "n",
-    icon = { icon = " ", color = "purple" },
+    icon = { icon = " ", color = "green" },
   },
   {
     "<leader>sgs",
@@ -270,7 +270,7 @@ return {
     end,
     desc = "Git Status",
     mode = "n",
-    icon = { icon = "󰊢 ", color = "purple" },
+    icon = { icon = "󰊢 ", color = "yellow" },
   },
   {
     "<leader>sgS",
@@ -279,7 +279,7 @@ return {
     end,
     desc = "Git Stash",
     mode = "n",
-    icon = { icon = "󰊢 ", color = "purple" },
+    icon = { icon = "󰊢 ", color = "orange" },
   },
   {
     "<leader>sgf",
@@ -288,7 +288,7 @@ return {
     end,
     desc = "Git Log File",
     mode = "n",
-    icon = { icon = " ", color = "purple" },
+    icon = { icon = " ", color = "cyan" },
   },
   {
     "<leader>sgL",
@@ -297,6 +297,6 @@ return {
     end,
     desc = "Git Log Line",
     mode = "n",
-    icon = { icon = " ", color = "purple" },
+    icon = { icon = " ", color = "blue" },
   },
 }

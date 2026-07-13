@@ -25,6 +25,7 @@ local leader_o = require("keymap.leader_o")
 local leader_k = require("keymap.leader_k")
 local leader_e = require("keymap.leader_e")
 local leader_s = require("keymap.leader_s")
+local leader_g = require("keymap.leader_g")
 local leader_w = require("keymap.leader_w")
 
 M = merge_specs(
@@ -42,6 +43,7 @@ M = merge_specs(
   leader_k,
   leader_e,
   leader_s,
+  leader_g,
   leader_w
 )
 
