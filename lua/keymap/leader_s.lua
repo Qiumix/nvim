@@ -128,6 +128,15 @@ return {
     icon = { icon = "󰍎 ", color = "purple" },
   },
   {
+    "<leader>sn",
+    function()
+      Snacks.picker.notifications()
+    end,
+    desc = "Notification History",
+    mode = "n",
+    icon = { icon = " ", color = "purple" },
+  },
+  {
     "<leader>sj",
     function()
       Snacks.picker.jumps()
