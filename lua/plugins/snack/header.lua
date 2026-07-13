@@ -1,26 +1,4 @@
-local items = {
-  { name = "f 󰈞 Find Files", action = "Tv files", section = "  Television Finder" },
-  { name = "g  Live Grep", action = "Tv text", section = "  Television Finder" },
-  { name = "l  Git Logs", action = "Tv git-log", section = "  Television Finder" },
-  { name = "b  Git Branches", action = "Tv git-branch", section = "  Television Finder" },
-  { name = "t  Select Channel", action = "Tv", section = "  Television Finder" },
-
-  { name = "n  New File", action = "enew", section = "  Utils" },
-  { name = "c  Neovim Config", action = "edit $MYVIMRC", section = "  Utils" },
-  { name = "q  Quit Neovim", action = "quit", section = "  Utils" },
-}
-
----@type LznPackSpec
-return {
-  src = "nvim-mini/mini.nvim",
-  event = "DeferredUIEnter",
-  after = function()
-    local starter = require("mini.starter")
-
-    local config = {
-      items = items,
-      evaluate_single = true,
-      header = [[
+return [[
 ┌───────────────────────────────────────────────────────┐
 │                                                       │
 │                     Witch Of Neko                󰃢    │
@@ -33,10 +11,4 @@ return {
 │                                                       │
 │                                                       │
 └───────────────────────────────────────────────────────┘
-  ]],
-      footer = "",
-      content_hooks = { starter.gen_hook.aligning("center", "center") },
-    }
-    starter.setup(config)
-  end,
-}
+]]

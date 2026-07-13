@@ -1,26 +1,7 @@
----@module "snacks"
----@type snacks.picker.Config
-local picker_config = {
-  sources = {
-    explorer = {
-      layout = { preset = "sidebar", preview = "main" },
-      auto_close = false,
-      jump = { close = false },
-    },
-  },
-  win = {
-    input = {
-      keys = {
-        ["<c-x>"] = { "bufdelete", mode = { "n", "i" } },
-      },
-    },
-    list = { keys = { ["dd"] = "bufdelete" } },
-  },
-}
 return {
   animate = { enabled = true },
   bigfile = { enabled = true, size = 500 * 1024 },
-  dashboard = { enabled = false },
+  dashboard = require("plugins.snack.dashboard"),
   dim = { enabled = true },
   explorer = { enabled = true, replace_netrw = true },
   image = { enabled = true },
@@ -37,5 +18,5 @@ return {
   toggle = { enabled = true },
   words = { enabled = false },
   zen = { enabled = true },
-  picker = picker_config,
+  picker = require("plugins.snack.picker"),
 }
