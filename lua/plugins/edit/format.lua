@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 return {
   "stevearc/conform.nvim",
   event = "VeryLazy",

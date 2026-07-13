@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 local config = {
   ---@type lc.lang
   lang = "cpp",

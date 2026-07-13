@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 local config = {
   transparent_mode = true,
 }

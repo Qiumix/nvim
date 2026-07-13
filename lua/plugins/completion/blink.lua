@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 return {
   "saghen/blink.cmp",
   version = vim.version.range("^1"),

@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 return {
   "nvim-mini/mini.ai",
   event = "VeryLazy",

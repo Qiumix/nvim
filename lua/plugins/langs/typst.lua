@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 local config = {
   open_cmd = "floorp %s",
   -- port = 3340,

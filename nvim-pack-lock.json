@@ -200,6 +200,10 @@
     "zpack.nvim": {
       "rev": "c8b4e8d597ec5da5102e66ce7d73b77fa727b90c",
       "src": "https://github.com/zuqini/zpack.nvim"
+    },
+    "zshow.nvim": {
+      "rev": "fb2a7104fa339854cb45493942bb45bfd3bc4567",
+      "src": "https://gitlab.com/sairy/zshow.nvim"
     }
   }
 }

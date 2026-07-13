@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 return {
   "folke/flash.nvim",
   event = "VeryLazy",

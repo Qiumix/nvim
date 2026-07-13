@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 local config = {
   show_count = true,
   maxkeys = 4,

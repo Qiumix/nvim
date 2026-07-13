@@ -1,3 +1,6 @@
+---@module "zpack"
+---@type zpack.Spec
+
 return {
   "rachartier/tiny-inline-diagnostic.nvim",
   event = "VeryLazy",
