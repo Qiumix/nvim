@@ -1,10 +1,9 @@
 return {
-  -- "modern", "classic", "minimal", "powerline", "ghost", "simple", "nonerdfont", "amongus"
   preset = "modern",
   options = {
     show_source = {
       enabled = true,
-      if_many = false,
+      if_many = true,
     },
 
     multilines = {

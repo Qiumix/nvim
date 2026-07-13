@@ -27,7 +27,7 @@ return {
   indent = { enabled = true },
   input = { enabled = true },
   layout = { enabled = true },
-  notifier = { enabled = false },
+  notifier = { enabled = true },
   quickfile = { enabled = true },
   scope = { enabled = true },
   scratch = { enabled = true },
