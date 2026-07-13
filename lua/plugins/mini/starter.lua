@@ -13,8 +13,7 @@ local items = {
 ---@type LznPackSpec
 return {
   src = "nvim-mini/mini.nvim",
-  name = "mini.starter",
-  event = "UIEnter",
+  event = "DeferredUIEnter",
   after = function()
     local starter = require("mini.starter")
 
