@@ -2,7 +2,7 @@
 return {
   event = "UIEnter",
   after = function()
-    local keys = require("plugins.config.whichkey")
+    local keys = require("keymap")
     local wk = require("which-key")
     wk.setup({
       preset = "helix",

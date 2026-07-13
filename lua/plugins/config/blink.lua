@@ -12,12 +12,16 @@ local completion = {
         label = {
           text = function(ctx)
             local ok, mod = pcall(require, "colorful-menu")
-            if ok then return mod.blink_components_text(ctx) end
+            if ok then
+              return mod.blink_components_text(ctx)
+            end
             return ctx.label
           end,
           highlight = function(ctx)
             local ok, mod = pcall(require, "colorful-menu")
-            if ok then return mod.blink_components_highlight(ctx) end
+            if ok then
+              return mod.blink_components_highlight(ctx)
+            end
             return {}
           end,
         },
