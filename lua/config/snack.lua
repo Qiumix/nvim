@@ -2,7 +2,7 @@ return {
   animate = { enabled = true },
   bigfile = { enabled = true, size = 500 * 1024 },
   dashboard = {
-    enabled = true,
+    enabled = false,
     preset = {
       header = [[
 ┌───────────────────────────────────────────────────────┐
