@@ -4,7 +4,7 @@ return {
   {
     "<leader>ss",
     function()
-      Snacks.picker.smart()
+      Snacks.picker.grep()
     end,
     desc = "Smart Find Files",
     mode = "n",
@@ -13,25 +13,16 @@ return {
   {
     "<leader>sf",
     function()
-      Snacks.picker.files()
+      Snacks.picker.smart()
     end,
     desc = "Find Files",
     mode = "n",
     icon = { icon = "󰈔 ", color = "yellow" },
   },
   {
-    "<leader>sg",
+    "<leader>sl",
     function()
-      Snacks.picker.grep()
-    end,
-    desc = "Grep",
-    mode = "n",
-    icon = { icon = "󰦨 ", color = "yellow" },
-  },
-  {
-    "<leader>sw",
-    function()
-      Snacks.picker.grep_word()
+      Snacks.picker.lines()
     end,
     desc = "Visual selection or word",
     mode = { "n", "x" },
@@ -146,15 +137,6 @@ return {
     icon = { icon = "󰮱 ", color = "yellow" },
   },
   {
-    "<leader>sl",
-    function()
-      Snacks.picker.loclist()
-    end,
-    desc = "Location List",
-    mode = "n",
-    icon = { icon = "󰁨 ", color = "yellow" },
-  },
-  {
     "<leader>sq",
     function()
       Snacks.picker.qflist()
@@ -224,7 +206,7 @@ return {
     end,
     desc = "Man Pages",
     mode = "n",
-    icon = { icon = "󰘳 ", color = "yellow" },
+    icon = { icon = " ", color = "yellow" },
   },
   {
     "<leader>sS",
