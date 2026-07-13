@@ -1,5 +1,4 @@
----@type LznPackSpec
 return {
-  src = "xemptuous/sqlua.nvim",
+  "xemptuous/sqlua.nvim",
   ft = "sql",
 }

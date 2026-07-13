@@ -3,11 +3,10 @@ local config = {
   maxkeys = 4,
 }
 
----@type LznPackSpec
 return {
-  src = "nvzone/showkeys",
-  event = "DeferredUIEnter",
-  after = function()
+  "nvzone/showkeys",
+  event = "VeryLazy",
+  config = function()
     local showkeys = require("showkeys")
     showkeys.setup(config)
     showkeys.open()

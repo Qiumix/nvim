@@ -1,5 +1,4 @@
----@type LznPackSpec
 return {
-  src = "mfussenegger/nvim-dap",
+  "mfussenegger/nvim-dap",
   cmd = "DapContinue",
 }

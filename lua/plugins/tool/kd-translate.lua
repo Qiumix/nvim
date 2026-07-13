@@ -1,5 +1,4 @@
----@type LznPackSpec
 return {
-  src = "SilverofLight/kd_translate.nvim",
+  "SilverofLight/kd_translate.nvim",
   cmd = { "TranslateNormal", "TranslateVisual" },
 }

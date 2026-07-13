@@ -1,8 +1,7 @@
----@type LznPackSpec
 return {
-  src = "karb94/neoscroll.nvim",
-  event = "DeferredUIEnter",
-  after = function()
+  "karb94/neoscroll.nvim",
+  event = "VeryLazy",
+  config = function()
     require("neoscroll").setup({ mappings = {} })
   end,
 }

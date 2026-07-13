@@ -1,9 +1,8 @@
----@type LznPackSpec
 return {
-  src = "mikesmithgh/kitty-scrollback.nvim",
+  "mikesmithgh/kitty-scrollback.nvim",
   cmd = { "KittyScrollbackGenerateKittens", "KittyScrollbackGenerateCommandLineEditing", "KittyScrollbackCheckHealth" },
   event = { "User KittyScrollbackLaunch" },
-  after = function()
+  config = function()
     vim.api.nvim_create_autocmd({ "FileType" }, {
       group = vim.api.nvim_create_augroup("KittyScrollbackNoConfirmYank", { clear = true }),
       pattern = { "kitty-scrollback" },

@@ -1,8 +1,7 @@
----@type LznPackSpec
 return {
-  src = "gbprod/yanky.nvim",
-  event = "DeferredUIEnter",
-  after = function()
+  "gbprod/yanky.nvim",
+  event = "VeryLazy",
+  config = function()
     require("yanky").setup()
   end,
 }

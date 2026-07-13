@@ -1,8 +1,7 @@
----@type LznPackSpec
 return {
-  src = "folke/lazydev.nvim",
+  "folke/lazydev.nvim",
   ft = "lua",
-  after = function()
+  config = function()
     require("lazydev").setup({
       library = {
         "nvim-dap-ui",

@@ -1,7 +1,6 @@
----@type LznPackSpec
 return {
-  src = "Qiumix/rime-toggle.nvim",
-  after = function()
+  "Qiumix/rime-toggle.nvim",
+  config = function()
     require("rime_toggle").setup()
   end,
 }

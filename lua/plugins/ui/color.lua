@@ -1,8 +1,7 @@
----@type LznPackSpec
 return {
-  src = "uga-rosa/ccc.nvim",
-  event = "DeferredUIEnter",
-  after = function()
+  "uga-rosa/ccc.nvim",
+  event = "VeryLazy",
+  config = function()
     local ccc = require("ccc")
     ccc.setup({})
   end,

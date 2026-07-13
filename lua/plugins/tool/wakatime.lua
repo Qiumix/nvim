@@ -1,5 +1,4 @@
----@type LznPackSpec
 return {
-  src = "wakatime/vim-wakatime",
+  "wakatime/vim-wakatime",
   event = "UIEnter",
 }

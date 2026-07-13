@@ -1,9 +1,7 @@
----@type LznPackSpec
 return {
-  src = "folke/flash.nvim",
-  event = "DeferredUIEnter",
-  after = function()
-    local config = require("plugins.config.flash")
-    require("flash").setup(config)
+  "folke/flash.nvim",
+  event = "VeryLazy",
+  config = function()
+    require("flash").setup(require("plugins.config.flash"))
   end,
 }

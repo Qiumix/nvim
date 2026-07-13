@@ -1,5 +1,4 @@
----@type LznPackSpec
 return {
-  src = "numToStr/FTerm.nvim",
+  "numToStr/FTerm.nvim",
   lazy = false,
 }

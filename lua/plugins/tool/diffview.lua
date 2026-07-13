@@ -1,5 +1,4 @@
----@type LznPackSpec
 return {
-  src = "sindrets/diffview.nvim",
+  "sindrets/diffview.nvim",
   cmd = "DiffviewOpen",
 }

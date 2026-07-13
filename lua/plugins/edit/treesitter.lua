@@ -45,7 +45,7 @@ return {
   {
     src = "romus204/tree-sitter-manager.nvim",
     version = "main",
-    event = "DeferredUIEnter",
+    event = "VeryLazy",
     after = function()
       require("tree-sitter-manager").setup()
     end,

@@ -1,6 +1,5 @@
----@type LznPackSpec
 return {
+  "neovim/nvim-lspconfig",
   lazy = false,
-  src = "neovim/nvim-lspconfig",
   event = "UIEnter",
 }

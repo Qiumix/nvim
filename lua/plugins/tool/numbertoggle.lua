@@ -1,5 +1,4 @@
----@type LznPackSpec
 return {
-  src = "sitiom/nvim-numbertoggle",
+  "sitiom/nvim-numbertoggle",
   event = "UIEnter",
 }

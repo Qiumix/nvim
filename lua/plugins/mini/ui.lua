@@ -1,13 +1,10 @@
-local status_line_config = {}
-
----@type LznPackSpec
 return {
-  src = "nvim-mini/mini.nvim",
+  "nvim-mini/mini.nvim",
   name = "mini.ui",
-  event = "DeferredUIEnter",
-  after = function()
+  event = "VeryLazy",
+  config = function()
     require("mini.icons").setup()
-    require("mini.statusline").setup(status_line_config)
+    require("mini.statusline").setup({})
     require("mini.indentscope").setup()
 
     if vim.env.KITTY_SCROLLBACK_NVIM == "true" then

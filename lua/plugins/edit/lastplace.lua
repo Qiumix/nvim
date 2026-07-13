@@ -1,8 +1,7 @@
----@type LznPackSpec
 return {
+  "nxhung2304/lastplace.nvim",
   event = "BufReadPre",
-  src = "nxhung2304/lastplace.nvim",
-  after = function()
+  config = function()
     require("lastplace").setup()
   end,
 }

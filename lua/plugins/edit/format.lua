@@ -1,9 +1,7 @@
----@type LznPackSpec
 return {
-  src = "stevearc/conform.nvim",
-  event = "DeferredUIEnter",
-  after = function()
-    local config = require("plugins.config.format")
-    require("conform").setup(config)
+  "stevearc/conform.nvim",
+  event = "VeryLazy",
+  config = function()
+    require("conform").setup(require("plugins.config.format"))
   end,
 }

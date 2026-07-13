@@ -8,12 +8,11 @@ local config = {
   },
 }
 
----@type LznPackSpec
 return {
-  src = "chomosuke/typst-preview.nvim",
+  "chomosuke/typst-preview.nvim",
   ft = "typst",
   cmd = "TypstPreview",
-  after = function()
+  config = function()
     require("typst-preview").setup(config)
   end,
 }

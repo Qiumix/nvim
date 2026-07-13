@@ -1,11 +1,10 @@
----@type LznPackSpec
 return {
   {
-    src = "mikavilpas/yazi.nvim",
+    "mikavilpas/yazi.nvim",
     version = vim.version.range("*"),
-    event = "DeferredUIEnter",
+    event = "VeryLazy",
     cmd = "Yazi",
-    after = function()
+    config = function()
       require("yazi").setup(require("plugins.config.yazi"))
     end,
   },
