@@ -1,6 +1,3 @@
----@module "zpack"
----@type zpack.Spec
-
 local config = {
   backend = (function()
     if vim.env.TERM == "foot" then
@@ -11,6 +8,8 @@ local config = {
   end)(),
 }
 
+---@module "zpack"
+---@type zpack.Spec
 return {
   enabled = false,
   "3rd/image.nvim",

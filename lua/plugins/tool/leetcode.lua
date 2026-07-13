@@ -1,6 +1,3 @@
----@module "zpack"
----@type zpack.Spec
-
 local config = {
   ---@type lc.lang
   lang = "cpp",
@@ -19,12 +16,14 @@ local config = {
   injector = {}, ---@type table<lc.lang, lc.inject>
 
   ---@type lc.picker
-  picker = {},
+  picker = { provider = "snacks-picker" },
 
   ---@type boolean
   image_support = true,
 }
 
+---@module "zpack"
+---@type zpack.Spec
 return {
   "kawre/leetcode.nvim",
   cmd = "Leet",

@@ -1,10 +1,9 @@
----@module "zpack"
----@type zpack.Spec
-
 local config = {
   transparent_mode = true,
 }
----@type LznPackSpec
+
+---@module "zpack"
+---@type zpack.Spec
 return {
   src = "ellisonleao/gruvbox.nvim",
 
