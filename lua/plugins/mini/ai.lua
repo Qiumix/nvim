@@ -1,10 +1,10 @@
 return {
   "nvim-mini/mini.ai",
   event = "VeryLazy",
-  config = function()
+  opts = function()
     local ai = require("mini.ai")
     local spec_treesitter = ai.gen_spec.treesitter
-    ai.setup({
+    return {
       custom_textobjects = {
         f = spec_treesitter({ a = "@function.outer", i = "@function.inner" }),
         F = spec_treesitter({ a = "@class.outer", i = "@class.inner" }),
@@ -16,6 +16,6 @@ return {
       },
       n_lines = 100,
       search_method = "cover_or_next",
-    })
+    }
   end,
 }

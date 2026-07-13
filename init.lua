@@ -25,7 +25,6 @@ require("zpack").setup({
 require("utils")
 
 -- Load core configs directly
-require("core.options")
-require("core.autocmd")
-require("core.usercmd")
-require("core.lsp")
+Load("core")
+
+vim.cmd(":colorscheme gruvbox")

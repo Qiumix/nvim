@@ -1,8 +1,7 @@
----@type LznPackSpec
 return {
+  "xzbdmw/colorful-menu.nvim",
   event = "InsertEnter",
-  src = "xzbdmw/colorful-menu.nvim",
-  after = function()
+  config = function()
     require("colorful-menu").setup({})
   end,
 }

@@ -3,7 +3,7 @@ return {
   event = "VeryLazy",
   lazy = false,
   config = function()
-    require("tiny-inline-diagnostic").setup({ require("plugins.config.tiny") })
+    require("tiny-inline-diagnostic").setup({ require("config.tiny") })
     vim.diagnostic.config({ virtual_text = false })
   end,
 }

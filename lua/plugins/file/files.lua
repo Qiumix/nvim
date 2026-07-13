@@ -5,7 +5,7 @@ return {
     event = "VeryLazy",
     cmd = "Yazi",
     config = function()
-      require("yazi").setup(require("plugins.config.yazi"))
+      require("yazi").setup(require("config.yazi"))
     end,
   },
 }

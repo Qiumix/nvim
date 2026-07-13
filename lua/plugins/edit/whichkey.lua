@@ -1,18 +1,18 @@
----@type LznPackSpec
 return {
+  "folke/which-key.nvim",
   event = "UIEnter",
-  after = function()
+  opts = {
+    preset = "helix",
+    win = {
+      wo = {
+        winblend = 20,
+      },
+    },
+  },
+  config = function(plugin, opts)
     local keys = require("keymap")
     local wk = require("which-key")
-    wk.setup({
-      preset = "helix",
-      win = {
-        wo = {
-          winblend = 20,
-        },
-      },
-    })
+    wk.setup(opts)
     wk.add(keys)
   end,
-  src = "folke/which-key.nvim",
 }
