@@ -155,6 +155,9 @@ return {
   },
   {
     "<leader>sn",
+    -- function()
+    --   Snacks.picker.notifications()
+    -- end,
     desc = "Notification",
     mode = "n",
     icon = { icon = " ", color = "green" },
