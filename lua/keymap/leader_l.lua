@@ -2,6 +2,13 @@
 return {
   -- <leader>l Prefix (LSP & Language tools)
   {
+    "<leader>la",
+    require("actions-preview").code_actions,
+    desc = "Actions Preview",
+    mode = "n",
+    icon = { icon = " ", color = "purple" },
+  },
+  {
     "<leader>ld",
     vim.diagnostic.setqflist,
     desc = "Open Diagnostic Buffer",
@@ -31,6 +38,6 @@ return {
     "<cmd>TypstPreview<cr>",
     desc = "Preview Typst",
     mode = "n",
-    icon = { icon = " ", color = "green" },
+    icon = { icon = " ", color = "blue" },
   },
 }
