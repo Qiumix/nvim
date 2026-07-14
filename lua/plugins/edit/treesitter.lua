@@ -1,6 +1,5 @@
 ---@module "zpack"
----@type zpack.Spec
-
+---@type zpack.Spec|zpack.Spec[]
 return {
   {
     "nvim-treesitter/nvim-treesitter-textobjects",

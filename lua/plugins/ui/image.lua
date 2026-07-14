@@ -14,7 +14,8 @@ return {
   enabled = false,
   "3rd/image.nvim",
   ft = { "markdown", "typst", "html", "css" },
-  config = function()
-    require("image").setup(config)
+  opts = config,
+  config = function(_, opts)
+    require("image").setup(opts)
   end,
 }

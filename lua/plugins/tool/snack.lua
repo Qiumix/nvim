@@ -1,6 +1,5 @@
 ---@module "zpack"
 ---@type zpack.Spec
-
 return {
   "folke/snacks.nvim",
   event = "VeryLazy",

@@ -1,6 +1,5 @@
 ---@module "zpack"
 ---@type zpack.Spec
-
 return {
   "nvim-mini/mini.nvim",
   name = "mini.editor",

@@ -1,6 +1,5 @@
 ---@module "zpack"
 ---@type zpack.Spec
-
 return {
   "mikesmithgh/kitty-scrollback.nvim",
   cmd = { "KittyScrollbackGenerateKittens", "KittyScrollbackGenerateCommandLineEditing", "KittyScrollbackCheckHealth" },

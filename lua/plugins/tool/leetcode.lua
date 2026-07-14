@@ -27,7 +27,8 @@ local config = {
 return {
   "kawre/leetcode.nvim",
   cmd = "Leet",
-  config = function()
-    require("leetcode").setup(config)
+  opts = config,
+  config = function(_, opts)
+    require("leetcode").setup(opts)
   end,
 }

@@ -1,6 +1,5 @@
 ---@module "zpack"
 ---@type zpack.Spec
-
 return {
   {
     "saecki/crates.nvim",

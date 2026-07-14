@@ -1,7 +1,5 @@
 ---@module "zpack"
 ---@type zpack.Spec
-
----@type LznPackSpec
 return {
   enabled = false,
   src = "milanglacier/minuet-ai.nvim",

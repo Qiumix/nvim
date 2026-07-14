@@ -7,7 +7,8 @@ local config = {
 return {
   src = "ellisonleao/gruvbox.nvim",
 
-  after = function()
-    require("gruvbox").setup(config)
+  opts = config,
+  after = function(_, opts)
+    require("gruvbox").setup(opts)
   end,
 }

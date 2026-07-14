@@ -1,6 +1,5 @@
 ---@module "zpack"
 ---@type zpack.Spec
-
 return {
   "folke/which-key.nvim",
   event = "UIEnter",
@@ -12,7 +11,7 @@ return {
       },
     },
   },
-  config = function(plugin, opts)
+  config = function(_, opts)
     local keys = require("keymap")
     local wk = require("which-key")
     wk.setup(opts)

@@ -1,6 +1,3 @@
----@module "zpack"
----@type zpack.Spec
-
 local config = {
   open_cmd = "floorp %s",
   -- port = 3340,
@@ -11,11 +8,14 @@ local config = {
   },
 }
 
+---@module "zpack"
+---@type zpack.Spec
 return {
   "chomosuke/typst-preview.nvim",
   ft = "typst",
   cmd = "TypstPreview",
-  config = function()
-    require("typst-preview").setup(config)
+  opts = config,
+  config = function(_, opts)
+    require("typst-preview").setup(opts)
   end,
 }
