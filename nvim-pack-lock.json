@@ -22,6 +22,10 @@
       "rev": "9d1a256e006decc574789dfc7d628ca11644d4c2",
       "src": "https://github.com/uga-rosa/ccc.nvim"
     },
+    "codeme.nvim": {
+      "rev": "54810c83d183c6e69f9ad910a4a410ed80958d66",
+      "src": "https://gitlab.com/tduyng/codeme.nvim"
+    },
     "colorful-menu.nvim": {
       "rev": "196ddf16d5f8fec09ba7f20e6b153aa5188e907b",
       "src": "https://github.com/xzbdmw/colorful-menu.nvim"
@@ -49,6 +53,10 @@
     "gitsigns.nvim": {
       "rev": "eb60cc7b94c46005237fd34170d76f3a089a90aa",
       "src": "https://github.com/lewis6991/gitsigns.nvim"
+    },
+    "grug-far.nvim": {
+      "rev": "1cc080f55706b38aabfa97d40acb6adf59ac4a5a",
+      "src": "https://github.com/MagicDuck/grug-far.nvim"
     },
     "gruvbox.nvim": {
       "rev": "154eb5ff5b96d0641307113fa385eaf0d36d9796",
@@ -94,6 +102,10 @@
       "rev": "fc5c7167adc51d5f39219e86739d5c193b777f44",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
+    "noice.nvim": {
+      "rev": "7bfd942445fb63089b59f97ca487d605e715f155",
+      "src": "https://github.com/folke/noice.nvim"
+    },
     "nui.nvim": {
       "rev": "de740991c12411b663994b2860f1a4fd0937c130",
       "src": "https://github.com/MunifTanjim/nui.nvim"
@@ -102,12 +114,8 @@
       "rev": "9e848e09a697ee95302a3ef2dd43fd6eb709e570",
       "src": "https://github.com/mfussenegger/nvim-dap"
     },
-    "nvim-dap-ui": {
-      "rev": "cc9dd33aade7f20bae414d0cba163bc60d4d4b43",
-      "src": "https://github.com/rcarriga/nvim-dap-ui"
-    },
     "nvim-dap-view": {
-      "rev": "b8c8aa91f42055d7f69012587cde4f1d99f2a701",
+      "rev": "ba5c838e731003abefb8bc1c403c59aa5b3aa194",
       "src": "https://github.com/igorlfs/nvim-dap-view",
       "version": "1.0.0 - 2.0.0"
     },
@@ -122,6 +130,10 @@
     "nvim-nio": {
       "rev": "21f5324bfac14e22ba26553caf69ec76ae8a7662",
       "src": "https://github.com/nvim-neotest/nvim-nio"
+    },
+    "nvim-notify": {
+      "rev": "8701bece920b38ea289b457f902e2ad184131a5d",
+      "src": "https://github.com/rcarriga/nvim-notify"
     },
     "nvim-numbertoggle": {
       "rev": "704e098c7f056f0dae9407d8651edd3d183f3fff",

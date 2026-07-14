@@ -31,7 +31,7 @@ return {
     end,
     desc = "Format buffer",
     mode = { "n", "x" },
-    icon = { icon = "󰏫 ", color = "green" },
+    icon = { icon = "󰊄 ", color = "green" },
   },
   {
     "<leader>lt",

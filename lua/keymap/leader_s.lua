@@ -17,7 +17,7 @@ return {
     end,
     desc = "Find Files",
     mode = "n",
-    icon = { icon = "󰈔 ", color = "cyan" },
+    icon = { icon = " ", color = "cyan" },
   },
   {
     "<leader>st",
@@ -25,6 +25,18 @@ return {
     desc = "Find Files",
     mode = "n",
     icon = { icon = " ", color = "cyan" },
+  },
+  {
+    "<leader>sw",
+    desc = "Swap next parameter",
+    mode = "n",
+    icon = { icon = " ", color = "yellow" },
+  },
+  {
+    "<leader>sW",
+    desc = "Swap previous parameter",
+    mode = "n",
+    icon = { icon = " ", color = "yellow" },
   },
   {
     "<leader>sl",
@@ -101,11 +113,18 @@ return {
   {
     "<leader>sr",
     function()
-      Snacks.picker.resume()
+      local grug = require("grug-far")
+      local ext = vim.bo.buftype == "" and vim.fn.expand("%:e")
+      grug.open({
+        transient = true,
+        prefills = {
+          filesFilter = ext and ext ~= "" and "*." .. ext or nil,
+        },
+      })
     end,
-    desc = "Resume",
-    mode = "n",
-    icon = { icon = "󰑓 ", color = "purple" },
+    desc = "Search and Replace",
+    mode = { "n", "v", "x" },
+    icon = { icon = " ", color = "cyan" },
   },
   {
     "<leader>s.",
@@ -136,12 +155,53 @@ return {
   },
   {
     "<leader>sn",
-    function()
-      Snacks.picker.notifications()
-    end,
-    desc = "Notification History",
+    desc = "Notification",
     mode = "n",
-    icon = { icon = " ", color = "purple" },
+    icon = { icon = " ", color = "green" },
+  },
+  {
+    "<leader>snl",
+    mode = "n",
+    function()
+      require("noice").cmd("last")
+    end,
+    desc = "Noice Last Message",
+    icon = { icon = "󰮲 ", color = "cyan" },
+  },
+  {
+    "<leader>snh",
+    mode = "n",
+    function()
+      require("noice").cmd("history")
+    end,
+    desc = "Noice History",
+    icon = { icon = " ", color = "yellow" },
+  },
+  {
+    "<leader>sna",
+    mode = "n",
+    function()
+      require("noice").cmd("all")
+    end,
+    desc = "Noice All",
+    icon = { icon = " ", color = "yellow" },
+  },
+  {
+    "<leader>snd",
+    mode = "n",
+    function()
+      require("noice").cmd("dismiss")
+    end,
+    desc = "Dismiss All",
+  },
+  {
+    "<leader>snp",
+    mode = "n",
+    function()
+      require("noice").cmd("pick")
+    end,
+    desc = "Noice Picker",
+    icon = { icon = " ", color = "purple" },
   },
   {
     "<leader>sj",
