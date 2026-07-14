@@ -83,7 +83,7 @@
       "src": "https://github.com/nvim-mini/mini.ai"
     },
     "mini.editor": {
-      "rev": "db41c4076105a63caec12612d11228348f55a109",
+      "rev": "fc5c7167adc51d5f39219e86739d5c193b777f44",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "mini.icons": {
@@ -91,12 +91,8 @@
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "mini.ui": {
-      "rev": "db41c4076105a63caec12612d11228348f55a109",
+      "rev": "fc5c7167adc51d5f39219e86739d5c193b777f44",
       "src": "https://github.com/nvim-mini/mini.nvim"
-    },
-    "neoscroll.nvim": {
-      "rev": "c8d29979cb0cb3a2437a8e0ae683fd82f340d3b8",
-      "src": "https://github.com/karb94/neoscroll.nvim"
     },
     "nui.nvim": {
       "rev": "de740991c12411b663994b2860f1a4fd0937c130",
@@ -115,7 +111,7 @@
       "src": "https://github.com/theHamsta/nvim-dap-virtual-text"
     },
     "nvim-lspconfig": {
-      "rev": "5955a100ae7155962330643924e21a798b9bdc91",
+      "rev": "d5b6e3db4c17b0146f63a2fc47e2027a754b2cb1",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -152,7 +148,7 @@
       "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
     "rustaceanvim": {
-      "rev": "a692e6c30d59ae789b02e08a914884198fb21d6f",
+      "rev": "313a4c8e5b21d612798b68922a3aaf8c3115dbca",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "showkeys": {
