@@ -1,5 +1,5 @@
 ---@module "zpack"
----@type zpack.Spec
+---@type zpack.Spec|zpack.Spec[]
 return {
   {
     "lewis6991/gitsigns.nvim",

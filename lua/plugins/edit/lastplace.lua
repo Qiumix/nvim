@@ -3,5 +3,7 @@
 return {
   "nxhung2304/lastplace.nvim",
   event = "BufReadPre",
-  opts = {},
+  opts = {
+    center_on_jump = false,
+  },
 }

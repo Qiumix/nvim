@@ -20,6 +20,13 @@ return {
     icon = { icon = "󰈔 ", color = "cyan" },
   },
   {
+    "<leader>st",
+    "<cmd>CccPick<CR>",
+    desc = "Find Files",
+    mode = "n",
+    icon = { icon = " ", color = "cyan" },
+  },
+  {
     "<leader>sl",
     function()
       Snacks.picker.lines()
