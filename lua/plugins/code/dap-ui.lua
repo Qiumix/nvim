@@ -4,4 +4,5 @@ return {
   "igorlfs/nvim-dap-view",
   version = vim.version.range("1.*"),
   dependencies = { "mfussenegger/nvim-dap" },
+  opts = require("config.dap_view"),
 }
