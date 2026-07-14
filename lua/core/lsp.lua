@@ -22,4 +22,5 @@ vim.lsp.enable({
   "steel-language-server",
   "wgsl",
   "kotlin_language_server",
+  "docker_language_server",
 })

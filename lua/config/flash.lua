@@ -1,3 +1,5 @@
+---@module "flash"
+---@type Flash.Config
 return {
   modes = {
     char = {
