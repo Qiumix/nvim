@@ -3,5 +3,13 @@
 return {
   "gbprod/yanky.nvim",
   event = "VeryLazy",
-  opts = {},
+  dependencies = {
+    "kkharji/sqlite.lua",
+  },
+  opts = {
+    ring = { storage = "sqlite" },
+    textobj = {
+      enabled = true,
+    },
+  },
 }
