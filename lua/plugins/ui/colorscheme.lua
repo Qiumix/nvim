@@ -5,7 +5,7 @@ local config = {
 ---@module "zpack"
 ---@type zpack.Spec
 return {
-  src = "ellisonleao/gruvbox.nvim",
+  "ellisonleao/gruvbox.nvim",
 
   opts = config,
   after = function(_, opts)

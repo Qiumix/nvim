@@ -1,6 +1,6 @@
 ---@module "zpack"
 ---@type zpack.Spec
 return {
-  src = "nvim-neotest/nvim-nio",
+  "nvim-neotest/nvim-nio",
   lazy = true,
 }
