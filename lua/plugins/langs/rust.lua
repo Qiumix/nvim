@@ -1,11 +1,11 @@
 ---@module "zpack"
----@type zpack.Spec
+---@type zpack.Spec|zpack.Spec[]
 return {
   {
     "saecki/crates.nvim",
     ft = "toml",
     config = function()
-      require("crates").setup()
+      require("crates").setup({})
     end,
   },
   {
