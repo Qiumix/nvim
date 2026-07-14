@@ -1,5 +1,6 @@
 vim.lsp.enable({
   "eslint",
+  "vue",
   "lua_ls",
   "gopls",
   "zls",
@@ -9,7 +10,7 @@ vim.lsp.enable({
   "biome",
   "clangd",
   "bashls",
-  "vtsls",
+  "lsp-vtsls",
   "fish_lsp",
   "sqlls",
   "jdtls",
