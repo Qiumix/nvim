@@ -1,5 +1,6 @@
 ---@module "zpack"
----@type zpack.Spec
+---@type zpack.Spec[]
 return {
-  "nanotee/sqls.nvim",
+  { "nanotee/sqls.nvim" },
+  { "xemptuous/sqlua.nvim", cmd = "SQLua" },
 }
