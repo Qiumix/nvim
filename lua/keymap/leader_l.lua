@@ -3,8 +3,8 @@ return {
   -- <leader>l Prefix (LSP & Language tools)
   {
     "<leader>la",
-    require("actions-preview").code_actions,
-    desc = "Actions Preview",
+    vim.lsp.buf.code_action,
+    desc = "Code Action",
     mode = "n",
     icon = { icon = " ", color = "purple" },
   },
