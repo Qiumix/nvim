@@ -1,13 +1,18 @@
-vim.pack.add({ { src = "https://github.com/zuqini/zpack.nvim" } }, { confirm = false })
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
+vim.pack.add({ { src = "https://github.com/zuqini/zpack.nvim" } })
+
 require("zpack").setup({
-  spec = {
-    { import = "plugins" },
-  },
   defaults = {
+    confirm = false,
     lazy = true,
   },
 })
 
-require("utils")
-Load("core")
+require("core.autocmd")
+require("core.lsp")
+require("core.options")
+require("core.usercmd")
+
 vim.cmd(":colorscheme gruvbox")

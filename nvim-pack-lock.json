@@ -90,6 +90,10 @@
       "rev": "98faae31e9be1cc054ae63485e58ceb185efcad0",
       "src": "https://github.com/nvim-mini/mini.icons"
     },
+    "mini.nvim": {
+      "rev": "fc5c7167adc51d5f39219e86739d5c193b777f44",
+      "src": "https://github.com/nvim-mini/mini.nvim"
+    },
     "mini.ui": {
       "rev": "fc5c7167adc51d5f39219e86739d5c193b777f44",
       "src": "https://github.com/nvim-mini/mini.nvim"
@@ -158,6 +162,10 @@
     "snacks.nvim": {
       "rev": "882c996cf28183f4d63640de0b4c02ec886d01f2",
       "src": "https://github.com/folke/snacks.nvim"
+    },
+    "sqls.nvim": {
+      "rev": "45e2ea8a684a9a194e8adbde77a02e7ac77f6d4e",
+      "src": "https://github.com/nanotee/sqls.nvim"
     },
     "sqlua.nvim": {
       "rev": "3527fa88de1a9ec35b27b56502b08f503e83eeb9",
