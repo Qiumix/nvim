@@ -2,7 +2,11 @@
 ---@type zpack.Spec
 return {
   "mikesmithgh/kitty-scrollback.nvim",
-  cmd = { "KittyScrollbackGenerateKittens", "KittyScrollbackGenerateCommandLineEditing", "KittyScrollbackCheckHealth" },
+  cmd = {
+    "KittyScrollbackGenerateKittens",
+    "KittyScrollbackGenerateCommandLineEditing",
+    "KittyScrollbackCheckHealth",
+  },
   event = { "User KittyScrollbackLaunch" },
   config = function()
     vim.api.nvim_create_autocmd({ "FileType" }, {

@@ -1,3 +1,4 @@
+---@type vim.lsp.Config
 return {
   cmd = { "vtsls", "--stdio" },
   filetypes = { "typescript", "javascript", "typescriptreact", "javascriptreact", "vue" },
