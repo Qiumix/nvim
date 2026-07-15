@@ -96,7 +96,13 @@ return {
     mode = "i",
     icon = { icon = "󰜮 ", color = "grey" },
   },
-  { "<A-k>", "<esc><cmd>m .-2<cr>==gi", desc = "Move Line Up", mode = "i", icon = { icon = "󰜷 ", color = "grey" } },
+  {
+    "<A-k>",
+    "<esc><cmd>m .-2<cr>==gi",
+    desc = "Move Line Up",
+    mode = "i",
+    icon = { icon = "󰜷 ", color = "grey" },
+  },
   {
     "<A-j>",
     ":<C-u>execute \"'<,'>move '>+\" . v:count1<cr>gv=gv",

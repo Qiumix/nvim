@@ -10,7 +10,13 @@ return {
   { "gl", "g$", desc = "Go to end of line", mode = { "n", "x", "o" }, icon = { icon = "󰘠 ", color = "grey" } },
   { "gh", "g^", desc = "Go to start of line", mode = { "n", "x", "o" }, icon = { icon = "󰘟 ", color = "grey" } },
   { "ge", "G", desc = "Go to end of file", mode = { "n", "x", "o" }, icon = { icon = "󰞒 ", color = "grey" } },
-  { "go", "%", desc = "Jump to matching bracket", mode = { "n", "x", "o" }, icon = { icon = "󰅩 ", color = "grey" } },
+  {
+    "go",
+    "%",
+    desc = "Jump to matching bracket",
+    mode = { "n", "x", "o" },
+    icon = { icon = "󰅩 ", color = "grey" },
+  },
   -- { "gd", vim.lsp.buf.definition, desc = "LSP Goto Definition", mode = "n", icon = { icon = "󰂺 ", color = "blue" } },
 
   {

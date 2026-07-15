@@ -1,7 +1,13 @@
 ---@type wk.Spec
 return {
   -- <leader><tab> Prefix (Tabs)
-  { "<leader><tab><tab>", "<cmd>tabnew<cr>", desc = "New Tab", mode = "n", icon = { icon = "󰝜 ", color = "blue" } },
+  {
+    "<leader><tab><tab>",
+    "<cmd>tabnew<cr>",
+    desc = "New Tab",
+    mode = "n",
+    icon = { icon = "󰝜 ", color = "blue" },
+  },
   { "<leader><tab>]", "<cmd>tabnext<cr>", desc = "Next Tab", mode = "n", icon = { icon = "󰅂 ", color = "azure" } },
   {
     "<leader><tab>[",
@@ -10,7 +16,13 @@ return {
     mode = "n",
     icon = { icon = "󰅁 ", color = "azure" },
   },
-  { "<leader><tab>f", "<cmd>tabfirst<cr>", desc = "First Tab", mode = "n", icon = { icon = "󰘀 ", color = "azure" } },
+  {
+    "<leader><tab>f",
+    "<cmd>tabfirst<cr>",
+    desc = "First Tab",
+    mode = "n",
+    icon = { icon = "󰘀 ", color = "azure" },
+  },
   { "<leader><tab>l", "<cmd>tablast<cr>", desc = "Last Tab", mode = "n", icon = { icon = "󰘁 ", color = "azure" } },
   {
     "<leader><tab>o",
