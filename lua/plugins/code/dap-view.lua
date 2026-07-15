@@ -6,12 +6,21 @@ return {
   dependencies = { "mfussenegger/nvim-dap" },
   opts = {
     auto_toggle = true,
+    follow_tab = true,
     winbar = {
       show = true,
-      sections = { "watches", "scopes", "exceptions", "breakpoints", "threads", "repl", "console" },
+      sections = {
+        "breakpoints",
+        "scopes",
+        "repl",
+        "watches",
+        "threads",
+        -- "exceptions",
+        -- "console",
+      },
       default_section = "scopes",
       controls = {
-        enabled = true,
+        enabled = false,
         position = "right",
         buttons = {
           "play",
@@ -26,17 +35,23 @@ return {
       },
     },
     windows = {
-      size = 0.4,
-      position = "below",
+      size = 0.35,
+      position = "left",
       terminal = {
-        size = 0.3,
-        hide = { "console" },
+        size = 0.4,
+        position = "right",
       },
     },
-    help = {
-      border = "rounded",
-    },
+    help = { border = "rounded" },
     switchbuf = "usetab",
+    keymaps = {
+      base = {
+        next_view = "]v",
+        prev_view = "[v",
+        jump_to_first = "[V",
+        jump_to_last = "]V",
+        help = "g?",
+      },
+    },
   },
-  cmd = { "DapViewOpen", "DapViewClose", "DapViewToggle" },
 }
