@@ -1,5 +1,5 @@
----@type dap.ServerAdapter
----@field private dbg string
+---@module "dap"
+---@type dap.ServerAdapter|{dbg: string}
 return {
   dbg = "lldb",
   type = "server",

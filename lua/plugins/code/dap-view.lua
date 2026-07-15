@@ -42,16 +42,5 @@ return {
         position = "right",
       },
     },
-    help = { border = "rounded" },
-    switchbuf = "usetab",
-    keymaps = {
-      base = {
-        next_view = "]v",
-        prev_view = "[v",
-        jump_to_first = "[V",
-        jump_to_last = "]V",
-        help = "g?",
-      },
-    },
   },
 }
