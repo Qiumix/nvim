@@ -3,5 +3,8 @@
 return {
   "MeanderingProgrammer/render-markdown.nvim",
   ft = { "markdown", "norg", "org" },
-  opts = {},
+  dependencies = {
+    "nvim-mini/mini.icons",
+  },
+  opts = require("config.markdown"),
 }
