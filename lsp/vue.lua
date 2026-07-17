@@ -7,6 +7,11 @@ return {
     hostInfo = "neovim",
   },
   settings = {
+    typescript = {
+      tsserver = {
+        pluginPaths = { "." },
+      },
+    },
     vtsls = {
       tsserver = {
         globalPlugins = {
