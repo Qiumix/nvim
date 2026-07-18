@@ -1,10 +1,24 @@
+---@module "snacks"
+---@type snacks.Config
 return {
   animate = { enabled = true },
   bigfile = { enabled = true, size = 500 * 1024 },
   dashboard = { enabled = false },
   dim = { enabled = true },
   explorer = { enabled = true, replace_netrw = true },
-  image = { enabled = true },
+  image = {
+    enabled = true,
+    math = {
+      typst = {
+        tpl = [[
+        #set page(width: auto, height: auto, margin: (x: 2pt, y: 2pt))
+        #show math.equation.where(block: false): set text(top-edge: "bounds", bottom-edge: "bounds")
+        #set text(size: 12pt, fill: rgb("#83a598"))
+        ${header}
+        ${content}]],
+      },
+    },
+  },
   indent = { enabled = false },
   input = { enabled = true },
   layout = { enabled = true },
@@ -25,14 +39,6 @@ return {
         auto_close = false,
         jump = { close = false },
       },
-    },
-    win = {
-      input = {
-        keys = {
-          ["<c-x>"] = { "bufdelete", mode = { "n", "i" } },
-        },
-      },
-      list = { keys = { ["dd"] = "bufdelete" } },
     },
   },
 }

@@ -1,8 +1,6 @@
 -- ── Leaders & Globals ──────────────────────────────────────────────
-vim.g.mapleader = " " -- <Space> as leader key
-vim.g.maplocalleader = "," -- <,> as local leader (used by grug-far etc.)
 vim.g.editorconfig = true -- respect .editorconfig files
-vim.g.root_pattern = { ".git", ".nvim", ".project.el", ".editorconfig" }
+vim.g.root_pattern = { ".git" }
 vim.g.no_plugin_maps = true -- disable default regex ftplugin jump, because treesitter-textobjects
 
 -- ── Persistence ────────────────────────────────────────────────────
@@ -73,7 +71,7 @@ vim.opt.timeoutlen = 300 -- ms to wait for next key in a mapped sequence
 vim.opt.termguicolors = true -- enable 24-bit RGB color in the TUI, also for nvim-highlight-colors
 vim.opt.showmode = false -- don't show "-- INSERT --", statusline handles it
 vim.opt.ruler = false -- don't show line/col in bottom-right, statusline handles it
-vim.opt.conceallevel = 2 -- hide markup symbols (e.g. ** in markdown)
+vim.opt.conceallevel = 1 -- hide markup symbols (e.g. ** in markdown)
 vim.opt.fillchars = {
   foldopen = " ",
   foldclose = " ",

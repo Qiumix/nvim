@@ -1,10 +1,16 @@
+local function get_root()
+  local root = vim.fs.root(0, { ".git", "Cargo.toml", "go.mod", "package.json", "build.zig" })
+  return root
+end
+
 ---@type wk.Spec
 return {
   -- <leader>s Prefix (Search with Snacks Picker)
   {
     "<leader>ss",
     function()
-      Snacks.picker.grep()
+      local root = get_root()
+      Snacks.picker.grep({ cmd = root })
     end,
     desc = "Smart Find Files",
     mode = "n",
@@ -13,7 +19,8 @@ return {
   {
     "<leader>sf",
     function()
-      Snacks.picker.smart()
+      local root = get_root()
+      Snacks.picker.smart({ cwd = root })
     end,
     desc = "Find Files",
     mode = "n",
