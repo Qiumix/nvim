@@ -16,6 +16,13 @@ return {
     icon = { icon = "󰃤 ", color = "red" },
   },
   {
+    "<leader>li",
+    "<cmd>InspectTree<CR>",
+    desc = "InspectTree",
+    mode = "n",
+    icon = { icon = " ", color = "red" },
+  },
+  {
     "<leader>lf",
     function()
       local has_conform, conform = pcall(require, "conform")

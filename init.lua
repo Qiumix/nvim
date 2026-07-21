@@ -8,11 +8,12 @@ require("zpack").setup(
   {
     defaults = {
       confirm = false,
+      lazy = true,
     },
-    profiling = {
-      loader = true,
-      require = true,
-    },
+    -- profiling = {
+    --   loader = true,
+    --   require = true,
+    -- },
   }
 )
 

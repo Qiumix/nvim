@@ -27,6 +27,7 @@ return {
     lisp = { "lisp_fmt" },
     asd = { "lisp_fmt" },
     ros = { "lisp_fmt" },
+    kdl = { "kdlfmt" },
     scheme = { "lisp_fmt" },
     steel = { "lisp_fmt" },
     toml = { "taplo" },
@@ -37,6 +38,11 @@ return {
   formatters = {
     biome = { require_cwd = true },
     deno_fmt = { require_cwd = true },
+    kdlfmt = {
+      command = "kdlfmt",
+      args = { "format", "--kdl-version", "v1", "-" },
+      stdin = true,
+    },
     lisp_fmt = {
       command = "raco",
       args = { "fmt" },
