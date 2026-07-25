@@ -1,9 +1,7 @@
 ---@module "zpack"
----@type zpack.Spec
+---@type zpack.Spec|zpack.Spec[]
 return {
-  "Qiumix/rime-toggle.nvim",
-  lazy = false,
-  config = function()
-    require("rime_toggle").setup()
-  end,
+  {
+    "Qiumix/rime-toggle.nvim",
+  },
 }
