@@ -14,8 +14,8 @@ end
 local groups = require("keymap.groups")
 local surround = require("keymap.surround")
 local textobjects = require("keymap.textobjects")
-local root = require("keymap.root")
-local subpaths = require("keymap.subpaths")
+local common = require("keymap.common")
+local better = require("keymap.better")
 local leader_tab = require("keymap.leader_tab")
 local leader_b = require("keymap.leader_b")
 local leader_t = require("keymap.leader_t")
@@ -33,8 +33,8 @@ M = merge_specs(
   groups,
   surround,
   textobjects,
-  root,
-  subpaths,
+  common,
+  better,
   leader_tab,
   leader_b,
   leader_t,

@@ -1,5 +1,21 @@
 ---@type wk.Spec
 return {
+  {
+    "]t",
+    function()
+      require("todo-comments").jump_next()
+    end,
+    desc = "Next Todo Comment",
+    icon = { icon = " ", color = "azure" },
+  },
+  {
+    "[t",
+    function()
+      require("todo-comments").jump_prev()
+    end,
+    desc = "Previous Todo Comment",
+    icon = { icon = " ", color = "azure" },
+  },
   -- ════════════════════════════════════════════════════════════
   --  GROUPED MAPS (SUB-PATHS)
   -- ════════════════════════════════════════════════════════════

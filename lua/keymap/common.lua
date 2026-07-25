@@ -121,16 +121,6 @@ return {
   -- Visual Editing Core
   { "<", "<gv", desc = "Indent left and keep selection", mode = "x", icon = { icon = "󰉵 ", color = "grey" } },
   { ">", ">gv", desc = "Indent right and keep selection", mode = "x", icon = { icon = "󰉶 ", color = "grey" } },
-  {
-    "p",
-    "_dP",
-    desc = "Smart paste without overwriting register",
-    mode = "v",
-    expr = true,
-    silent = true,
-    icon = { icon = "󰆒 ", color = "green" },
-  },
-
   -- Insert Mode Break-points
   { ",", ",<c-g>u", desc = "Undo break point (,)", mode = "i", icon = { icon = "󰕌 ", color = "grey" } },
   { ".", ".<c-g>u", desc = "Undo break point (.)", mode = "i", icon = { icon = "󰕌 ", color = "grey" } },
