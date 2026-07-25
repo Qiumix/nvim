@@ -1,6 +1,9 @@
 local g = vim.g
 local opt = vim.opt
 
+g.mapleader = " " -- <Space> as leader key
+g.maplocalleader = "," -- <,> as local leader (used by grug-far etc.)
+
 -- ── Leaders & Globals ──────────────────────────────────────────────
 g.editorconfig = true -- respect .editorconfig files
 g.root_pattern = { ".git" }

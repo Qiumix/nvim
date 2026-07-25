@@ -1,21 +1,7 @@
 vim.pack.add({ { src = "https://github.com/zuqini/zpack.nvim" } })
-vim.g.mapleader = " " -- <Space> as leader key
-vim.g.maplocalleader = "," -- <,> as local leader (used by grug-far etc.)
-
-require("zpack").setup(
-  ---@module "zpack"
-  ---@type zpack.Config
-  {
-    profiling = {
-      loader = true,
-      require = true,
-    },
-  }
-)
-
-require("core.autocmd")
-require("core.lsp")
 require("core.options")
+require("core.autocmd")
 require("core.usercmd")
-
+require("zpack").setup()
+require("core.lsp")
 vim.cmd(":colorscheme gruvbox")
