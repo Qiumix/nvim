@@ -123,15 +123,9 @@ return {
   { ">", ">gv", desc = "Indent right and keep selection", mode = "x", icon = { icon = "󰉶 ", color = "grey" } },
   {
     "p",
-    function()
-      if vim.fn.mode() == "V" then
-        return "P"
-      else
-        return '"_dP'
-      end
-    end,
+    "_dP",
     desc = "Smart paste without overwriting register",
-    mode = "x",
+    mode = "v",
     expr = true,
     silent = true,
     icon = { icon = "󰆒 ", color = "green" },

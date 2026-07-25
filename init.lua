@@ -6,14 +6,10 @@ require("zpack").setup(
   ---@module "zpack"
   ---@type zpack.Config
   {
-    defaults = {
-      confirm = false,
-      lazy = true,
+    profiling = {
+      loader = true,
+      require = true,
     },
-    -- profiling = {
-    --   loader = true,
-    --   require = true,
-    -- },
   }
 )
 

@@ -1,78 +1,82 @@
+local g = vim.g
+local opt = vim.opt
+
 -- ── Leaders & Globals ──────────────────────────────────────────────
-vim.g.editorconfig = true -- respect .editorconfig files
-vim.g.root_pattern = { ".git" }
-vim.g.no_plugin_maps = true -- disable default regex ftplugin jump, because treesitter-textobjects
+g.editorconfig = true -- respect .editorconfig files
+g.root_pattern = { ".git" }
+g.no_plugin_maps = true -- disable default regex ftplugin jump, because treesitter-textobjects
 
 -- ── Persistence ────────────────────────────────────────────────────
-vim.opt.shada = "'100,<0" -- remember 100 marks, don't persist registers
-vim.opt.swapfile = false -- disable swap files, rely on undofile instead
-vim.opt.undofile = true -- persist undo history across sessions
-vim.opt.undolevels = 10000 -- maximum number of undo steps
-vim.opt.autowrite = true -- auto-save before :make, :next, CTRL-O, etc.
+opt.shada = "'100,<0" -- remember 100 marks, don't persist registers
+opt.swapfile = false -- disable swap files, rely on undofile instead
+opt.undofile = true -- persist undo history across sessions
+opt.undolevels = 10000 -- maximum number of undo steps
+opt.autowrite = true -- auto-save before :make, :next, CTRL-O, etc.
 
 -- ── Line Display ───────────────────────────────────────────────────
-vim.opt.number = true -- show absolute line number on current line
-vim.opt.relativenumber = true -- show relative line numbers on other lines
-vim.opt.cursorline = true -- highlight the line the cursor is on
-vim.opt.wrap = false -- don't soft-wrap long lines
-vim.opt.linebreak = true -- if wrap is toggled on, break at word boundaries
-vim.opt.scrolloff = 5 -- keep 10 lines visible above/below cursor
-vim.opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
-vim.opt.smoothscroll = true -- scroll by screen line, not by text line
-vim.opt.signcolumn = "yes" -- always show sign column (avoids layout shift)
+opt.number = true -- show absolute line number on current line
+opt.relativenumber = true -- show relative line numbers on other lines
+opt.cursorline = true -- highlight the line the cursor is on
+opt.wrap = false -- don't soft-wrap long lines
+opt.linebreak = true -- if wrap is toggled on, break at word boundaries
+opt.scrolloff = 5 -- keep 10 lines visible above/below cursor
+opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
+opt.smoothscroll = true -- scroll by screen line, not by text line
+opt.signcolumn = "yes" -- always show sign column (avoids layout shift)
 
 -- ── Editing ────────────────────────────────────────────────────────
-vim.opt.mouse = "a" -- enable mouse in all modes
-vim.opt.virtualedit = "block" -- allow cursor beyond end-of-line in visual block
-vim.opt.confirm = true -- prompt to save instead of failing on :q
-vim.opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- sync with system clipboard (disabled over SSH)
-vim.opt.textwidth = 80
+opt.mouse = "a" -- enable mouse in all modes
+opt.virtualedit = "block" -- allow cursor beyond end-of-line in visual block
+opt.confirm = true -- prompt to save instead of failing on :q
+opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- sync with system clipboard (disabled over SSH)
+opt.textwidth = 80
 
 -- ── Indentation ────────────────────────────────────────────────────
-vim.opt.expandtab = true -- insert spaces instead of tabs
-vim.opt.tabstop = 2 -- Tab width
-vim.opt.softtabstop = 2 -- Soft tab stop
+opt.expandtab = true -- insert spaces instead of tabs
+opt.tabstop = 2 -- Tab width
+opt.softtabstop = 2 -- Soft tab stop
 vim.o.showtabline = 2
-vim.opt.shiftwidth = 2 -- indent by 2 spaces per level
-vim.opt.shiftround = true -- round indent to nearest multiple of shiftwidth
-vim.opt.smartindent = true -- Smart auto-indenting
-vim.opt.autoindent = true -- Copy indent from current line
-vim.opt.breakindent = true -- visually indent wrapped lines to match start
+opt.shiftwidth = 2 -- indent by 2 spaces per level
+opt.shiftround = true -- round indent to nearest multiple of shiftwidth
+opt.smartindent = true -- Smart auto-indenting
+opt.autoindent = true -- Copy indent from current line
+opt.breakindent = true -- visually indent wrapped lines to match start
+vim.bo.indentexpr = "v:lua.vim.treesitter.indentexpr()"
 
 -- ── Search ─────────────────────────────────────────────────────────
-vim.opt.hlsearch = true -- Don't highlight search results
-vim.opt.incsearch = true -- Show matches as you type
-vim.opt.ignorecase = true -- case-insensitive search by default
-vim.opt.smartcase = true -- …unless query contains uppercase letters
-vim.opt.inccommand = "nosplit" -- live preview :s substitutions as you type
-vim.opt.grepformat = "%f:%l:%c:%m" -- parse ripgrep output format
-vim.opt.grepprg = "rg --vimgrep" -- use ripgrep instead of grep
+opt.hlsearch = true -- Don't highlight search results
+opt.incsearch = true -- Show matches as you type
+opt.ignorecase = true -- case-insensitive search by default
+opt.smartcase = true -- …unless query contains uppercase letters
+opt.inccommand = "nosplit" -- live preview :s substitutions as you type
+opt.grepformat = "%f:%l:%c:%m" -- parse ripgrep output format
+opt.grepprg = "rg --vimgrep" -- use ripgrep instead of grep
 
 -- ── Windows & Splits ───────────────────────────────────────────────
 vim.o.winborder = "rounded"
-vim.opt.splitright = true -- :vsplit opens to the right
-vim.opt.splitbelow = true -- :split opens below
-vim.opt.splitkeep = "screen" -- keep text position stable when splitting
-vim.opt.laststatus = 3 -- single global statusline across all splits
+opt.splitright = true -- :vsplit opens to the right
+opt.splitbelow = true -- :split opens below
+opt.splitkeep = "screen" -- keep text position stable when splitting
+opt.laststatus = 3 -- single global statusline across all splits
 
 -- ── Folding ────────────────────────────────────────────────────────
-vim.opt.foldenable = true
-vim.opt.foldlevel = 99 -- open all folds by default
-vim.opt.foldlevelstart = 99
-vim.opt.foldmethod = "expr" -- use treesitter expression for folding
-vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-vim.opt.foldtext = "" -- render fold lines with treesitter highlights
+opt.foldenable = true
+opt.foldlevel = 99 -- open all folds by default
+opt.foldlevelstart = 99
+opt.foldmethod = "expr" -- use treesitter expression for folding
+opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+opt.foldtext = "" -- render fold lines with treesitter highlights
 
 -- ── Timing ─────────────────────────────────────────────────────────
-vim.opt.updatetime = 100 -- ms idle before CursorHold fires / swap writes
-vim.opt.timeoutlen = 300 -- ms to wait for next key in a mapped sequence
+opt.updatetime = 100 -- ms idle before CursorHold fires / swap writes
+opt.timeoutlen = 300 -- ms to wait for next key in a mapped sequence
 
 -- ── Appearance ─────────────────────────────────────────────────────
-vim.opt.termguicolors = true -- enable 24-bit RGB color in the TUI, also for nvim-highlight-colors
-vim.opt.showmode = false -- don't show "-- INSERT --", statusline handles it
-vim.opt.ruler = false -- don't show line/col in bottom-right, statusline handles it
-vim.opt.conceallevel = 1 -- hide markup symbols (e.g. ** in markdown)
-vim.opt.fillchars = {
+opt.termguicolors = true -- enable 24-bit RGB color in the TUI, also for nvim-highlight-colors
+opt.showmode = false -- don't show "-- INSERT --", statusline handles it
+opt.ruler = false -- don't show line/col in bottom-right, statusline handles it
+opt.conceallevel = 1 -- hide markup symbols (e.g. ** in markdown)
+opt.fillchars = {
   foldopen = " ",
   foldclose = " ",
   fold = " ",
@@ -80,8 +84,8 @@ vim.opt.fillchars = {
   diff = "╱",
   eob = " ",
 } -- diff filler char, hide ~ after EOF
-vim.opt.list = true -- show invisible characters
-vim.opt.listchars = {
+opt.list = true -- show invisible characters
+opt.listchars = {
   tab = "» ",
   trail = "·",
   nbsp = "␣",
@@ -90,13 +94,13 @@ vim.opt.listchars = {
 } -- symbols for tab/trailing/nbsp
 
 -- ── Completion & Navigation ────────────────────────────────────────
-vim.opt.wildmode = "longest:full,full" -- complete longest common, then cycle full matches
-vim.opt.jumpoptions = { "stack", "view" } -- restore view when jumping through jumplist
+opt.wildmode = "longest:full,full" -- complete longest common, then cycle full matches
+opt.jumpoptions = { "stack", "view" } -- restore view when jumping through jumplist
 
 -- ── Encoding ───────────────────────────────────────────────────────
-vim.opt.ttimeoutlen = 10
-vim.opt.encoding = "UTF-8" -- Set encoding
-vim.opt.fileencodings = {
+opt.ttimeoutlen = 10
+opt.encoding = "UTF-8" -- Set encoding
+opt.fileencodings = {
   "ucs-bom",
   "utf-8",
   "shift-jis",
@@ -117,41 +121,41 @@ vim.diagnostic.config({
 })
 
 -- ── File handling ───────────────────────────────────────────────────
-vim.opt.backup = false -- Don't create backup files
-vim.opt.writebackup = false -- Don't create backup before writing
-vim.opt.undodir = vim.fn.expand("~/.local/share/nvim/vim/undodir") -- Undo directory
-vim.opt.ttimeoutlen = 0 -- Key code timeout
-vim.opt.autoread = true -- Auto reload files changed outside vim
+opt.backup = false -- Don't create backup files
+opt.writebackup = false -- Don't create backup before writing
+opt.undodir = vim.fn.expand("~/.local/share/nvim/vim/undodir") -- Undo directory
+opt.ttimeoutlen = 0 -- Key code timeout
+opt.autoread = true -- Auto reload files changed outside vim
 
 -- Visual settings
-vim.opt.colorcolumn = "+1"
-vim.opt.showmatch = true -- Highlight matching brackets
-vim.opt.matchtime = 1 -- How long to show matching bracket
-vim.opt.cmdheight = 1 -- Command line height
-vim.opt.pumheight = 10 -- Popup menu height
-vim.opt.pumblend = 10 -- Popup menu transparency
-vim.opt.winblend = 10 -- Floating window transparency
-vim.opt.completeopt = "menu,menuone,noselect"
-vim.opt.concealcursor = "" -- Don't hide cursor line markup
-vim.opt.synmaxcol = 300 -- Syntax highlighting limit
-vim.opt.winminwidth = 5 -- Minimum window width
+opt.colorcolumn = "+1"
+opt.showmatch = true -- Highlight matching brackets
+opt.matchtime = 1 -- How long to show matching bracket
+opt.cmdheight = 1 -- Command line height
+opt.pumheight = 10 -- Popup menu height
+opt.pumblend = 10 -- Popup menu transparency
+opt.winblend = 10 -- Floating window transparency
+opt.completeopt = "menu,menuone,noselect"
+opt.concealcursor = "" -- Don't hide cursor line markup
+opt.synmaxcol = 300 -- Syntax highlighting limit
+opt.winminwidth = 5 -- Minimum window width
 
 -- Behavior settings
-vim.opt.hidden = true -- Allow hidden buffers
-vim.opt.iskeyword = "_,A-Z,a-z,48-57"
-vim.opt.path:append("**") -- include subdirectories in search
-vim.opt.wildignore:append("**/node_modules/**,**/build/**,**/.git/**")
+opt.hidden = true -- Allow hidden buffers
+opt.iskeyword = "_,A-Z,a-z,48-57"
+opt.path:append("**") -- include subdirectories in search
+opt.wildignore:append("**/node_modules/**,**/build/**,**/.git/**")
 
 -- Performance improvements
-vim.opt.redrawtime = 10000
-vim.opt.maxmempattern = 20000
+opt.redrawtime = 10000
+opt.maxmempattern = 20000
 
-vim.g.autoformat = true
-vim.g.trouble_lualine = true
-vim.opt.shortmess:append({ W = true, I = true, c = true, C = true })
-vim.g.markdown_recommended_style = 0
+g.autoformat = true
+g.trouble_lualine = true
+opt.shortmess:append({ W = true, I = true, c = true, C = true })
+g.markdown_recommended_style = 0
 
 -- Disable builtin plugins replaced by third-party alternatives
-vim.g.loaded_netrwPlugin = 1
-vim.g.loaded_netrw = 1
-vim.g.loaded_matchit = 1
+g.loaded_netrwPlugin = 1
+g.loaded_netrw = 1
+g.loaded_matchit = 1
