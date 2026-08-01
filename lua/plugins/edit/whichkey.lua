@@ -1,6 +1,8 @@
 ---@module "zpack"
 ---@type zpack.Spec
 return {
+  ---@module "which-key"
+  ---@type wk.Opts
   "folke/which-key.nvim",
   event = "UIEnter",
   opts = {

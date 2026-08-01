@@ -116,7 +116,18 @@ return {
     "romus204/tree-sitter-manager.nvim",
     version = "main",
     event = "VeryLazy",
-    ft = { "typst", "wgsl" },
-    opts = {},
+    ft = { "typst", "wgsl", "wesl" },
+    ---@module "tree-sitter-manager"
+    ---@type tree-sitter-manager.Config
+    opts = {
+      languages = {
+        wesl = {
+          install_info = {
+            url = "https://github.com/webgpu-tools/tree-sitter-wesl",
+            queries = "queries",
+          },
+        },
+      },
+    },
   },
 }

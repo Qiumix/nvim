@@ -12,7 +12,7 @@ return {
       local root = get_root()
       Snacks.picker.grep({ cmd = root })
     end,
-    desc = "Smart Find Files",
+    desc = "Smart Find Text",
     mode = "n",
     icon = { icon = "󰍉 ", color = "yellow" },
   },
@@ -29,7 +29,7 @@ return {
   {
     "<leader>st",
     "<cmd>CccPick<CR>",
-    desc = "Find Files",
+    desc = "Find Color",
     mode = "n",
     icon = { icon = " ", color = "cyan" },
   },

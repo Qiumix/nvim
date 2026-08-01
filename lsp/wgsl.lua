@@ -2,5 +2,6 @@
 return {
   name = "wgsl",
   cmd = { "wgsl-analyzer" },
-  filetypes = { "wgsl" },
+  filetypes = { "wgsl", "wesl" },
+  settings = {},
 }
