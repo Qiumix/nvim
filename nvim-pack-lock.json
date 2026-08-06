@@ -82,6 +82,10 @@
       "rev": "4e8b3683940a8377379ce9398e7f329e3560b42c",
       "src": "https://github.com/kawre/leetcode.nvim"
     },
+    "lualine.nvim": {
+      "rev": "221ce6b2d999187044529f49da6554a92f740a96",
+      "src": "https://github.com/nvim-lualine/lualine.nvim"
+    },
     "marks.nvim": {
       "rev": "f353e8c08c50f39e99a9ed474172df7eddd89b72",
       "src": "https://github.com/chentoast/marks.nvim"
@@ -95,7 +99,7 @@
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "mini.nvim": {
-      "rev": "8bf5c57bc82dd590932faa41bfde9fd6d40a9433",
+      "rev": "3e47ec3709716177bf28e2d17e35c7ab39db126e",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "noice.nvim": {
@@ -120,7 +124,7 @@
       "src": "https://github.com/theHamsta/nvim-dap-virtual-text"
     },
     "nvim-lspconfig": {
-      "rev": "9ae2b3b63b924b1329724dae76e9d2c5c40b389c",
+      "rev": "43ed3797b266e1ee8d222e491379ad471c9d3146",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -140,6 +144,10 @@
       "src": "https://github.com/nvim-treesitter/nvim-treesitter-textobjects",
       "version": "'main'"
     },
+    "nvim-web-devicons": {
+      "rev": "2ae6958df7ced50baac5035cec0c15799eedfbf7",
+      "src": "https://github.com/nvim-tree/nvim-web-devicons"
+    },
     "plenary.nvim": {
       "rev": "74b06c6c75e4eeb3108ec01852001636d85a932b",
       "src": "https://github.com/nvim-lua/plenary.nvim"
@@ -157,7 +165,7 @@
       "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
     "rustaceanvim": {
-      "rev": "6409acbb0a6f17f228a7524698431300b96082e2",
+      "rev": "818d3565d7b9f86546d0ddf5d16a5e12eb70ef4f",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "showkeys": {
@@ -215,7 +223,7 @@
       "version": ">=0.0.0"
     },
     "zpack.nvim": {
-      "rev": "c8b4e8d597ec5da5102e66ce7d73b77fa727b90c",
+      "rev": "f1af873a894a3c1a433daad110500603387fa721",
       "src": "https://github.com/zuqini/zpack.nvim"
     },
     "zshow.nvim": {

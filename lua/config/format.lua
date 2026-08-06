@@ -33,10 +33,15 @@ return {
     toml = { "taplo" },
     nix = { "nixfmt" },
     typst = { "tinymist", "typstyle" },
+    csv = { "xsv" },
   },
 
   formatters = {
     biome = { require_cwd = true },
+    xsv = {
+      command = "xsv",
+      args = { "fmt" },
+    },
     deno_fmt = { require_cwd = true },
     kdlfmt = {
       command = "kdlfmt",
