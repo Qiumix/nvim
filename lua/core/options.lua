@@ -21,7 +21,7 @@ opt.number = true -- show absolute line number on current line
 opt.relativenumber = true -- show relative line numbers on other lines
 opt.cursorline = true -- highlight the line the cursor is on
 opt.wrap = false -- don't soft-wrap long lines
-opt.linebreak = true -- if wrap is toggled on, break at word boundaries
+opt.linebreak = false -- if wrap is toggled on, break at word boundaries
 opt.scrolloff = 5 -- keep 10 lines visible above/below cursor
 opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 opt.smoothscroll = true -- scroll by screen line, not by text line
@@ -31,7 +31,7 @@ opt.signcolumn = "yes" -- always show sign column (avoids layout shift)
 opt.mouse = "a" -- enable mouse in all modes
 opt.virtualedit = "block" -- allow cursor beyond end-of-line in visual block
 opt.confirm = true -- prompt to save instead of failing on :q
-opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- sync with system clipboard (disabled over SSH)
+opt.clipboard = "unnamedplus" -- sync with system clipboard (disabled over SSH)
 opt.textwidth = 80
 
 -- ── Indentation ────────────────────────────────────────────────────
@@ -44,7 +44,7 @@ opt.shiftround = true -- round indent to nearest multiple of shiftwidth
 opt.smartindent = true -- Smart auto-indenting
 opt.autoindent = true -- Copy indent from current line
 opt.breakindent = true -- visually indent wrapped lines to match start
-vim.bo.indentexpr = "v:lua.vim.treesitter.indentexpr()"
+-- vim.bo.indentexpr = "v:lua.vim.treesitter.indentexpr()"
 
 -- ── Search ─────────────────────────────────────────────────────────
 opt.hlsearch = true -- Don't highlight search results
@@ -101,7 +101,6 @@ opt.wildmode = "longest:full,full" -- complete longest common, then cycle full m
 opt.jumpoptions = { "stack", "view" } -- restore view when jumping through jumplist
 
 -- ── Encoding ───────────────────────────────────────────────────────
-opt.ttimeoutlen = 10
 opt.encoding = "UTF-8" -- Set encoding
 opt.fileencodings = {
   "ucs-bom",
@@ -147,15 +146,15 @@ opt.winminwidth = 5 -- Minimum window width
 opt.hidden = true -- Allow hidden buffers
 opt.iskeyword = "_,A-Z,a-z,48-57"
 opt.path:append("**") -- include subdirectories in search
-opt.wildignore:append("**/node_modules/**,**/build/**,**/.git/**")
+opt.wildignore:append("**/node_modules/**,**/build/**,**/.git/**,**/target/**")
 
 -- Performance improvements
-opt.redrawtime = 10000
+opt.redrawtime = 5000
 opt.maxmempattern = 20000
 
 g.autoformat = true
 g.trouble_lualine = true
-opt.shortmess:append({ W = true, I = true, c = true, C = true })
+opt.shortmess:append({ W = true, I = false, c = true, C = true })
 g.markdown_recommended_style = 0
 
 -- Disable builtin plugins replaced by third-party alternatives
