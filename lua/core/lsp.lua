@@ -1,6 +1,7 @@
 vim.lsp.enable({
   "eslint",
-  "lua_ls",
+  -- "lua_ls",
+  "emmylua_ls",
   "gopls",
   "zls",
   "cssls",
