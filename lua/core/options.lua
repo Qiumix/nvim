@@ -19,7 +19,7 @@ opt.autowrite = true -- auto-save before :make, :next, CTRL-O, etc.
 -- ── Line Display ───────────────────────────────────────────────────
 opt.number = true -- show absolute line number on current line
 opt.relativenumber = true -- show relative line numbers on other lines
-opt.cursorline = true -- highlight the line the cursor is on
+opt.cursorline = false -- highlight the line the cursor is on
 opt.wrap = false -- don't soft-wrap long lines
 opt.linebreak = false -- if wrap is toggled on, break at word boundaries
 opt.scrolloff = 5 -- keep 10 lines visible above/below cursor
@@ -130,7 +130,7 @@ opt.ttimeoutlen = 0 -- Key code timeout
 opt.autoread = true -- Auto reload files changed outside vim
 
 -- Visual settings
-opt.colorcolumn = "+1"
+-- opt.colorcolumn = "+1"
 opt.showmatch = true -- Highlight matching brackets
 opt.matchtime = 1 -- How long to show matching bracket
 opt.cmdheight = 1 -- Command line height

@@ -15,4 +15,20 @@ return {
     mode = "x",
     icon = { icon = "󰗊 ", color = "orange" },
   },
+  {
+    "<leader>K",
+    "<cmd>Translate<CR>",
+    desc = "Translation",
+    mode = "n",
+    silent = true,
+    icon = { icon = "󰖶 ", color = "cyan" },
+  },
+  {
+    "<leader>K",
+    ":Translate<CR>",
+    desc = "Translation",
+    mode = "v",
+    silent = true,
+    icon = { icon = "󰖶 ", color = "cyan" },
+  },
 }

@@ -5,6 +5,7 @@ return {
   ---@type wk.Opts
   "folke/which-key.nvim",
   event = "UIEnter",
+  priority = 0,
   opts = {
     preset = "helix",
     win = {
