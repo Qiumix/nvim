@@ -31,6 +31,7 @@ return {
     "%",
     desc = "Jump to matching bracket",
     mode = { "n", "x", "o" },
+    remap = true,
     icon = { icon = "󰅩 ", color = "grey" },
   },
   -- { "gd", vim.lsp.buf.definition, desc = "LSP Goto Definition", mode = "n", icon = { icon = "󰂺 ", color = "blue" } },
