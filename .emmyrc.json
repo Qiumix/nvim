@@ -10,7 +10,7 @@
     ]
   },
   "diagnostics": {
-    "disable": ["unresolved-require"],
+    "disable": [],
     "enables": [],
     "globals": [],
     "globalsRegex": []

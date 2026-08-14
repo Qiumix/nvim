@@ -51,7 +51,10 @@ return {
         symbols = {
           alternate_file = "",
         },
-        color = { fg = "#ebdbb2", bg = "NONE", gui = "italic,bold" },
+        buffers_color = {
+          active = "white",
+          inactive = nil,
+        },
       },
     },
     lualine_z = { "tabs" },
