@@ -63,7 +63,7 @@
       "src": "https://github.com/lewis6991/gitsigns.nvim"
     },
     "grug-far.nvim": {
-      "rev": "6e05398cf6cad05b3fb46569db96b1ccfcbbd402",
+      "rev": "11595bf747edc270bce2069d1020502ad4ae56cf",
       "src": "https://github.com/MagicDuck/grug-far.nvim"
     },
     "gruvbox-material": {
@@ -91,7 +91,7 @@
       "src": "https://github.com/SilverofLight/kd_translate.nvim"
     },
     "kitty-scrollback.nvim": {
-      "rev": "1c2ac18420078525b7a4279aade891c1602b35c2",
+      "rev": "5a163bfeb789c1a2bfa143b0e78b02caa233bc43",
       "src": "https://github.com/mikesmithgh/kitty-scrollback.nvim"
     },
     "lazydev.nvim": {
@@ -144,7 +144,7 @@
       "src": "https://github.com/theHamsta/nvim-dap-virtual-text"
     },
     "nvim-lspconfig": {
-      "rev": "d2011e1dd0c27569c551f16b688d86029ae015c9",
+      "rev": "51dbf5359da86721662c87ca10eb73add973737b",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -189,7 +189,7 @@
       "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
     "rustaceanvim": {
-      "rev": "08790b246da1b5de6119022fc55e99a07b345db3",
+      "rev": "5ceae75d8141290c03e119b4c4ce785574a0325b",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "showkeys": {
@@ -209,7 +209,7 @@
       "src": "https://github.com/kkharji/sqlite.lua"
     },
     "sqls.nvim": {
-      "rev": "45e2ea8a684a9a194e8adbde77a02e7ac77f6d4e",
+      "rev": "332caa9ab86af1a00259feb01051ea825e8fc461",
       "src": "https://github.com/nanotee/sqls.nvim"
     },
     "sqlua.nvim": {
