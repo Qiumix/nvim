@@ -16,11 +16,7 @@
     "globalsRegex": []
   },
   "workspace": {
-    "library": [
-      "$VIMRUNTIME",
-      "$HOME/.local/share/nvim/site/pack/core/opt/zpack.nvim",
-      "$HOME/.local/share/nvim/site/pack/core/opt/snacks.nvim"
-    ],
+    "library": ["$VIMRUNTIME"],
     "ignoreGlobs": ["**/*_spec.lua"]
   }
 }

@@ -2,9 +2,9 @@
 ---@type zpack.Spec
 return {
   "rachartier/tiny-inline-diagnostic.nvim",
-  event = "VeryLazy",
+  event = "LspAttach",
   config = function()
-    require("tiny-inline-diagnostic").setup({ require("config.tiny") })
+    require("tiny-inline-diagnostic").setup(require("config.tiny"))
     vim.diagnostic.config({ virtual_text = false })
   end,
 }

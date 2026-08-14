@@ -1,3 +1,7 @@
+-- Use lazydev to dynamically collect plugin libraries, synced into
+-- emmylua.workspace.library (replaces loading all runtime files at once)
+require("config.emmylua_ls_bridge").setup()
+
 local root_markers1 = {
   ".emmyrc.json",
   ".emmyrc.lua",
@@ -22,9 +26,6 @@ return {
     emmylua = {
       codeLens = { enable = true },
       hint = { enable = true },
-      workspace = {
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
     },
   },
 }
