@@ -40,6 +40,16 @@ return {
     silent = true,
     icon = { icon = "󰃤 ", color = "orange" },
   },
+  {
+    "<leader>tl",
+    function()
+      vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+    end,
+    desc = "Toggle Inlay Hints",
+    mode = "n",
+    silent = true,
+    icon = { icon = "󰙏 ", color = "yellow" },
+  },
 
   {
     "<leader>tf",

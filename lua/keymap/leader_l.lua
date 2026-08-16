@@ -27,7 +27,7 @@ return {
     function()
       local has_conform, conform = pcall(require, "conform")
       if has_conform then
-        conform.format({ async = true }, function(err, did_edit)
+        conform.format({ async = true, timeout_ms = 500, lsp_format = "fallback" }, function(err, did_edit)
           if not err and did_edit then
             vim.notify("Code formatted", vim.log.levels.INFO, { title = "Conform" })
           end
