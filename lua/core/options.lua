@@ -28,11 +28,11 @@ opt.smoothscroll = true -- scroll by screen line, not by text line
 opt.signcolumn = "yes" -- always show sign column (avoids layout shift)
 
 -- ── Editing ────────────────────────────────────────────────────────
-opt.mouse = "a" -- enable mouse in all modes
+opt.mouse = "" -- enable mouse in all modes
 opt.virtualedit = "block" -- allow cursor beyond end-of-line in visual block
 opt.confirm = true -- prompt to save instead of failing on :q
 opt.clipboard = "unnamedplus" -- sync with system clipboard (disabled over SSH)
-opt.textwidth = 80
+opt.textwidth = 0
 
 -- ── Indentation ────────────────────────────────────────────────────
 opt.expandtab = true -- insert spaces instead of tabs
