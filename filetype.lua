@@ -1,23 +1,24 @@
 vim.filetype.add({
 
   extension = {
+    arb = "json",
+    conf = "hyprlang",
+    env = "dotenv",
+    kbd = "lisp",
+    log = "log",
     sld = "scheme",
     sls = "scheme",
     sps = "scheme",
-    env = "dotenv",
     wgsl = "wgsl",
-    conf = "hyprlang",
-    kbd = "lisp",
-    log = "log",
   },
 
   -- filename only match file's name, not path
   -- meanwhile not supporting regex
   filename = {
-    ["grub"] = "sh",
-    ["mkinitcpio.conf"] = "sh",
     [".env"] = "dotenv",
     ["env"] = "dotenv",
+    ["grub"] = "sh",
+    ["mkinitcpio.conf"] = "sh",
   },
 
   -- pattern match full path

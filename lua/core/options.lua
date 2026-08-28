@@ -23,12 +23,13 @@ opt.cursorline = false -- highlight the line the cursor is on
 opt.wrap = false -- don't soft-wrap long lines
 opt.linebreak = false -- if wrap is toggled on, break at word boundaries
 opt.scrolloff = 5 -- keep 10 lines visible above/below cursor
+opt.ttyfast = true --faster scrolling
 opt.sidescrolloff = 8 -- Keep 8 columns left/right of cursor
 opt.smoothscroll = true -- scroll by screen line, not by text line
 opt.signcolumn = "yes" -- always show sign column (avoids layout shift)
 
 -- ── Editing ────────────────────────────────────────────────────────
-opt.mouse = "" -- enable mouse in all modes
+opt.mouse = "a" -- enable mouse in all modes
 opt.virtualedit = "block" -- allow cursor beyond end-of-line in visual block
 opt.confirm = true -- prompt to save instead of failing on :q
 opt.clipboard = "unnamedplus" -- sync with system clipboard (disabled over SSH)
@@ -102,6 +103,7 @@ opt.jumpoptions = { "stack", "view" } -- restore view when jumping through jumpl
 
 -- ── Encoding ───────────────────────────────────────────────────────
 opt.encoding = "UTF-8" -- Set encoding
+opt.fileformats = "unix,dos,mac"
 opt.fileencodings = {
   "ucs-bom",
   "utf-8",

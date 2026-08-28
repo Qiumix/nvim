@@ -10,7 +10,11 @@
     ]
   },
   "diagnostics": {
-    "disable": ["unresolved-require", "undefined-field"],
+    "disable": [
+      "unresolved-require",
+      "undefined-field",
+      "annotation-usage-error"
+    ],
     "enables": [],
     "globals": [],
     "globalsRegex": []
@@ -21,6 +25,8 @@
       "$HOME/.local/share/nvim/site/pack/core/opt/zpack.nvim",
       "$HOME/.local/share/nvim/site/pack/core/opt/snacks.nvim"
     ],
-    "ignoreGlobs": ["**/*_spec.lua"]
+    "ignoreGlobs": [
+      "**/*_spec.lua"
+    ]
   }
 }

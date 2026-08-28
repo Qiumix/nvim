@@ -115,8 +115,7 @@ return {
   {
     "romus204/tree-sitter-manager.nvim",
     version = "main",
-    event = "VeryLazy",
-    ft = { "typst", "wgsl", "wesl", "ron" },
+    lazy = false,
     ---@module "tree-sitter-manager"
     ---@type tree-sitter-manager.Config
     opts = {

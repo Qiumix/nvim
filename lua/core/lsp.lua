@@ -14,6 +14,7 @@ vim.lsp.enable({
   "jsonls",
   "kotlin_language_server",
   -- "lua_ls",
+  "pylsp",
   "ron-lsp",
   "roslyn_ls",
   -- "scheme-langserver",

@@ -54,6 +54,10 @@
       "rev": "8d723bac4a9ac46adfdf99d42155286977aac72a",
       "src": "https://github.com/kepano/flexoki"
     },
+    "flutter-tools.nvim": {
+      "rev": "0867b346e9a60753080168188c8f1ee6be40b767",
+      "src": "https://github.com/nvim-flutter/flutter-tools.nvim"
+    },
     "friendly-snippets": {
       "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
@@ -119,7 +123,7 @@
       "src": "https://github.com/nvim-mini/mini.icons"
     },
     "mini.nvim": {
-      "rev": "629bf6792187e11b4829411c1648f86f28df3963",
+      "rev": "1098976ddda3cf00f50c1dda5eef10ccf463d9eb",
       "src": "https://github.com/nvim-mini/mini.nvim"
     },
     "noice.nvim": {
@@ -127,7 +131,7 @@
       "src": "https://github.com/folke/noice.nvim"
     },
     "nui.nvim": {
-      "rev": "de740991c12411b663994b2860f1a4fd0937c130",
+      "rev": "10fc361835c856ba4233ef5ea135b919bf3dce97",
       "src": "https://github.com/MunifTanjim/nui.nvim"
     },
     "nvim-dap": {
@@ -144,7 +148,7 @@
       "src": "https://github.com/theHamsta/nvim-dap-virtual-text"
     },
     "nvim-lspconfig": {
-      "rev": "51dbf5359da86721662c87ca10eb73add973737b",
+      "rev": "3928e638fdedf195b23ae5a18f024afa487982bc",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-nio": {
@@ -189,7 +193,7 @@
       "src": "https://github.com/Qiumix/rime-toggle.nvim"
     },
     "rustaceanvim": {
-      "rev": "5ceae75d8141290c03e119b4c4ce785574a0325b",
+      "rev": "09f108e983e6ed89d737a5b60597b921bc2249ff",
       "src": "https://github.com/mrcjkb/rustaceanvim"
     },
     "showkeys": {
@@ -213,7 +217,7 @@
       "src": "https://github.com/nanotee/sqls.nvim"
     },
     "sqlua.nvim": {
-      "rev": "3527fa88de1a9ec35b27b56502b08f503e83eeb9",
+      "rev": "a49a28dafa5e240e90adbc60881fbd6f066f79f4",
       "src": "https://github.com/xemptuous/sqlua.nvim"
     },
     "tiny-inline-diagnostic.nvim": {
@@ -233,7 +237,7 @@
       "src": "https://github.com/xiyaowong/transparent.nvim"
     },
     "tree-sitter-manager.nvim": {
-      "rev": "9dc4ffc4fb010e7abb976a92360c2c5a7d324c15",
+      "rev": "023590c8f068788a0513a4409bf37ff7f9d1deff",
       "src": "https://github.com/romus204/tree-sitter-manager.nvim",
       "version": "'main'"
     },
@@ -254,12 +258,12 @@
       "src": "https://github.com/gbprod/yanky.nvim"
     },
     "yazi.nvim": {
-      "rev": "8d6c25cb4e7c5702d6cd5a263cb36129fa78aa4c",
+      "rev": "2508e758d9057da9a3ec3f8c53e9f33a46a66e2d",
       "src": "https://github.com/mikavilpas/yazi.nvim",
       "version": ">=0.0.0"
     },
     "zpack.nvim": {
-      "rev": "f1af873a894a3c1a433daad110500603387fa721",
+      "rev": "b9146b11e0485eb60e0bd76d70c6bb273d635915",
       "src": "https://github.com/zuqini/zpack.nvim"
     },
     "zshow.nvim": {
