@@ -47,6 +47,7 @@ local config = {
     use_nvim_cmp_as_default = true,
   },
   sources = {
+    -- transform_items = require("flutter-icons").transform_items,
     default = {
       "lsp",
       "snippets",

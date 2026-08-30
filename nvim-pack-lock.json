@@ -54,6 +54,10 @@
       "rev": "8d723bac4a9ac46adfdf99d42155286977aac72a",
       "src": "https://github.com/kepano/flexoki"
     },
+    "flutter-icons.nvim": {
+      "rev": "e94270747fd26d29967b3c477849652a440a2761",
+      "src": "https://github.com/sidlatau/flutter-icons.nvim"
+    },
     "flutter-tools.nvim": {
       "rev": "0867b346e9a60753080168188c8f1ee6be40b767",
       "src": "https://github.com/nvim-flutter/flutter-tools.nvim"

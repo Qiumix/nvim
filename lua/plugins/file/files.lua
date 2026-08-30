@@ -6,6 +6,9 @@ return {
     version = vim.version.range("*"),
     event = "VeryLazy",
     cmd = "Yazi",
+    dependencies = {
+      "askfiy/smart-translate.nvim",
+    },
     config = function()
       require("yazi").setup(require("config.yazi"))
     end,

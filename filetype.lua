@@ -30,5 +30,7 @@ vim.filetype.add({
     [".*/etc/mkinitcpio%.conf%.d/.*"] = "sh",
     ["[jt]sconfig.*.json"] = "jsonc",
     ["%.env%.[%w_.-]+"] = "dotenv",
+
+    [".flutter-plugins-dependencies"] = "json",
   },
 })
