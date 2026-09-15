@@ -2,7 +2,7 @@
 ---@type zpack.Spec
 return {
   "folke/flash.nvim",
-  enabled = false,
+  enabled = true,
   event = "VeryLazy",
   opts = require("config.flash"),
 }

@@ -61,6 +61,12 @@ return {
     if bufname:match("/node_modules/") then
       return
     end
-    return { timeout_ms = 500, lsp_format = "fallback" }
+    return {
+      lsp_format = "fallback",
+      timeout_ms = 500,
+    }
   end,
+  format_after_save = {
+    lsp_format = "fallback",
+  },
 }
