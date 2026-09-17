@@ -3,7 +3,7 @@
 return {
   {
     "hiphish/rainbow-delimiters.nvim",
-    lazy = false,
+    event = "FileType",
   },
 
   {

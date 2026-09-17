@@ -5,7 +5,9 @@ return {
     "askfiy/smart-translate.nvim",
     cmd = { "Translate" },
     event = "VeryLazy",
-    opts = require("config.translate"),
+    opts = function()
+      return require("config.translate")
+    end,
     dependencies = {
       "askfiy/http.nvim", -- a wrapper implementation of the Python aiohttp library that uses CURL to send requests.
     },

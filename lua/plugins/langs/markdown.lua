@@ -6,5 +6,7 @@ return {
   dependencies = {
     "nvim-mini/mini.icons",
   },
-  opts = require("config.markdown"),
+  opts = function()
+    return require("config.markdown")
+  end,
 }

@@ -2,7 +2,7 @@
 ---@type zpack.Spec
 return {
   "mfussenegger/nvim-dap",
-  lazy = false,
+  lazy = true,
   config = function()
     local dap = require("dap")
 

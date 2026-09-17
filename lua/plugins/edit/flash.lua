@@ -4,5 +4,7 @@ return {
   "folke/flash.nvim",
   enabled = true,
   event = "VeryLazy",
-  opts = require("config.flash"),
+  opts = function()
+    return require("config.flash")
+  end,
 }

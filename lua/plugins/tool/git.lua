@@ -4,6 +4,8 @@ return {
   {
     "lewis6991/gitsigns.nvim",
     event = "UIEnter",
-    opts = require("config.git"),
+    opts = function()
+      return require("config.git")
+    end,
   },
 }

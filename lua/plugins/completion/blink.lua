@@ -7,5 +7,7 @@ return {
     { "rafamadriz/friendly-snippets" },
   },
   event = { "InsertEnter", "CmdlineEnter" },
-  opts = require("config.blink"),
+  opts = function()
+    return require("config.blink")
+  end,
 }

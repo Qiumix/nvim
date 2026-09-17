@@ -17,5 +17,5 @@ return {
       "nvim-lua/plenary.nvim",
     },
   },
-  { "sidlatau/flutter-icons.nvim", dependencies = { "folke/snacks.nvim" } },
+  { "sidlatau/flutter-icons.nvim", ft = "dart", dependencies = { "folke/snacks.nvim" } },
 }

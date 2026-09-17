@@ -2,6 +2,6 @@
 ---@type zpack.Spec
 return {
   "MagicDuck/grug-far.nvim",
-  lazy = false,
+  cmd = "GrugFar",
   opts = { headerMaxWidth = 80 },
 }

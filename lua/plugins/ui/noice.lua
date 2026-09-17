@@ -3,7 +3,9 @@
 return {
   "folke/noice.nvim",
   event = "VeryLazy",
-  opts = require("config.noice"),
+  opts = function()
+    return require("config.noice")
+  end,
   dependencies = {
     "MunifTanjim/nui.nvim",
     { "rcarriga/nvim-notify", opts = { background_colour = "#000000", timeout = 1 } },
