@@ -165,5 +165,5 @@ g.loaded_netrw = 1
 g.loaded_matchit = 1
 
 g.python3_host_prog = "/usr/bin/python3"
-g.loaded_black = 1
+g.load_black = 1
 g.loaded_fzf = 1
