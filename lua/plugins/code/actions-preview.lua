@@ -2,6 +2,7 @@
 ---@type zpack.Spec
 return {
   "aznhe21/actions-preview.nvim",
+  event = "VeryLazy",
   opts = {
     highlight_command = {
       -- require("actions-preview.highlight").delta(),

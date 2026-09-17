@@ -2,6 +2,7 @@
 ---@type zpack.Spec
 return {
   "igorlfs/nvim-dap-view",
+  event = "VeryLazy",
   version = vim.version.range("1.*"),
   dependencies = { "mfussenegger/nvim-dap" },
   opts = {
