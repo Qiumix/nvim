@@ -1,7 +1,7 @@
 return {
   "folke/todo-comments.nvim",
   cmd = { "TodoTrouble", "TodoTelescope" },
-  event = { "BufReadPre", "BufNewFile", "BufWritePre" },
+  event = "VeryLazy",
   opts = {},
   keys = {
     {

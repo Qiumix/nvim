@@ -2,4 +2,5 @@
 ---@type zpack.Spec
 return {
   "sitiom/nvim-numbertoggle",
+  event = "InsertEnter",
 }

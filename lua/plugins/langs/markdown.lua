@@ -5,6 +5,7 @@ return {
   ft = { "markdown", "norg", "org" },
   dependencies = {
     "nvim-mini/mini.icons",
+    event = "VeryLazy",
   },
   opts = function()
     return require("config.markdown")

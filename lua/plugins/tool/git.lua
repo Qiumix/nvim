@@ -3,7 +3,7 @@
 return {
   {
     "lewis6991/gitsigns.nvim",
-    event = "UIEnter",
+    event = "VeryLazy",
     opts = function()
       return require("config.git")
     end,

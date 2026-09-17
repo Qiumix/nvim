@@ -2,7 +2,7 @@
 ---@type zpack.Spec
 return {
   "theHamsta/nvim-dap-virtual-text",
-  event = "UIEnter",
+  event = "VeryLazy",
   opts = {
     enabled = true,
     enabled_commands = true,

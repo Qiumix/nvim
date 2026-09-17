@@ -3,7 +3,6 @@
 return {
   { import = "plugins.code" },
   { import = "plugins.completion" },
-  { import = "plugins.deps" },
   { import = "plugins.edit" },
   { import = "plugins.file" },
   { import = "plugins.langs" },

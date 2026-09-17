@@ -2,6 +2,7 @@
 ---@type zpack.Spec
 return {
   "mikesmithgh/kitty-scrollback.nvim",
+  enabled = false,
   cmd = {
     "KittyScrollbackGenerateKittens",
     "KittyScrollbackGenerateCommandLineEditing",

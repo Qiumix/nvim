@@ -9,4 +9,3 @@ vim.api.nvim_create_autocmd("FileType", {
     require("core.lsp")
   end,
 })
-vim.cmd(":colorscheme gruvbox")
