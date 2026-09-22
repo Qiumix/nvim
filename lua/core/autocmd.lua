@@ -13,7 +13,7 @@ autocmd("TextYankPost", {
 })
 
 -- Auto create dir when saving a file
-vim.api.nvim_create_autocmd({ "BufWritePre" }, {
+autocmd({ "BufWritePre" }, {
   callback = function(event)
     local file = vim.uv.fs_realpath(event.match) or event.match
     vim.fn.mkdir(vim.fn.fnamemodify(file, ":p:h"), "p")
@@ -21,9 +21,8 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
 })
 
 -- go to last loc when opening a buffer
-vim.api.nvim_create_autocmd("BufReadPost", {
+autocmd("BufReadPost", {
   callback = function(event)
-    local exclude = { "gitcommit" } -- don't remember position in commit messages
     local mark = vim.api.nvim_buf_get_mark(event.buf, '"')
     local lcount = vim.api.nvim_buf_line_count(event.buf)
     if mark[1] > 0 and mark[1] <= lcount then
@@ -34,7 +33,7 @@ vim.api.nvim_create_autocmd("BufReadPost", {
 
 -- Transparent background for blink.cmp
 local aug = augroup("BlinkTransparent")
-vim.api.nvim_create_autocmd("User", {
+autocmd("User", {
   group = aug,
   pattern = "BlinkCmpMenuOpen",
   once = true,
@@ -43,7 +42,7 @@ vim.api.nvim_create_autocmd("User", {
     vim.api.nvim_set_hl(0, "BlinkCmpMenuBorder", { link = "", bg = "NONE" })
   end,
 })
-vim.api.nvim_create_autocmd("ColorScheme", {
+autocmd("ColorScheme", {
   group = aug,
   callback = function()
     vim.api.nvim_set_hl(0, "BlinkCmpMenu", { link = "", bg = "NONE" })

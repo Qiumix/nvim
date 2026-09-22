@@ -9,8 +9,6 @@ return {
     dependencies = {
       "askfiy/smart-translate.nvim",
     },
-    config = function()
-      require("yazi").setup(require("config.yazi"))
-    end,
+    opts = {},
   },
 }
