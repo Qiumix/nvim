@@ -11,8 +11,6 @@
   },
   "diagnostics": {
     "disable": [
-      "unresolved-require",
-      "undefined-field",
       "annotation-usage-error"
     ],
     "enables": [],
@@ -21,9 +19,7 @@
   },
   "workspace": {
     "library": [
-      "$VIMRUNTIME",
-      "$HOME/.local/share/nvim/site/pack/core/opt/zpack.nvim",
-      "$HOME/.local/share/nvim/site/pack/core/opt/snacks.nvim"
+      "$VIMRUNTIME"
     ],
     "ignoreGlobs": [
       "**/*_spec.lua"
