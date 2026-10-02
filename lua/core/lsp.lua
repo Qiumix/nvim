@@ -13,7 +13,7 @@ vim.lsp.enable({
   "hyprls",
   "jdtls",
   "jsonls",
-  "kt_lsp",
+  "kmp-lsp",
   -- "lua_ls",
   "pylsp",
   "ron-lsp",
