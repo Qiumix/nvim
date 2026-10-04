@@ -2,5 +2,4 @@
 ---@type zpack.Spec
 return {
   "numToStr/FTerm.nvim",
-  lazy = true,
 }
