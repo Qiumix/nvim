@@ -49,6 +49,8 @@ autocmd("ColorScheme", {
     vim.api.nvim_set_hl(0, "BlinkCmpMenuBorder", { link = "", bg = "NONE" })
   end,
 })
+
+-- LSP setup
 autocmd("FileType", {
   once = true,
   callback = function()
