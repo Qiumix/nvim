@@ -19,6 +19,7 @@ vim.lsp.enable({
   "ron-lsp",
   "roslyn_ls",
   -- "scheme-langserver",
+  "slint_lsp",
   "sqlls",
   "steel-language-server",
   "taplo",
