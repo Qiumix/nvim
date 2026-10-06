@@ -54,6 +54,13 @@ local config = {
       "path",
       "buffer",
     },
+    providers = {
+      path = {
+        opts = {
+          show_hidden_files_by_default = true,
+        },
+      },
+    },
   },
   fuzzy = { implementation = "prefer_rust_with_warning" },
 }
