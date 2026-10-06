@@ -1,5 +1,5 @@
+vim.loader.enable()
 vim.pack.add({ { src = "https://github.com/zuqini/zpack.nvim" } })
 require("core.options")
 require("core.autocmd")
-require("core.usercmd")
 require("zpack").setup({ defaults = { lazy = true } })

@@ -59,3 +59,11 @@ autocmd("FileType", {
     end
   end,
 })
+
+-- User command
+autocmd("VimEnter", {
+  once = true,
+  callback = function()
+    require("core.usercmd")
+  end,
+})
