@@ -1,5 +1,21 @@
 ---@module "conform"
 ---@type conform.setupOpts
+
+local function should_format(bufnr)
+  local ignore_filetypes = { "sql", "yaml", "yml" }
+  if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
+    return false
+  end
+  if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
+    return false
+  end
+  local bufname = vim.api.nvim_buf_get_name(bufnr)
+  if bufname:match("/node_modules/") then
+    return false
+  end
+  return true
+end
+
 return {
   formatters_by_ft = {
     asd = { "lisp_fmt" },
@@ -52,15 +68,7 @@ return {
   },
 
   format_on_save = function(bufnr)
-    local ignore_filetypes = { "sql", "yaml", "yml" }
-    if vim.tbl_contains(ignore_filetypes, vim.bo[bufnr].filetype) then
-      return
-    end
-    if vim.g.disable_autoformat or vim.b[bufnr].disable_autoformat then
-      return
-    end
-    local bufname = vim.api.nvim_buf_get_name(bufnr)
-    if bufname:match("/node_modules/") then
+    if not should_format(bufnr) then
       return
     end
     return {
@@ -68,7 +76,12 @@ return {
       timeout_ms = 500,
     }
   end,
-  format_after_save = {
-    lsp_format = "fallback",
-  },
+  format_after_save = function(bufnr)
+    if not should_format(bufnr) then
+      return
+    end
+    return {
+      lsp_format = "fallback",
+    }
+  end,
 }
