@@ -1,3 +1,4 @@
+---@diagnostic disable: assign-type-mismatch, missing-fields
 local g = vim.g
 local opt = vim.opt
 
@@ -156,7 +157,7 @@ opt.maxmempattern = 20000
 
 g.autoformat = true
 g.trouble_lualine = true
-opt.shortmess:append({ W = true, I = false, c = true, C = true })
+opt.shortmess:append("Wc")
 g.markdown_recommended_style = 0
 
 -- Disable builtin plugins replaced by third-party alternatives
