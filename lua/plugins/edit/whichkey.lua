@@ -4,7 +4,7 @@ return {
   ---@module "which-key"
   ---@type wk.Opts
   "folke/which-key.nvim",
-  event = "UIEnter",
+  event = "VeryLazy",
   priority = 0,
   opts = {
     preset = "helix",

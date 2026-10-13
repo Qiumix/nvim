@@ -1,3 +1,7 @@
+-- nvim-lspconfig is lazy; requiring it here makes zpack packadd it so the base
+-- `lsp/*.lua` configs are on rtp before `vim.lsp.enable` resolves them.
+require("lspconfig")
+
 vim.lsp.enable({
   "bashls",
   "biome",

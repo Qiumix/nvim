@@ -4,7 +4,7 @@ return {
   {
     "nvim-treesitter/nvim-treesitter-textobjects",
     version = "main",
-    event = "UIEnter",
+    event = "VeryLazy",
     config = function()
       require("nvim-treesitter-textobjects").setup({
         select = {

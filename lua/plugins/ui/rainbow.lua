@@ -8,7 +8,7 @@ return {
 
   {
     "lukas-reineke/indent-blankline.nvim",
-    event = "UIEnter",
+    event = "VeryLazy",
     main = "ibl",
     ---@module "ibl"
     ---@type ibl.config

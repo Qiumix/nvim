@@ -13,7 +13,7 @@ return {
   },
   {
     "brenoprata10/nvim-highlight-colors",
-    event = "UIEnter",
+    event = "VeryLazy",
     opts = {},
   },
 }
