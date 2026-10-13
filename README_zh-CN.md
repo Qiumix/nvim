@@ -1,5 +1,11 @@
 # Qiumix's neovim configration
 
+## showcase
+
+比较极简的gruvbox主题配置，能透明的就透明。
+
+<img width="2560" height="1600" alt="Image" src="https://github.com/user-attachments/assets/b9c6f10f-b950-4332-ac9f-7127eaf47ae6" />
+
 ## intro
 
 个人自用neovim配置，架构追求简洁，没有特殊的自定义语言spec然后消费合并，没有自定义的复杂模块，也没有花里胡哨的dashboard。
