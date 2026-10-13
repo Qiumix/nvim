@@ -5,6 +5,8 @@
 比较极简的gruvbox主题配置，能透明的就透明。
 
 <img width="2560" height="1600" alt="Image" src="https://github.com/user-attachments/assets/b9c6f10f-b950-4332-ac9f-7127eaf47ae6" />
+<img width="2560" height="1600" alt="Image" src="https://github.com/user-attachments/assets/4f6873cd-f2d0-4669-9e96-2765e0d0896b" />
+<img width="2560" height="1600" alt="Image" src="https://github.com/user-attachments/assets/808bc653-50b4-4df4-931e-e961cd3c49c6" />
 
 ## intro
 
@@ -18,7 +20,7 @@
 
 windows上你可以用scoop来着，包不算多，不过还是比较好用，因为它能自动append PATH变量，解决windows软件二进制和资产放一起的问题，tree-sitter和neovim-nightly里面也可以下载。
 
-按键我借鉴了一点点helix，gn/gp切buffer，gh/gl行首尾，ge go to end line of file。
+按键我借鉴了一点点helix，gn/gp切buffer，gh/gl行首尾，ge go to end line of file，插入模式的补全也是blink.cmp的默认按键，gn/gp切补全项，gy接受，没有使用tab键。
 
 ## requirements
 
@@ -28,6 +30,7 @@ windows上你可以用scoop来着，包不算多，不过还是比较好用，�
   - [ripgrep](https://github.com/BurntSushi/ripgrep) 用来查找内容，[snacks](https://github.com/folke/snacks.nvim) 和 [grug-far](https://github.com/MagicDuck/grug-far.nvim) 依赖
   - [fd](https://github.com/sharkdp/fd) 用来搜索文件，被 [snacks](https://github.com/folke/snacks.nvim)依赖
   - [yazi](https://github.com/sxyazi/yazi)，tui文件管理器，替代了常见的nvim配置中的左侧file tree，比较好用，tabs+buffers+yazi就可以满足多文件管理需求，而且yazi的按键风格也是vim的，可以愉快地hjkl。yazi还可以通过插件来把右侧文件夹的预览改成tree/eza -T之类的shell命令，也可以集成zoxide和fzf搜索文件(这是不需要装插件就有的功能)，甚至starship和ripgrep也是可以通过插件集成的，非常的unix哲学。
+  - [kd](https://github.com/Karmenzind/kd/)，提供`<leader>k`的词典。
 
 ## installation
 
