@@ -15,6 +15,7 @@ vim.lsp.enable({
   "jsonls",
   "kmp-lsp",
   -- "lua_ls",
+  "nushell",
   "pyrefly",
   "ron-lsp",
   "roslyn_ls",
