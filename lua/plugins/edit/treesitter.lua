@@ -115,9 +115,9 @@ return {
   {
     "romus204/tree-sitter-manager.nvim",
     version = "main",
-    event = "VeryLazy",
+    lazy = false,
     ---@module "tree-sitter-manager"
-    ---@type tree-sitter-manager.Config
+    ---@type tree_sitter_manager.Config
     opts = {
       languages = {
         wesl = {
