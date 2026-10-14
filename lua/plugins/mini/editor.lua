@@ -15,7 +15,5 @@ return {
         n_context = 2,
       },
     })
-
-    require("mini.icons").setup()
   end,
 }
