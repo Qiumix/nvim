@@ -1,4 +1,3 @@
----@diagnostic disable: assign-type-mismatch, missing-fields
 local g = vim.g
 local opt = vim.opt
 

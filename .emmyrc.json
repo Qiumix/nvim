@@ -1,7 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/EmmyLuaLs/emmylua-analyzer-rust/refs/heads/main/crates/emmylua_code_analysis/resources/schema.json",
+  "diagnostics": {
+    "disable": ["need-check-nil", "annotation-usage-error"],
+    "enables": [],
+    "globals": [],
+    "globalsRegex": []
+  },
   "runtime": {
-    "version": "LuaJIT",
     "requirePattern": [
       "lua/?/init.lua",
       "lua/?.lua",
@@ -9,19 +14,15 @@
       "?/lua/?.lua",
       "?.lua",
       "?/init.lua"
-    ]
-  },
-  "diagnostics": {
-    "disable": ["annotation-usage-error"],
-    "enables": [],
-    "globals": [],
-    "globalsRegex": []
+    ],
+    "version": "LuaJIT"
   },
   "workspace": {
+    "ignoreGlobs": ["**/*_spec.lua"],
     "library": [
       "$VIMRUNTIME",
-      "$HOME/.local/share/nvim/site/pack/core/opt/emmylua-nvim/nvim/library"
-    ],
-    "ignoreGlobs": ["**/*_spec.lua"]
+      "$HOME/.local/share/nvim/site/pack/core/opt/emmylua-nvim/nvim/library",
+      "$HOME/.local/share/nvim/site/pack/core/opt/snacks.nvim"
+    ]
   }
 }

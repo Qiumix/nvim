@@ -59,7 +59,6 @@ git clone https://github.com/Qiumix/nvim.git "$env:LOCALAPPDATA\nvim"
     ├── config       # 各个插件的配置，如果插件setup函数消费的opts比较复杂会在这里单独开一个文件require
     ├── core
     │   ├── autocmd.lua # 各种懒加载事件
-    │   ├── emmylua_ls_bridge.lua # 让emmylua_ls获取nvim的各种spec，包括插件的，比lua_ls快超级多，因为是rust(
     │   ├── lsp.lua # 启用的lsp，来源是after/lsp和`nvim-lspconfig/lsp`下的不带扩展名的lua文件名
     │   ├── options.lua # neovim自带的各种配置可以`:h options查看`
     │   └── usercmd.lua # 自定义的用户级命令，没啥用
@@ -78,33 +77,37 @@ git clone https://github.com/Qiumix/nvim.git "$env:LOCALAPPDATA\nvim"
 
 ## bench
 
-配置7940hx，16G的三星laptop ddr5，sn560硬盘。
-
-虽然平均启动速度很好看，但是日用基本还是看max，因为后续基本是从内存加载nvim插件和配置，只有刚开始会走硬盘。
+配置`7940HX`，16G的三星laptop DDR5，SN560硬盘，装了16G傲腾当swap。
+cpu运行频率4.9Ghz，我日常会开静音模式，大概2.0Ghz左右，冷启动会跑到38ms左右。
+这取决于cpu频率，我这里大部分情况硬盘io不是瓶颈，第一次启动后就有luac缓存了。
+这里我手动调了cpu频率到4.9Ghz，如果刚开始频率比较低，冷启动还是会慢，用`vim-startuptime`
+多次测试，前几次会比较慢，后面cpu会自动睿频所以速度会提升。
 
 ```bash
-vim-startuptime -vimpath nvim -warmup 3 -count 100 | head -20
+  vim-startuptime -vimpath nvim -warmup 3 -count 1000 | head -20
 Extra options: []
-Measured: 100 times
+Measured: 1000 times
 
-Total Average: 16.741470 msec
-Total Max:     43.090000 msec
-Total Min:     14.879000 msec
+Total Average: 17.316148 msec
+Total Max:     19.761000 msec
+Total Min:     15.956000 msec
 
   AVERAGE       MAX      MIN
 -----------------------------
-10.245670 27.165000 8.850000: /home/qiumix/.config/nvim/init.lua
- 1.592130  4.085000 1.354000: nvim_exec2() called at /home/qiumix/.config/nvim/init.lua:0
- 1.510250  3.869000 1.277000: /home/qiumix/.local/share/nvim/site/pack/core/opt/gruvbox.nvim/colors/gruvbox.lua
- 1.285030  3.084000 1.092000: reading ShaDa
- 1.133140  2.811000 0.911000: /home/qiumix/.config/nvim/filetype.lua
- 0.813740  1.954000 0.613000: require('vim.filetype')
- 0.700070  1.791000 0.623000: loading rtp plugins
- 0.652270  1.545000 0.533000: require('vim._core.defaults')
- 0.570920  1.339000 0.359000: require('vim.pack')
- 0.557820  1.210000 0.398000: require('core.options')
- 0.337730  0.937000 0.240000: require('gruvbox')
+10.720994 12.434000 9.821000: /home/qiumix/.config/nvim/init.lua
+ 1.357487  1.855000 1.115000: nvim_exec2() called at /home/qiumix/.config/nvim/init.lua:0
+ 1.309999  1.809000 1.069000: /home/qiumix/.local/share/nvim/site/pack/core/opt/gruvbox.nvim/colors/gruvbox.lua
+ 1.183927  1.962000 1.014000: /home/qiumix/.config/nvim/filetype.lua
+ 1.143664  1.583000 1.000000: reading ShaDa
+ 0.867842  1.505000 0.727000: require('vim.filetype')
+ 0.687748  1.096000 0.530000: require('vim._core.defaults')
+ 0.605172  1.043000 0.430000: require('tree-sitter-manager')
+ 0.585311  0.805000 0.541000: loading rtp plugins
+ 0.554497  1.049000 0.346000: require('vim.pack')
+ 0.548095  1.144000 0.399000: require('core.options')
 ```
+
+`grubvox`同步加载而非异步懒加载，会慢一点点，但是不会在启动的时候从默认neovim主题闪现到`gruvbox`。
 
 ## thanks
 
