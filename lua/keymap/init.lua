@@ -2,22 +2,22 @@
 local M = {}
 
 local modules = {
-  "keymap.groups",
-  "keymap.surround",
-  "keymap.textobjects",
-  "keymap.common",
-  "keymap.better",
-  "keymap.leader_tab",
-  "keymap.leader_b",
-  "keymap.leader_t",
-  "keymap.leader_l",
-  "keymap.leader_q",
-  "keymap.leader_o",
-  "keymap.leader_k",
-  "keymap.leader_e",
-  "keymap.leader_s",
-  "keymap.leader_g",
-  "keymap.leader_w",
+  "keymap.better", -- better than default
+  "keymap.common", -- misc
+  "keymap.groups", -- keymap groups for whichkey
+  "keymap.leader.b", -- buffer
+  "keymap.leader.e", -- explorer(yazi)
+  "keymap.leader.g", -- git
+  "keymap.leader.k", -- kd translate
+  "keymap.leader.l", -- language
+  "keymap.leader.o", -- neovim system control
+  "keymap.leader.q", -- quit
+  "keymap.leader.s", -- snack pick
+  "keymap.leader.t", -- toggle
+  "keymap.leader.tab", -- tab management
+  "keymap.leader.w", -- window management
+  "keymap.surround", -- surround
+  "keymap.textobjects", -- textobjects
 }
 
 for _, name in ipairs(modules) do
