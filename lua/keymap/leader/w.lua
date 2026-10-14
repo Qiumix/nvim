@@ -1,3 +1,4 @@
+---@module "which-key"
 ---@type wk.Spec
 return {
   -- <leader>w Prefix & Ctrl-w Helpers

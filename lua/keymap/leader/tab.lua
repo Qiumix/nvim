@@ -1,3 +1,4 @@
+---@module "which-key"
 ---@type wk.Spec
 return {
   -- <leader><tab> Prefix (Tabs)

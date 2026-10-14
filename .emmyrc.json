@@ -11,7 +11,7 @@
   },
   "diagnostics": {
     "disable": [
-      "annotation-usage-error"
+      // "annotation-usage-error"
     ],
     "enables": [],
     "globals": [],

@@ -3,6 +3,7 @@ local function get_root()
   return root
 end
 
+---@module "which-key"
 ---@type wk.Spec
 return {
   -- <leader>s Prefix (Search with Snacks Picker)

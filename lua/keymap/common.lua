@@ -1,3 +1,4 @@
+---@module "which-key"
 ---@type wk.Spec
 return {
   { "<Space>", "<Nop>", mode = "n" },
