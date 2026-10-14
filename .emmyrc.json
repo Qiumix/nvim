@@ -6,23 +6,22 @@
       "lua/?/init.lua",
       "lua/?.lua",
       "?/lua/?/init.lua",
-      "?/lua/?.lua"
+      "?/lua/?.lua",
+      "?.lua",
+      "?/init.lua"
     ]
   },
   "diagnostics": {
-    "disable": [
-      // "annotation-usage-error"
-    ],
+    "disable": ["annotation-usage-error"],
     "enables": [],
     "globals": [],
     "globalsRegex": []
   },
   "workspace": {
     "library": [
-      "$VIMRUNTIME"
+      "$VIMRUNTIME",
+      "$HOME/.local/share/nvim/site/pack/core/opt/emmylua-nvim/nvim/library"
     ],
-    "ignoreGlobs": [
-      "**/*_spec.lua"
-    ]
+    "ignoreGlobs": ["**/*_spec.lua"]
   }
 }
