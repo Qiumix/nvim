@@ -6,6 +6,7 @@ vim.lsp.enable({
   "bashls",
   "biome",
   "clangd",
+  -- "clice",
   "cssls",
   "docker_language_server",
   "emmylua_ls",
@@ -29,8 +30,8 @@ vim.lsp.enable({
   "steel-language-server",
   "taplo",
   "tinymist",
-  "vue",
-  "wgsl",
+  "vtsls",
+  "wgsl_analyzer",
   "yamlls",
   "zls",
 })
