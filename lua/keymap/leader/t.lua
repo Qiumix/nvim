@@ -60,6 +60,17 @@ return {
     icon = { icon = " ", color = "cyan" },
   },
   {
+    "<leader>tq",
+    function()
+      vim.cmd("normal! q=")
+      vim.notify("Multicursor follow toggled", vim.log.levels.INFO)
+    end,
+    desc = "Toggle multicursor follow (q=)",
+    mode = "n",
+    silent = true,
+    icon = { icon = "󰗧 ", color = "cyan" },
+  },
+  {
     "<leader>tt",
     function()
       local sw = vim.bo.shiftwidth
