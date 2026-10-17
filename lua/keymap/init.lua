@@ -11,11 +11,12 @@ local modules = {
   "keymap.leader.g", -- git
   "keymap.leader.k", -- kd translate
   "keymap.leader.l", -- language
+  "keymap.leader.m", -- language
   "keymap.leader.o", -- neovim system control
   "keymap.leader.q", -- quit
   "keymap.leader.s", -- snack pick
-  "keymap.leader.t", -- toggle
   "keymap.leader.tab", -- tab management
+  "keymap.leader.t", -- toggle
   "keymap.leader.w", -- window management
   "keymap.surround", -- surround
   "keymap.textobjects", -- textobjects
