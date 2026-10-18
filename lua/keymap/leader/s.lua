@@ -11,7 +11,7 @@ return {
     "<leader>ss",
     function()
       local root = get_root()
-      Snacks.picker.grep({ cmd = root })
+      Snacks.picker.grep({ cwd = root })
     end,
     desc = "Smart Find Text",
     mode = "n",
