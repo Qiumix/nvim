@@ -52,7 +52,38 @@ return {
   },
 
   formatters = {
-    biome = { require_cwd = false },
+    biome = {
+      -- Keep this false so `condition` has full control over whether biome runs.
+      require_cwd = false,
+      condition = function(self, ctx)
+        -- Lazy-load util only when this condition actually runs.
+        local util = require("conform.util")
+
+        -- Case 1: a Biome config exists somewhere up the tree -> run biome.
+        local biome_cfg = util.root_file({
+          "biome.json",
+          "biome.jsonc",
+          ".biome.json",
+          ".biome.jsonc",
+        })(self, ctx)
+
+        if biome_cfg then
+          return true
+        end
+
+        -- Lazy-load prettierd's cwd only when Biome config is missing.
+        local prettierd_cwd = require("conform.formatters.prettierd").cwd
+
+        -- Case 3 check: no Biome config, but a Prettier config exists -> skip
+        -- biome so `stop_after_first` falls through to prettier.
+        if prettierd_cwd(self, ctx) then
+          return false
+        end
+
+        -- Case 2: neither config exists -> still run biome with built-in defaults.
+        return true
+      end,
+    },
     kdlfmt = { command = "kdlfmt", args = { "format", "--kdl-version", "v1", "-" }, stdin = true },
     ronfmt = { command = "ronfmt", args = { "$FILENAME", "-d" } },
   },
