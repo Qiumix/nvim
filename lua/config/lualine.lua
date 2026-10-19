@@ -40,7 +40,19 @@ return {
     },
     lualine_b = { { "branch", color = { fg = "orange" } }, "diff", "diagnostics" },
     lualine_c = { "filename" },
-    lualine_x = { "encoding", "fileformat", "filetype" },
+    lualine_x = {
+      {
+        function()
+          if vim.bo.modifiable then
+            return vim.bo.fileencoding or vim.bo.encoding
+          end
+          return ""
+        end,
+        icon = "",
+      },
+      "fileformat",
+      "filetype",
+    },
     lualine_y = { "progress" },
     lualine_z = { "location", { "datetime", style = "%H:%M" } },
   },
