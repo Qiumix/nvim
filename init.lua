@@ -8,7 +8,7 @@ vim.pack.add({ { src = "https://github.com/zuqini/zpack.nvim" } })
 require("core.options")
 
 -- setup plugin loading
-require("zpack").setup({ defaults = { lazy = true } })
+require("zpack").setup({ defaults = { lazy = true, confirm = false } })
 
 -- auto command
 require("core.autocmd")

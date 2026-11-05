@@ -55,7 +55,7 @@ return {
     icon = { icon = "󰂺 ", color = "blue" },
   },
   {
-    "gR",
+    "gr",
     function()
       Snacks.picker.lsp_references()
     end,

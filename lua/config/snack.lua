@@ -1,4 +1,3 @@
----@module "snacks"
 ---@type snacks.Config
 return {
   animate = { enabled = true },
@@ -8,6 +7,7 @@ return {
   explorer = { enabled = true, replace_netrw = true },
   image = {
     enabled = true,
+    force = false,
     math = {
       typst = {
         tpl = [[

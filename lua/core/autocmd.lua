@@ -8,7 +8,11 @@ autocmd("TextYankPost", {
   desc = "Highlight on yank",
   group = augroup("highlight_yank"),
   callback = function()
-    vim.hl.hl_op()
+    if vim.fn.has("nvim-0.13") == 1 then
+      vim.hl.hl_op()
+    else
+      vim.hl.on_yank()
+    end
   end,
 })
 

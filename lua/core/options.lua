@@ -39,7 +39,8 @@ opt.textwidth = 0
 opt.expandtab = true -- insert spaces instead of tabs
 opt.tabstop = 2 -- Tab width
 opt.softtabstop = 2 -- Soft tab stop
-vim.o.showtabline = 2
+-- vim.o.showtabline = 2
+vim.o.showtabline = vim.env.KITTY_SCROLLBACK_NVIM == "true" and 0 or 2
 opt.shiftwidth = 2 -- indent by 2 spaces per level
 opt.shiftround = true -- round indent to nearest multiple of shiftwidth
 opt.smartindent = true -- Smart auto-indenting

@@ -1,8 +1,7 @@
 ---@module "zpack"
 ---@type zpack.Spec
-return {
+local spec = {
   "mikesmithgh/kitty-scrollback.nvim",
-  enabled = false,
   cmd = {
     "KittyScrollbackGenerateKittens",
     "KittyScrollbackGenerateCommandLineEditing",
@@ -20,6 +19,10 @@ return {
       end,
     })
 
-    require("kitty-scrollback").setup()
+    require("kitty-scrollback").setup({
+      { status_window = { autoclose = true } },
+    })
   end,
 }
+
+return spec

@@ -17,18 +17,18 @@ local config = {
 ---@type zpack.Spec
 return {
   "kawre/leetcode.nvim",
-  -- dependencies = {
-  --   "3rd/image.nvim",
-  --   opts = {
-  --     backend = ({
-  --       ["xterm-kitty"] = "kitty",
-  --       ["foot"] = "sixel",
-  --     })[vim.env.TERM],
-  --     integrations = {},
-  --     window_overlap_clear_enabled = false,
-  --     editor_only_render_when_focused = true,
-  --   },
-  -- },
+  dependencies = {
+    "3rd/image.nvim",
+    opts = {
+      backend = ({
+        ["xterm-kitty"] = "kitty",
+        ["foot"] = "sixel",
+      })[vim.env.TERM],
+      integrations = {},
+      window_overlap_clear_enabled = false,
+      editor_only_render_when_focused = true,
+    },
+  },
   cmd = "Leet",
   lazy = not table.concat(vim.v.argv, " "):match("leetcode%.nvim"),
   opts = config,

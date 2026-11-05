@@ -2,7 +2,7 @@ vim.filetype.add({
 
   extension = {
     arb = "json",
-    conf = "hyprlang",
+    conf = "ini",
     env = "dotenv",
     kbd = "lisp",
     log = "log",
@@ -10,6 +10,10 @@ vim.filetype.add({
     sls = "scheme",
     sps = "scheme",
     wgsl = "wgsl",
+    service = "systemd",
+    socket = "systemd",
+    timer = "systemd",
+    target = "systemd",
   },
 
   -- filename only match file's name, not path

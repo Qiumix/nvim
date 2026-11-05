@@ -30,6 +30,7 @@ return {
       statusline = { "kitty-scrollback" },
       winbar = {},
     },
+    always_show_tabline = vim.env.KITTY_SCROLLBACK_NVIM ~= "true",
   },
   sections = {
     lualine_a = {

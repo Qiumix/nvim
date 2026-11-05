@@ -1,7 +1,6 @@
 ---@module "zpack"
 ---@type zpack.Spec | zpack.Spec[]
 return {
-  { "ii14/emmylua-nvim", ft = "lua" },
   {
     "qiumix/emmylua_ls_bridge.nvim",
     ft = "lua",

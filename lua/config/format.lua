@@ -1,4 +1,3 @@
----@module "conform"
 ---@type conform.setupOpts
 
 local function should_format(bufnr)
@@ -23,11 +22,11 @@ return {
     bash = { "shfmt" },
     css = { "biome", "prettier", stop_after_first = true },
     go = { "gofmt", stop_after_first = true },
-    html = { "biome", "prettier", stop_after_first = true },
+    html = { "prettier", "biome", stop_after_first = true },
     javascript = { "biome", "prettier", stop_after_first = true },
     javascriptreact = { "biome", "prettier", stop_after_first = true },
-    jsonc = { "biome", "jq", "prettier", stop_after_first = true },
-    json = { "biome", "jq", "prettier", stop_after_first = true },
+    jsonc = { "jq", "biome", "prettier", stop_after_first = true },
+    json = { "jq", "biome", "prettier", stop_after_first = true },
     kdl = { "kdlfmt" },
     kotlin = { "ktlint" },
     lisp = { "racketfmt" },
