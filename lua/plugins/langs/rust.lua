@@ -4,9 +4,20 @@ return {
   {
     "saecki/crates.nvim",
     ft = "toml",
-    config = function()
-      require("crates").setup({})
-    end,
+    ---@type crates.UserConfig
+    opts = {
+      lsp = {
+        actions = true,
+        completion = true,
+        enabled = true,
+        hover = true,
+      },
+      popup = {
+        autofocus = true,
+        hide_on_select = true,
+        show_version_date = true,
+      },
+    },
   },
   {
     "mrcjkb/rustaceanvim",

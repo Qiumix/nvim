@@ -8,6 +8,13 @@ return {
   end,
   dependencies = {
     "MunifTanjim/nui.nvim",
-    { "rcarriga/nvim-notify", opts = { background_colour = "#000000", timeout = 1 } },
+    {
+      "rcarriga/nvim-notify",
+      opts = {
+        background_colour = "#000000",
+        timeout = 1,
+        merge_duplicates = 4,
+      },
+    },
   },
 }

@@ -2,6 +2,7 @@
 -- `lsp/*.lua` configs are on rtp before `vim.lsp.enable` resolves them.
 require("lspconfig")
 
+local rust_ls = vim.env.RA == "true" and "rust_analyzer" or "rust_glancer"
 vim.lsp.enable({
   "bashls",
   "biome",
@@ -20,8 +21,7 @@ vim.lsp.enable({
   "nushell",
   "pyrefly",
   "ron-lsp",
-  -- "rust_analyzer",
-  "rust_glancer",
+  rust_ls,
   -- "scheme-langserver",
   "slint_lsp",
   "sqlls",
