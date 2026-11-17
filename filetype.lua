@@ -10,6 +10,7 @@ vim.filetype.add({
     sls = "scheme",
     sps = "scheme",
     wgsl = "wgsl",
+    wesl = "wesl",
     service = "systemd",
     socket = "systemd",
     timer = "systemd",

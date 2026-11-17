@@ -2,22 +2,19 @@
 ---@type wk.Spec
 return {
   -- ════════════════════════════════════════════════════════════
-  --  TEXT OBJECTS DESCRIPTIONS (mini.ai & Tree-sitter Textobjects)
+  --  TEXT OBJECTS DESCRIPTIONS (nvim-treesitter-textobjects)
   --  Triggered after pressing operators (v/d/c/y) followed by a/i
   -- ════════════════════════════════════════════════════════════
   {
     mode = { "x", "o" },
     { "a", desc = "Argument / Parameter", icon = { icon = "󰅩 ", color = "cyan" } },
     { "f", desc = "Function / Method definition", icon = { icon = "󰊕 ", color = "blue" } },
-    { "F", desc = "Class / Struct definition", icon = { icon = "󰒪 ", color = "orange" } },
+    { "c", desc = "Class / Struct definition", icon = { icon = "󰒪 ", color = "orange" } },
     { "o", desc = "Condition / Loop block", icon = { icon = "󰅨 ", color = "purple" } },
 
-    -- Complementing mini.ai's builtin specs
-    { "b", desc = "Balanced ( ) [ ] { }", icon = { icon = "󰅪 ", color = "grey" } },
+    -- Built into Vim, listed here for discoverability
+    { "b", desc = "Balanced ( )", icon = { icon = "󰅪 ", color = "grey" } },
     { "B", desc = "Balanced { } block", icon = { icon = "󰅩 ", color = "grey" } },
-    { "i", desc = "Object scope with border", icon = { icon = "󰉶 ", color = "grey" } },
-    { "n", desc = "Around next textobject", icon = { icon = "󰞔 ", color = "azure" } },
-    { "l", desc = "Around last textobject", icon = { icon = "󰞓 ", color = "azure" } },
     { "p", desc = "Paragraph", icon = { icon = "󰦨 ", color = "yellow" } },
     { "s", desc = "Sentence", icon = { icon = "󰦪 ", color = "yellow" } },
     { "t", desc = "XML / HTML tag block", icon = { icon = "󰜬 ", color = "red" } },

@@ -4,6 +4,13 @@ return {
   {
     "hiphish/rainbow-delimiters.nvim",
     event = "FileType",
+    config = function()
+      require("rainbow-delimiters.setup").setup({
+        condition = function(bufnr)
+          return vim.api.nvim_buf_line_count(bufnr) <= 1000
+        end,
+      })
+    end,
   },
 
   {
