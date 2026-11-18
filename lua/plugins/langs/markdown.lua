@@ -7,7 +7,5 @@ return {
     "nvim-tree/nvim-web-devicons",
     event = "VeryLazy",
   },
-  opts = function()
-    return require("config.markdown")
-  end,
+  opts = require("config.markdown"),
 }
